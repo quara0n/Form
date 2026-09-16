@@ -1,0 +1,722 @@
+{
+  ".codex/hooks.json": {
+    "mtime": 1789146157.135615,
+    "seen": 1789197011.3088477,
+    "ast_hash": "73782ee6745da0edda76bc5923fe80c2",
+    "semantic_hash": ""
+  },
+  "package.json": {
+    "mtime": 1789287374.2272575,
+    "seen": 1789287470.1341202,
+    "ast_hash": "8cc5d07fea5f7630c33203f0a486ba0b",
+    "semantic_hash": ""
+  },
+  "playwright.config.ts": {
+    "mtime": 1789197289.3463974,
+    "seen": 1789197411.9343631,
+    "ast_hash": "c2b589ff14cc8036a89599dc9ac057ff",
+    "semantic_hash": ""
+  },
+  "scripts/download-media.mjs": {
+    "mtime": 1789197158.709973,
+    "seen": 1789197161.2576532,
+    "ast_hash": "da672ddb38506727724bd62f4b3a8869",
+    "semantic_hash": ""
+  },
+  "scripts/make-posters.mjs": {
+    "mtime": 1789068984.3583884,
+    "seen": 1789197011.3088582,
+    "ast_hash": "6914e2a2d56c5f5b19b200476e08fa1e",
+    "semantic_hash": ""
+  },
+  "src/App.tsx": {
+    "mtime": 1789294346.3538785,
+    "seen": 1789294356.2265706,
+    "ast_hash": "fd8878d337211afa1e87c674488eb87d",
+    "semantic_hash": ""
+  },
+  "src/components/Modal.tsx": {
+    "mtime": 1789068983.818481,
+    "seen": 1789197011.3088603,
+    "ast_hash": "a2d924e96379e7b8d2879774192f4787",
+    "semantic_hash": ""
+  },
+  "src/data/exercises.json": {
+    "mtime": 1789197158.6580198,
+    "seen": 1789197161.25766,
+    "ast_hash": "8e30edce2f65f02758f701406f32df14",
+    "semantic_hash": ""
+  },
+  "src/domain/programme.test.ts": {
+    "mtime": 1789068983.873947,
+    "seen": 1789197011.3088622,
+    "ast_hash": "3c7cf389c0f1456483e4bd8e20490a7c",
+    "semantic_hash": ""
+  },
+  "src/domain/programme.ts": {
+    "mtime": 1789294082.1156309,
+    "seen": 1789294356.2265792,
+    "ast_hash": "5905046361b1ca045d5928de35b4ef15",
+    "semantic_hash": ""
+  },
+  "src/features/builder/ProgrammeBuilder.tsx": {
+    "mtime": 1789294127.742499,
+    "seen": 1789294356.2265801,
+    "ast_hash": "0f04b0f229b70563ca27f20dc8c86501",
+    "semantic_hash": ""
+  },
+  "src/features/library/ExerciseLibrary.tsx": {
+    "mtime": 1789294331.8757975,
+    "seen": 1789294356.2265818,
+    "ast_hash": "909d09ba271725f1b35bd41ed4479cfa",
+    "semantic_hash": ""
+  },
+  "src/features/print/ProgrammeHandout.tsx": {
+    "mtime": 1789068984.007882,
+    "seen": 1789197011.3088663,
+    "ast_hash": "603e65e67d56798b289c51b872198bc1",
+    "semantic_hash": ""
+  },
+  "src/features/programmes/useProgramme.ts": {
+    "mtime": 1789068984.047752,
+    "seen": 1789197011.308867,
+    "ast_hash": "31fce3b9a604427e6f4423e06942a320",
+    "semantic_hash": ""
+  },
+  "src/main.tsx": {
+    "mtime": 1789068984.0507522,
+    "seen": 1789197011.3088682,
+    "ast_hash": "4cc15d56f86c28c05f7cb9f07c669ece",
+    "semantic_hash": ""
+  },
+  "src/storage/programmeRepository.test.ts": {
+    "mtime": 1789068984.0750322,
+    "seen": 1789197011.3088691,
+    "ast_hash": "8fae333d29b7d00b87bfc14806a05a22",
+    "semantic_hash": ""
+  },
+  "src/storage/programmeRepository.ts": {
+    "mtime": 1789197107.3328638,
+    "seen": 1789197161.2576718,
+    "ast_hash": "93c03fca9b0597066b37a684a5a37c5a",
+    "semantic_hash": ""
+  },
+  "tests/library-media.spec.ts": {
+    "mtime": 1789294266.2230036,
+    "seen": 1789294356.2265906,
+    "ast_hash": "4866f5a0b236aeffc3d471eeb2c44abe",
+    "semantic_hash": ""
+  },
+  "tests/rehab-builder.spec.ts": {
+    "mtime": 1789294394.1778133,
+    "seen": 1789294431.919148,
+    "ast_hash": "9e1ce6235a3044d5d1822072fd3e0d1e",
+    "semantic_hash": ""
+  },
+  "tests/workspace-recovery.spec.ts": {
+    "mtime": 1789197289.2444134,
+    "seen": 1789197411.9343917,
+    "ast_hash": "11b4ee526acfea2b7ad06c4fe8b6f224",
+    "semantic_hash": ""
+  },
+  "tsconfig.json": {
+    "mtime": 1789068984.291412,
+    "seen": 1789197011.3088737,
+    "ast_hash": "363148fd48e19f9ce3f0aefc4cae2deb",
+    "semantic_hash": ""
+  },
+  "vite.config.ts": {
+    "mtime": 1789068984.284694,
+    "seen": 1789197011.3088746,
+    "ast_hash": "42f04eb037a3058cc84002517ce9510d",
+    "semantic_hash": ""
+  },
+  "AGENTS.md": {
+    "mtime": 1789146157.1290123,
+    "seen": 1789197011.308876,
+    "ast_hash": "21ceb6533048be51308e69e7b74a35cf",
+    "semantic_hash": ""
+  },
+  "README.md": {
+    "mtime": 1789287444.8460405,
+    "seen": 1789287470.1341631,
+    "ast_hash": "803520375723e9e3a8625284a331ee1c",
+    "semantic_hash": ""
+  },
+  "docs/media-rights.md": {
+    "mtime": 1789197105.726354,
+    "seen": 1789197161.2576835,
+    "ast_hash": "0e8b2d46235b8d2cca90e1f8dddf6d48",
+    "semantic_hash": ""
+  },
+  "docs/plans/2026-09-09-1839-feat-msk-rehab-builder-plan.md": {
+    "mtime": 1788972116.432952,
+    "seen": 1789197011.308879,
+    "ast_hash": "7c1bf3038eff32f8095baa3dfe3873a9",
+    "semantic_hash": ""
+  },
+  "index.html": {
+    "mtime": 1789068984.322646,
+    "seen": 1789197011.3088799,
+    "ast_hash": "0e1903f120c22271b99f156e7ea990d2",
+    "semantic_hash": ""
+  },
+  "public/exercises/bench-press.jpg": {
+    "mtime": 1789068915.7926817,
+    "seen": 1789197011.3088808,
+    "ast_hash": "16dc2793dd2d96dc3636f91cfb131edb",
+    "semantic_hash": ""
+  },
+  "public/exercises/bicep-curl.jpg": {
+    "mtime": 1789068916.488659,
+    "seen": 1789197011.308882,
+    "ast_hash": "687f848747f6f4c5efdb5451ed90aaa7",
+    "semantic_hash": ""
+  },
+  "public/exercises/deadlift.jpg": {
+    "mtime": 1789068915.8593142,
+    "seen": 1789197011.3088827,
+    "ast_hash": "7584fb0294411dd346cdba6d4d2eb5f0",
+    "semantic_hash": ""
+  },
+  "public/exercises/half-squat.jpg": {
+    "mtime": 1789068916.373423,
+    "seen": 1789197011.3088841,
+    "ast_hash": "381c18405f4c12be7ea02c725229a82b",
+    "semantic_hash": ""
+  },
+  "public/exercises/hanging-crunch.jpg": {
+    "mtime": 1789068915.9337468,
+    "seen": 1789197011.308885,
+    "ast_hash": "134f6d55f112b9ec397fa97306d8b890",
+    "semantic_hash": ""
+  },
+  "public/exercises/incline-press.jpg": {
+    "mtime": 1789068916.0127707,
+    "seen": 1789197011.308886,
+    "ast_hash": "194dbc53e5649a1e321964b78d31d238",
+    "semantic_hash": ""
+  },
+  "public/exercises/leg-raise.jpg": {
+    "mtime": 1789068916.0681758,
+    "seen": 1789197011.3088868,
+    "ast_hash": "67eac1e3da240fc5210c35427c59a06f",
+    "semantic_hash": ""
+  },
+  "public/exercises/pull-up.jpg": {
+    "mtime": 1789068916.1303544,
+    "seen": 1789197011.3088877,
+    "ast_hash": "d2e394391d6e73689b5204eae6bca24b",
+    "semantic_hash": ""
+  },
+  "public/exercises/row.jpg": {
+    "mtime": 1789068915.7241733,
+    "seen": 1789197011.308889,
+    "ast_hash": "6458817a71de8dc22b92254687b8a145",
+    "semantic_hash": ""
+  },
+  "public/exercises/shoulder-press.jpg": {
+    "mtime": 1789068916.2209299,
+    "seen": 1789197011.3088899,
+    "ast_hash": "6a2fe94d5307625b0abc8f6d3295f9fc",
+    "semantic_hash": ""
+  },
+  "public/exercises/squat.jpg": {
+    "mtime": 1789068915.6494844,
+    "seen": 1789197011.3088908,
+    "ast_hash": "ef83c6e1c9e257724070c30ce54e9092",
+    "semantic_hash": ""
+  },
+  "public/exercises/toe-lift.jpg": {
+    "mtime": 1789068916.4295132,
+    "seen": 1789197011.308892,
+    "ast_hash": "2b512481656fd8b19602fff605f2735a",
+    "semantic_hash": ""
+  },
+  "public/exercises/bench-press.webm": {
+    "mtime": 1789068078.6787891,
+    "seen": 1789197011.308893,
+    "ast_hash": "1c999de2acd9fd3848009134187f8629",
+    "semantic_hash": ""
+  },
+  "public/exercises/bicep-curl.webm": {
+    "mtime": 1789068832.3523417,
+    "seen": 1789197011.308894,
+    "ast_hash": "28ac0ece78089958f1cf57866d6f57f9",
+    "semantic_hash": ""
+  },
+  "public/exercises/deadlift.webm": {
+    "mtime": 1789068083.2930386,
+    "seen": 1789197011.3088949,
+    "ast_hash": "63d96228593a4fb535e5a158f34fbc41",
+    "semantic_hash": ""
+  },
+  "public/exercises/half-squat.webm": {
+    "mtime": 1789068820.1456983,
+    "seen": 1789197011.308896,
+    "ast_hash": "8033ecbaa3e8574e626b91886e79ea0b",
+    "semantic_hash": ""
+  },
+  "public/exercises/hanging-crunch.webm": {
+    "mtime": 1789068102.906407,
+    "seen": 1789197011.3088975,
+    "ast_hash": "646865ab97da9dfca15c4a57f676add9",
+    "semantic_hash": ""
+  },
+  "public/exercises/incline-press.webm": {
+    "mtime": 1789068107.5176756,
+    "seen": 1789197011.3088984,
+    "ast_hash": "38451662448b95415d1601a6b07422a5",
+    "semantic_hash": ""
+  },
+  "public/exercises/leg-raise.webm": {
+    "mtime": 1789068126.9877007,
+    "seen": 1789197011.3088994,
+    "ast_hash": "de6aa2aa29caf8881a39b262555118bb",
+    "semantic_hash": ""
+  },
+  "public/exercises/pull-up.webm": {
+    "mtime": 1789068795.8480618,
+    "seen": 1789197011.3089004,
+    "ast_hash": "39eba8473cea9ab8cd0d8ff075130be8",
+    "semantic_hash": ""
+  },
+  "public/exercises/row.webm": {
+    "mtime": 1789068049.2553396,
+    "seen": 1789197011.3089013,
+    "ast_hash": "db7455d6787cca7b54622fbad94edaf0",
+    "semantic_hash": ""
+  },
+  "public/exercises/shoulder-press.webm": {
+    "mtime": 1789068800.1135244,
+    "seen": 1789197011.3089025,
+    "ast_hash": "172fa6b189b965a1171e7083bee7569f",
+    "semantic_hash": ""
+  },
+  "public/exercises/squat.webm": {
+    "mtime": 1789068049.0677161,
+    "seen": 1789197011.3089035,
+    "ast_hash": "998365fe9c7ae917c19c88cfcafde937",
+    "semantic_hash": ""
+  },
+  "public/exercises/toe-lift.webm": {
+    "mtime": 1789068826.547307,
+    "seen": 1789197011.3089044,
+    "ast_hash": "9653aa76eb7f59d1b7faaa6e7cf70142",
+    "semantic_hash": ""
+  },
+  "tests/pending-save.spec.ts": {
+    "mtime": 1789197289.181303,
+    "seen": 1789197411.9343874,
+    "ast_hash": "39763b872cfdddb1ea28dbe3ef3091a8",
+    "semantic_hash": ""
+  },
+  "tests/print-accessibility.spec.ts": {
+    "mtime": 1789197289.1928272,
+    "seen": 1789197411.9343889,
+    "ast_hash": "7d5c30219bfd1e5ec759a5134f4a0003",
+    "semantic_hash": ""
+  },
+  "docs/mvp-validation.md": {
+    "mtime": 1789197438.4891324,
+    "seen": 1789197915.2790546,
+    "ast_hash": "505e2dcf01dcab790391a81cb8e9334d",
+    "semantic_hash": ""
+  },
+  "scripts/minimax.mjs": {
+    "mtime": 1789287374.1119463,
+    "seen": 1789287470.13413,
+    "ast_hash": "5841a1c3de141ccb4e9b8cc558252abf",
+    "semantic_hash": ""
+  },
+  "scripts/minimax/core.mjs": {
+    "mtime": 1789287374.1893537,
+    "seen": 1789287470.1341314,
+    "ast_hash": "3a9603b4b6f62d154554519516033e79",
+    "semantic_hash": ""
+  },
+  "scripts/minimax/core.test.mjs": {
+    "mtime": 1789287374.2159858,
+    "seen": 1789287470.1341326,
+    "ast_hash": "d868e2f1a43d4964bad5328e3681677d",
+    "semantic_hash": ""
+  },
+  "video-production/pilot.json": {
+    "mtime": 1789287088.457824,
+    "seen": 1789287470.1341593,
+    "ast_hash": "3bde4557f2c48eff35f139574a78ce65",
+    "semantic_hash": ""
+  },
+  "docs/ideation/2026-09-12-personleg-ovingsbibliotek.html": {
+    "mtime": 1789198709.8404677,
+    "seen": 1789287470.1341643,
+    "ast_hash": "a151ef2a33adf9b5451121143de389eb",
+    "semantic_hash": ""
+  },
+  "docs/minimax-setup.md": {
+    "mtime": 1789287446.704286,
+    "seen": 1789287470.134167,
+    "ast_hash": "5369f4f7e6e82ecd389ac19473b4ca25",
+    "semantic_hash": ""
+  },
+  "docs/minimax-video-production.md": {
+    "mtime": 1789286654.9514446,
+    "seen": 1789287470.1341681,
+    "ast_hash": "d29488c997ee6374177996f791f18dd4",
+    "semantic_hash": ""
+  },
+  "src/data/generated-exercises.json": {
+    "mtime": 1789294127.8187551,
+    "seen": 1789294356.226576,
+    "ast_hash": "dc9d04b55145bbe15fa733aff699fc8a",
+    "semantic_hash": ""
+  },
+  "tests/generated-library.spec.ts": {
+    "mtime": 1789294301.635432,
+    "seen": 1789294356.2265894,
+    "ast_hash": "e850f4f2738f086319e2cf6722d9bc39",
+    "semantic_hash": ""
+  },
+  "video-production/consistent-woman-five.json": {
+    "mtime": 1789290347.6975553,
+    "seen": 1789294356.226599,
+    "ast_hash": "66337d855c4943b035246d64e84ca096",
+    "semantic_hash": ""
+  },
+  "video-production/gluteal-five-v1.json": {
+    "mtime": 1789293367.0473187,
+    "seen": 1789294356.2266,
+    "ast_hash": "8648d501491ad0d635358af15a57eab7",
+    "semantic_hash": ""
+  },
+  "video-production/lumbago-five-v1.json": {
+    "mtime": 1789292768.377746,
+    "seen": 1789294356.226601,
+    "ast_hash": "aa04a4cc8334eaa5dddbd33cf128cc4d",
+    "semantic_hash": ""
+  },
+  "video-production/retry-three-v2.json": {
+    "mtime": 1789291139.255896,
+    "seen": 1789294356.2266033,
+    "ast_hash": "827eb53f071c1969e85b7608b52be8cc",
+    "semantic_hash": ""
+  },
+  "video-production/retry-three-v3.json": {
+    "mtime": 1789291502.791489,
+    "seen": 1789294356.2266042,
+    "ast_hash": "975eb338a1a6c59d73ff2716a25f7994",
+    "semantic_hash": ""
+  },
+  "video-production/strength-five-v1.json": {
+    "mtime": 1789292213.776351,
+    "seen": 1789294356.2266054,
+    "ast_hash": "4aab376b255569da417dc055172c946a",
+    "semantic_hash": ""
+  },
+  "video-production/gluteal-five-notes.md": {
+    "mtime": 1789293367.0473187,
+    "seen": 1789294356.2266197,
+    "ast_hash": "54c590f466ff50df32fa6d357fd4c296",
+    "semantic_hash": ""
+  },
+  "video-production/lumbago-five-notes.md": {
+    "mtime": 1789292768.377746,
+    "seen": 1789294356.2266207,
+    "ast_hash": "776bb8bcb18deedb4fb1bdccb1fcff8a",
+    "semantic_hash": ""
+  },
+  "video-production/production-preferences.md": {
+    "mtime": 1789293080.9179468,
+    "seen": 1789294356.2266214,
+    "ast_hash": "3735db0651e27a83c5f476af93f6afed",
+    "semantic_hash": ""
+  },
+  "public/media/generated/abduction-hold-v1/poster.jpg": {
+    "mtime": 1789292267.0284908,
+    "seen": 1789294356.2266378,
+    "ast_hash": "7b4ddf916956a6d44f203a3d3d372cf4",
+    "semantic_hash": ""
+  },
+  "public/media/generated/adduction-ball-v1/poster.jpg": {
+    "mtime": 1789292280.2518437,
+    "seen": 1789294356.2266388,
+    "ast_hash": "61d634b99f3d59a13b2e376fc89d280f",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bird-dog-v1/poster.jpg": {
+    "mtime": 1789290390.6674433,
+    "seen": 1789294356.2266395,
+    "ast_hash": "76fa437f3b4f558f875503678af06354",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bird-dog-v2/poster.jpg": {
+    "mtime": 1789291226.0057063,
+    "seen": 1789294356.2266407,
+    "ast_hash": "dc1ceda6dc32b61b6dec6ba37492ec74",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bird-dog-v3/poster.jpg": {
+    "mtime": 1789291531.5881956,
+    "seen": 1789294356.2266414,
+    "ast_hash": "548b5109d990a44f56feb5235e1110fb",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bridge-band-v1/poster.jpg": {
+    "mtime": 1789289695.2915509,
+    "seen": 1789294356.2266424,
+    "ast_hash": "eb17988c616f6942cb1710acfae5d506",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bridge-no-band-v1/poster.jpg": {
+    "mtime": 1789290407.550477,
+    "seen": 1789294356.226643,
+    "ast_hash": "1cd5a15ada69c27a5fe5cfb67d28b9d9",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bulgarian-v1/poster.jpg": {
+    "mtime": 1789292264.5242805,
+    "seen": 1789294356.2266443,
+    "ast_hash": "d133f96391881d841c088c97072f89c0",
+    "semantic_hash": ""
+  },
+  "public/media/generated/cat-camel-v1/poster.jpg": {
+    "mtime": 1789292809.8858092,
+    "seen": 1789294356.226645,
+    "ast_hash": "6d843b4c345572599a9a7e1ac3683b01",
+    "semantic_hash": ""
+  },
+  "public/media/generated/clamshell-red-v1/poster.jpg": {
+    "mtime": 1789290388.1713748,
+    "seen": 1789294356.2266464,
+    "ast_hash": "d4a6a5048de2ae2815cac5f9d7357ab0",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-abduction-v1/poster.jpg": {
+    "mtime": 1789293391.7715611,
+    "seen": 1789294356.2266474,
+    "ast_hash": "53e9709ded112e633f5bffa636b32aae",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-hinge-v1/poster.jpg": {
+    "mtime": 1789293444.6971898,
+    "seen": 1789294356.2266483,
+    "ast_hash": "3114995721f9a0336734b8f1bc6dfe15",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-sidestep-v1/poster.jpg": {
+    "mtime": 1789293418.3479848,
+    "seen": 1789294356.2266493,
+    "ast_hash": "8b5a668c4182cf39e43adae934d3e5db",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-stepup-v1/poster.jpg": {
+    "mtime": 1789293431.5736544,
+    "seen": 1789294356.2266505,
+    "ast_hash": "a82415e03e0e8914a2507c06001a179a",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-wall-v1/poster.jpg": {
+    "mtime": 1789293405.157249,
+    "seen": 1789294356.2266526,
+    "ast_hash": "971149a683b2f28685e59bf4dabc6647",
+    "semantic_hash": ""
+  },
+  "public/media/generated/knee-rolls-v1/poster.jpg": {
+    "mtime": 1789292793.153164,
+    "seen": 1789294356.2266538,
+    "ast_hash": "fed40cc9be0b39d7fc0a8b65bfbc052d",
+    "semantic_hash": ""
+  },
+  "public/media/generated/quadruped-rockback-v1/poster.jpg": {
+    "mtime": 1789292813.922269,
+    "seen": 1789294356.2266548,
+    "ast_hash": "5b12e9c09e30f07ca9e11891ac5e0da4",
+    "semantic_hash": ""
+  },
+  "public/media/generated/shoulder-er-v1/poster.jpg": {
+    "mtime": 1789292237.114045,
+    "seen": 1789294356.2266555,
+    "ast_hash": "1b19df21f2a531980085561a0ba124cf",
+    "semantic_hash": ""
+  },
+  "public/media/generated/side-plank-knees-v1/poster.jpg": {
+    "mtime": 1789290421.1158116,
+    "seen": 1789294356.2266567,
+    "ast_hash": "2e118001d974a3c04555e3598aaa0f59",
+    "semantic_hash": ""
+  },
+  "public/media/generated/side-plank-knees-v2/poster.jpg": {
+    "mtime": 1789291238.86951,
+    "seen": 1789294356.2266576,
+    "ast_hash": "28c7e0f6aae2d28cd6ba5c864fce9f39",
+    "semantic_hash": ""
+  },
+  "public/media/generated/side-plank-knees-v3/poster.jpg": {
+    "mtime": 1789291547.1011474,
+    "seen": 1789294356.2266586,
+    "ast_hash": "cec82f103da44768b71bae31f5b35a68",
+    "semantic_hash": ""
+  },
+  "public/media/generated/single-knee-chest-v1/poster.jpg": {
+    "mtime": 1789292795.7733817,
+    "seen": 1789294356.2266595,
+    "ast_hash": "3121b425f94b215a93d55357c08ec7b1",
+    "semantic_hash": ""
+  },
+  "public/media/generated/sit-to-stand-v1/poster.jpg": {
+    "mtime": 1789292827.7869105,
+    "seen": 1789294356.2266605,
+    "ast_hash": "c83f1df9027be5c2f5c30533e6d2a713",
+    "semantic_hash": ""
+  },
+  "public/media/generated/squat-red-v1/poster.jpg": {
+    "mtime": 1789292239.6560206,
+    "seen": 1789294356.2266614,
+    "ast_hash": "810f920bbfb4a2f834aa6a9a78806b88",
+    "semantic_hash": ""
+  },
+  "public/media/generated/abduction-hold-v1/video.mp4": {
+    "mtime": 1789292266.8765001,
+    "seen": 1789294356.2266784,
+    "ast_hash": "54da1fb60a5585cf9c93aa1cfba47367",
+    "semantic_hash": ""
+  },
+  "public/media/generated/adduction-ball-v1/video.mp4": {
+    "mtime": 1789292280.0950136,
+    "seen": 1789294356.2266793,
+    "ast_hash": "de65d37fc58338b56cb342416193b27d",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bird-dog-v1/video.mp4": {
+    "mtime": 1789290390.5363705,
+    "seen": 1789294356.2266803,
+    "ast_hash": "7af36baec4494cc0f9843b88a0c1be73",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bird-dog-v2/video.mp4": {
+    "mtime": 1789291225.852332,
+    "seen": 1789294356.2266812,
+    "ast_hash": "93372cde785652d049bdc621309a20bf",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bird-dog-v3/video.mp4": {
+    "mtime": 1789291531.434386,
+    "seen": 1789294356.2266824,
+    "ast_hash": "b26aea16fdf29a4e7f4ac8c0fea1abfa",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bridge-band-v1/video.mp4": {
+    "mtime": 1789289695.1538956,
+    "seen": 1789294356.2266834,
+    "ast_hash": "3e8c4e72c41639b700e5ec0747b2e76c",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bridge-no-band-v1/video.mp4": {
+    "mtime": 1789290407.4256735,
+    "seen": 1789294356.226684,
+    "ast_hash": "119d73f12974c04731226911f6d0d692",
+    "semantic_hash": ""
+  },
+  "public/media/generated/bulgarian-v1/video.mp4": {
+    "mtime": 1789292264.368879,
+    "seen": 1789294356.226685,
+    "ast_hash": "ea4e13bdc6462ac2c23e3c40c31f0690",
+    "semantic_hash": ""
+  },
+  "public/media/generated/cat-camel-v1/video.mp4": {
+    "mtime": 1789292809.7270477,
+    "seen": 1789294356.226686,
+    "ast_hash": "90fd445a8e61347b4c4eec613eea8b28",
+    "semantic_hash": ""
+  },
+  "public/media/generated/clamshell-red-v1/video.mp4": {
+    "mtime": 1789290388.0409284,
+    "seen": 1789294356.2266867,
+    "ast_hash": "b1f5cde2a7b8f9f9322ca9f859a48bf5",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-abduction-v1/video.mp4": {
+    "mtime": 1789293391.6205864,
+    "seen": 1789294356.2266877,
+    "ast_hash": "845de0e13c8b3724a7888ef56ea2b384",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-hinge-v1/video.mp4": {
+    "mtime": 1789293444.5265186,
+    "seen": 1789294356.2266886,
+    "ast_hash": "633f2c433d368f6ffc0e4aca95732597",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-sidestep-v1/video.mp4": {
+    "mtime": 1789293418.1953607,
+    "seen": 1789294356.2266898,
+    "ast_hash": "5729d2bfde85e12dd4ae38e5bcc13cb8",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-stepup-v1/video.mp4": {
+    "mtime": 1789293431.420076,
+    "seen": 1789294356.2266905,
+    "ast_hash": "fb227f172f691d3bcb9e6de4689d6aa6",
+    "semantic_hash": ""
+  },
+  "public/media/generated/gt-wall-v1/video.mp4": {
+    "mtime": 1789293405.0068214,
+    "seen": 1789294356.2266915,
+    "ast_hash": "cfb7172ada46e527a76183a6a859e579",
+    "semantic_hash": ""
+  },
+  "public/media/generated/knee-rolls-v1/video.mp4": {
+    "mtime": 1789292793.0004475,
+    "seen": 1789294356.2266924,
+    "ast_hash": "f3cffa6a72e51a19a4021fdb4913c755",
+    "semantic_hash": ""
+  },
+  "public/media/generated/quadruped-rockback-v1/video.mp4": {
+    "mtime": 1789292813.7686796,
+    "seen": 1789294356.2266934,
+    "ast_hash": "0e300ad26491cb9dc35faa7efc192c71",
+    "semantic_hash": ""
+  },
+  "public/media/generated/shoulder-er-v1/video.mp4": {
+    "mtime": 1789292236.9533753,
+    "seen": 1789294356.2266943,
+    "ast_hash": "523ed3e163d8ce7bcb5068f6b6d50130",
+    "semantic_hash": ""
+  },
+  "public/media/generated/side-plank-knees-v1/video.mp4": {
+    "mtime": 1789290420.984257,
+    "seen": 1789294356.2266955,
+    "ast_hash": "6d45c5a907af0437b455a9c614f0d3d0",
+    "semantic_hash": ""
+  },
+  "public/media/generated/side-plank-knees-v2/video.mp4": {
+    "mtime": 1789291238.7165089,
+    "seen": 1789294356.2266963,
+    "ast_hash": "eaf49a9d3afeb32f5a14cf2dbcb33abd",
+    "semantic_hash": ""
+  },
+  "public/media/generated/side-plank-knees-v3/video.mp4": {
+    "mtime": 1789291546.9451797,
+    "seen": 1789294356.2266972,
+    "ast_hash": "dd53f38e611df0d610f5000329492dc3",
+    "semantic_hash": ""
+  },
+  "public/media/generated/single-knee-chest-v1/video.mp4": {
+    "mtime": 1789292795.6136513,
+    "seen": 1789294356.226698,
+    "ast_hash": "1cb8909cc458e7b287f031cfc7dbd255",
+    "semantic_hash": ""
+  },
+  "public/media/generated/sit-to-stand-v1/video.mp4": {
+    "mtime": 1789292827.6363065,
+    "seen": 1789294356.226699,
+    "ast_hash": "f53f392273bc9e7aaf0bf9cd9ee46de9",
+    "semantic_hash": ""
+  },
+  "public/media/generated/squat-red-v1/video.mp4": {
+    "mtime": 1789292239.476402,
+    "seen": 1789294356.2267,
+    "ast_hash": "d88c2e0eae1b0bb3cd73f95b382c41a9",
+    "semantic_hash": ""
+  }
+}
