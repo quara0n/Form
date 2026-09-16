@@ -16,6 +16,7 @@ import {
   AlertCircle,
 } from "lucide-react";
 import catalogue from "./data/exercises.json";
+import generated from "./data/generated-exercises.json";
 import {
   addExercise,
   validateProgramme,
@@ -38,7 +39,7 @@ export default function App() {
   const [toast, setToast] = useState("");
   const [confirmDelete, setConfirmDelete] = useState<Programme | null>(null);
   const [busy, setBusy] = useState(false);
-  const exercises = catalogue as Exercise[];
+  const exercises = [...generated, ...catalogue] as Exercise[];
   const counts = programme.items.reduce<Record<string, number>>(
     (all, item) => ({
       ...all,
@@ -156,13 +157,6 @@ export default function App() {
             </button>
           </div>
           <main className={`workspace-content mobile-${mobileView}`}>
-            <div className="library-container">
-              <ExerciseLibrary
-                exercises={exercises}
-                onAdd={add}
-                counts={counts}
-              />
-            </div>
             <aside className="builder-panel" aria-label="Programme builder">
               <div className="builder-header">
                 <div>
@@ -267,6 +261,13 @@ export default function App() {
                 <p>Thoughtfully prescribed. Ready to put into practice.</p>
               </div>
             </aside>
+            <div className="library-container">
+              <ExerciseLibrary
+                exercises={exercises}
+                onAdd={add}
+                counts={counts}
+              />
+            </div>
           </main>
         </div>
       </div>
@@ -411,17 +412,18 @@ export default function App() {
               them, and they do not sync across devices. Use general programme
               names and do not enter patient details.
             </p>
-            <h3>About the starter collection</h3>
+            <h3>Om videobiblioteket</h3>
             <p>
-              These openly licensed demonstrations cover a small selection of
-              strength movements. Clinicians choose suitability, dosage and
-              adaptations; this is an evaluation tool, not a complete clinical
-              catalogue.
+              Biblioteket inneholder egne AI-genererte videoer og den
+              opprinnelige lisensierte samlingen. Tidligere forsøk med kjente
+              avvik har en videomerknad. Du vurderer utførelse, dosering og
+              tilpasninger.
             </p>
             <p>
-              Video credits and licence links are available in each exercise
-              preview. Original videos are unchanged; images are extracted
-              stills.
+              Klikk på øvelsens bilde eller navn i programmet for å åpne videoen
+              og redigere beskrivelsen. Teksten lagres med programmet og følger
+              med på utskriften. Kildeinformasjon finnes i
+              videoforhåndsvisningen.
             </p>
             <button
               className="primary-button full-width"

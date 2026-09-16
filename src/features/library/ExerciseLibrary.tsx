@@ -23,12 +23,18 @@ export function ExerciseLibrary({
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState("");
   const [equipment, setEquipment] = useState("");
+  const [collection, setCollection] = useState("");
   const [preview, setPreview] = useState<Exercise | null>(null);
   const [failed, setFailed] = useState(false);
   const [retry, setRetry] = useState(0);
   const results = useMemo(
-    () => searchExercises(exercises, query, region, equipment),
-    [exercises, query, region, equipment],
+    () =>
+      searchExercises(exercises, query, region, equipment).filter(
+        (e) =>
+          !collection ||
+          (e.collection || "Opprinnelig bibliotek") === collection,
+      ),
+    [exercises, query, region, equipment, collection],
   );
   function open(e: Exercise) {
     setPreview(e);
@@ -98,11 +104,28 @@ export function ExerciseLibrary({
           </button>
         ))}
       </div>
+      <label className="collection-filter">
+        Samling
+        <select
+          aria-label="Samling"
+          value={collection}
+          onChange={(e) => setCollection(e.target.value)}
+        >
+          <option value="">Alle samlinger</option>
+          {[
+            ...new Set(
+              exercises.map((e) => e.collection || "Opprinnelig bibliotek"),
+            ),
+          ].map((value) => (
+            <option key={value}>{value}</option>
+          ))}
+        </select>
+      </label>
       <div className="results-heading">
         <h2>
           {region || "Exercise library"} <span>{results.length}</span>
         </h2>
-        <span>Curated movements · Openly licensed</span>
+        <span>Form-videoer og lisensierte øvelser</span>
       </div>
       {!results.length ? (
         <div className="empty-search">
@@ -115,6 +138,7 @@ export function ExerciseLibrary({
               setQuery("");
               setRegion("");
               setEquipment("");
+              setCollection("");
             }}
           >
             Clear all filters
@@ -149,6 +173,9 @@ export function ExerciseLibrary({
               </button>
               <div className="exercise-card-body">
                 <span className="body-region">{e.region}</span>
+                {e.reviewNote && (
+                  <span className="review-badge">Har videomerknad</span>
+                )}
                 <h3>
                   <button onClick={() => open(e)}>{e.name}</button>
                 </h3>
@@ -173,7 +200,7 @@ export function ExerciseLibrary({
         <p>
           A considered starting point.
           <br />
-          <span>12 movements to explore, adapt and make your own.</span>
+          <span>{exercises.length} videoer du kan velge og tilpasse.</span>
         </p>
       </div>
       {preview && (
@@ -184,8 +211,8 @@ export function ExerciseLibrary({
                 <Play size={28} />
                 <h3>This video couldn’t load</h3>
                 <p>
-                  Your programme is unchanged. You can still use the
-                  instructions below.
+                  Du kan fortsatt legge øvelsen til i programmet og åpne
+                  beskrivelsen der.
                 </p>
                 <button
                   className="secondary-button"
@@ -214,8 +241,9 @@ export function ExerciseLibrary({
               <span>{preview.region}</span>
               <span>{preview.equipment}</span>
             </div>
-            <h3>Movement notes</h3>
-            <p>{preview.description}</p>
+            {preview.reviewNote && (
+              <p className="review-note">Videomerknad: {preview.reviewNote}</p>
+            )}
             <div className="media-credit">
               Video: {preview.credit} · {preview.license}
               {preview.license === "CC BY 3.0" && (

@@ -28,6 +28,7 @@ export function ProgrammeBuilder({
   programme: Programme;
   setProgramme: Dispatch<SetStateAction<Programme>>;
 }) {
+  const [expanded, setExpanded] = useState<string | null>(null);
   const [removed, setRemoved] = useState<{
     item: Prescription;
     index: number;
@@ -96,11 +97,22 @@ export function ProgrammeBuilder({
                 <span className="exercise-number">
                   {String(index + 1).padStart(2, "0")}
                 </span>
-                <img src={item.exercise.poster} alt="" />
-                <div className="prescription-name">
-                  <h3>{item.exercise.name}</h3>
-                  <span>{item.exercise.equipment}</span>
-                </div>
+                <button
+                  className="exercise-details-toggle"
+                  aria-label={`Vis beskrivelse for ${item.exercise.name}`}
+                  aria-expanded={expanded === item.id}
+                  aria-controls={`details-${item.id}`}
+                  onClick={() =>
+                    setExpanded(expanded === item.id ? null : item.id)
+                  }
+                >
+                  <img src={item.exercise.poster} alt="" />
+                  <div className="prescription-name">
+                    <h3>{item.exercise.name}</h3>
+                    <span>{item.exercise.equipment}</span>
+                  </div>
+                  <ChevronDown size={16} />
+                </button>
                 <button
                   className="icon-button small"
                   aria-label={`Remove exercise ${index + 1}`}
@@ -119,6 +131,40 @@ export function ProgrammeBuilder({
                   <X size={16} />
                 </button>
               </div>
+              {expanded === item.id && (
+                <div className="exercise-details" id={`details-${item.id}`}>
+                  <video
+                    src={item.exercise.video}
+                    poster={item.exercise.poster}
+                    controls
+                    playsInline
+                    preload="metadata"
+                  />
+                  {item.exercise.reviewNote && (
+                    <p className="review-note">
+                      Videomerknad: {item.exercise.reviewNote}
+                    </p>
+                  )}
+                  <label htmlFor={`description-${item.id}`}>
+                    Kort beskrivelse
+                  </label>
+                  <textarea
+                    id={`description-${item.id}`}
+                    rows={3}
+                    maxLength={2000}
+                    value={item.exercise.description}
+                    onChange={(e) =>
+                      editItem(item.id, {
+                        exercise: {
+                          ...item.exercise,
+                          description: e.target.value,
+                        },
+                      })
+                    }
+                  />
+                  <small>Endringer lagres i dette programmet.</small>
+                </div>
+              )}
               <div className="parameter-grid">
                 {item.parameters.map((param) => {
                   const error = validateParameter(param);

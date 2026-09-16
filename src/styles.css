@@ -189,9 +189,12 @@ textarea {
   gap: 8px;
   font-size: 12px;
 }
+.library-container {
+  min-width: 0;
+}
 .workspace-content {
   display: grid;
-  grid-template-columns: minmax(480px, 1fr) 416px;
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   align-items: start;
   max-width: 1800px;
   margin: auto;
@@ -345,7 +348,7 @@ textarea {
 }
 .exercise-grid {
   display: grid;
-  grid-template-columns: repeat(3, minmax(0, 1fr));
+  grid-template-columns: repeat(2, minmax(0, 1fr));
   gap: 18px 16px;
 }
 .exercise-card {
@@ -490,7 +493,7 @@ textarea {
 }
 .builder-panel {
   background: #fff;
-  border-left: 1px solid var(--line);
+  border-right: 1px solid var(--line);
   min-height: calc(100vh - 88px);
   height: calc(100vh - 88px);
   position: sticky;
@@ -1220,7 +1223,7 @@ textarea {
 }
 @media (min-width: 1600px) {
   .workspace-content {
-    grid-template-columns: minmax(0, 1fr) 460px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .library {
     padding: 45px 50px;
@@ -1240,7 +1243,7 @@ textarea {
 }
 @media (max-width: 1200px) {
   .workspace-content {
-    grid-template-columns: minmax(380px, 1fr) 355px;
+    grid-template-columns: repeat(2, minmax(0, 1fr));
   }
   .library {
     padding: 30px 24px;
@@ -1533,4 +1536,84 @@ textarea {
     color: inherit;
     text-decoration: none;
   }
+}
+.exercise-details-toggle {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  flex: 1;
+  min-width: 0;
+  padding: 0;
+  background: none;
+  border: 0;
+  text-align: left;
+  color: inherit;
+  cursor: pointer;
+}
+.exercise-details-toggle img {
+  width: 52px;
+  height: 44px;
+  object-fit: cover;
+  border-radius: 6px;
+}
+.exercise-details-toggle .prescription-name {
+  flex: 1;
+}
+.exercise-details-toggle[aria-expanded="true"] > svg {
+  transform: rotate(180deg);
+}
+.exercise-details {
+  margin: 12px 0;
+  display: grid;
+  gap: 8px;
+}
+.exercise-details video {
+  width: 100%;
+  max-height: 260px;
+  background: #eee;
+  border-radius: 8px;
+}
+.exercise-details label {
+  font-size: 13px;
+  font-weight: 600;
+}
+.exercise-details textarea {
+  width: 100%;
+  resize: vertical;
+  padding: 10px;
+  border: 1px solid #d8ddd5;
+  border-radius: 6px;
+  font: inherit;
+  font-size: 13px;
+}
+.exercise-details small {
+  color: #697166;
+}
+.review-note {
+  font-size: 12px;
+  color: #79551e;
+  background: #fff6e6;
+  padding: 10px;
+  border-radius: 6px;
+}
+.review-badge {
+  display: inline-block;
+  color: #79551e;
+  font-size: 10px;
+  margin-left: 8px;
+}
+.collection-filter {
+  display: flex;
+  align-items: center;
+  gap: 12px;
+  font-size: 12px;
+  margin: 14px 0;
+}
+.collection-filter select {
+  min-width: 0;
+  padding: 8px;
+  border: 1px solid #d8ddd5;
+  border-radius: 6px;
+  background: white;
+  font: inherit;
 }

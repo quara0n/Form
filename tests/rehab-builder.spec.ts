@@ -124,9 +124,10 @@ test("mobile workspace retains programme and has no horizontal overflow", async 
 });
 test("desktop library and all media render", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".exercise-card")).toHaveCount(12);
+  await expect(page.locator(".exercise-card")).toHaveCount(36);
   await page.screenshot({ path: "test-results/desktop.png", fullPage: true });
   for (const img of await page.locator(".exercise-image img").all()) {
+    await img.scrollIntoViewIfNeeded();
     await expect(img).toHaveJSProperty("complete", true);
     expect(
       await img.evaluate((el: HTMLImageElement) => el.naturalWidth),

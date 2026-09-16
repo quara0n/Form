@@ -1,8 +1,9 @@
 import { test, expect } from "@playwright/test";
 import { readFileSync } from "node:fs";
-const catalogue: { name: string; video: string }[] = JSON.parse(
-  readFileSync("src/data/exercises.json", "utf8"),
-);
+const catalogue: { name: string; video: string }[] = [
+  ...JSON.parse(readFileSync("src/data/exercises.json", "utf8")),
+  ...JSON.parse(readFileSync("src/data/generated-exercises.json", "utf8")),
+];
 
 test("every bundled video decodes and supports seeking", async ({ page }) => {
   await page.goto("/");
@@ -46,7 +47,7 @@ test("combines tag search, region and equipment and recovers empty results", asy
   await page.getByRole("button", { name: "Upper body", exact: true }).click();
   await expect(page.getByText("No exercises found")).toBeVisible();
   await page.getByRole("button", { name: "Clear all filters" }).click();
-  await expect(page.locator(".exercise-card")).toHaveCount(12);
+  await expect(page.locator(".exercise-card")).toHaveCount(catalogue.length);
   await page.getByRole("button", { name: "Trunk", exact: true }).click();
   await page.getByLabel("Filter by equipment").selectOption("Pull-up bar");
   await expect(page.locator(".exercise-card")).toHaveCount(2);

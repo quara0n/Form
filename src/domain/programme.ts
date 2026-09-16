@@ -1,4 +1,6 @@
 export interface Exercise {
+  collection?: string;
+  reviewNote?: string;
   id: string;
   name: string;
   description: string;
