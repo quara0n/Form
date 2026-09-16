@@ -1,0 +1,72 @@
+{
+  "name": "lumbago-five-v1",
+  "duration": 5,
+  "resolution": "768P",
+  "exercises": [
+    {
+      "id": "knee-rolls-v1",
+      "name": "Knærulling liggende",
+      "description": "Ligg med bøyde knær. Før knærne samlet et lite stykke til siden og rolig tilbake. Tilpass utslaget etter symptomrespons.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [
+        "korsrygg",
+        "rolig bevegelse"
+      ],
+      "firstFrame": "references/lumbago-supine.png",
+      "prompt": "From the supine bent-knee starting pose, keep both knees touching as one pair. 0-0.5s rest; 0.5-2s slowly rotate both bent knees TOGETHER toward camera through a small comfortable angle, feet gently pivoting in place. Shoulders and upper back stay grounded. 2-2.8s pause; 2.8-4.5s return both knees to upright starting position; final half second rest. Knees never separate, no hip lift. One small side-to-center repetition, not a forced deep twist. Preserve exact reference woman identity, gray top, black leggings, bare feet, studio and lighting. Fixed camera, full body visible, realistic anatomy. One continuous five-second shot, no text, no band or ball, no speech or music."
+    },
+    {
+      "id": "single-knee-chest-v1",
+      "name": "Ett kne mot brystet",
+      "description": "Ligg på ryggen. Før ett kne rolig mot brystet med støtte bak låret, hold kort og sett foten ned igjen.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [
+        "korsrygg",
+        "rolig bevegelse"
+      ],
+      "firstFrame": "references/lumbago-supine.png",
+      "prompt": "Start supine with BOTH feet on mat and knees bent. Slowly bring camera-near knee toward chest while both hands reach behind that thigh to gently support it. Other foot stays flat and other knee stays bent. 0-0.5s start; 0.5-2s lift and guide thigh toward torso without forcing; 2-2.8s hold; 2.8-4.5s release and return foot fully to original mat position; final half second rest with arms beside body. Head and upper back stay down. One leg only, no switching. Preserve exact reference woman identity, gray top, black leggings, bare feet, studio and lighting. Fixed camera, full body visible, realistic anatomy. One continuous five-second shot, no text, no band or ball, no speech or music."
+    },
+    {
+      "id": "cat-camel-v1",
+      "name": "Katt–kamel",
+      "description": "Stå på alle fire. Rund ryggen rolig, beveg deg tilbake gjennom nøytral til lett svai og avslutt i nøytral stilling.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [
+        "korsrygg",
+        "rolig bevegelse"
+      ],
+      "firstFrame": "references/lumbago-quadruped.png",
+      "prompt": "One gentle cat-camel spinal mobility cycle from neutral all fours. Both hands and both knees remain planted in their exact places, elbows straight. 0-0.5s neutral; 0.5-1.8s slowly round the back upward, tuck pelvis and let chin nod; 1.8-3.5s smoothly return through neutral into a SMALL comfortable hollow of back, head following spine without throwing head back; 3.5-5s return to exact neutral starting pose. Motion is spinal rounding and hollowing, not bending elbows or sitting onto heels. Moderate range, no extreme contortion. Preserve exact reference woman identity, gray top, black leggings, bare feet, studio and lighting. Fixed camera, full body visible, realistic anatomy. One continuous five-second shot, no text, no band or ball, no speech or music."
+    },
+    {
+      "id": "quadruped-rockback-v1",
+      "name": "Bakoverføring på alle fire",
+      "description": "Stå på alle fire. Før setet rolig bakover mot hælene så langt det kjennes greit, og kom tilbake.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [
+        "korsrygg",
+        "rolig bevegelse"
+      ],
+      "firstFrame": "references/lumbago-quadruped.png",
+      "prompt": "One gentle quadruped rock-back from neutral all fours. Hands and knees remain fixed on mat, elbows straight. 0-0.5s start; 0.5-2s slowly move pelvis backward toward heels by bending hips and knees, only through moderate comfortable range, chest follows between arms. 2-2.8s pause before reaching heels; 2.8-4.5s shift forward to original hands-under-shoulders all fours; final half second neutral. No lifting hands or knees, no push-up and no forceful end-range stretch. Preserve exact reference woman identity, gray top, black leggings, bare feet, studio and lighting. Fixed camera, full body visible, realistic anatomy. One continuous five-second shot, no text, no band or ball, no speech or music."
+    },
+    {
+      "id": "sit-to-stand-v1",
+      "name": "Reis og sett deg",
+      "description": "Sitt med føttene godt i gulvet. Len deg litt frem, reis deg og sett deg rolig tilbake. Bruk hendene på lårene ved behov.",
+      "region": "Lower body",
+      "equipment": "Chair",
+      "tags": [
+        "korsrygg",
+        "rolig bevegelse"
+      ],
+      "firstFrame": "references/lumbago-chair.png",
+      "prompt": "One complete sit-to-stand-and-sit cycle. 0-0.5s seated as image; 0.5-2s lean torso forward from hips, press both feet into floor and rise to fully upright standing; hands may lightly push on thighs. 2-2.6s stand still; 2.6-4.5s send hips back and bend knees to sit softly onto same chair; 4.5-5s seated again. Both feet stay fixed, chair does not move. Entire head stays inside frame when standing. Controlled everyday movement, no jumping or collapse. Preserve exact reference woman identity, gray top, black leggings, bare feet, studio and lighting. Fixed camera, full body visible, realistic anatomy. One continuous five-second shot, no text, no band or ball, no speech or music."
+    }
+  ]
+}

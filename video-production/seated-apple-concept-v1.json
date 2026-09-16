@@ -1,0 +1,19 @@
+{
+  "name": "seated-apple-concept-v1",
+  "resolution": "768P",
+  "duration": 5,
+  "exercises": [
+    {
+      "id": "seated-apple-v1",
+      "name": "Sette seg på et eple – konsept",
+      "description": "Kvinnen setter seg på et eple på benken, knuser det og smiler mot kameraet.",
+      "region": "Trunk",
+      "equipment": "Bench",
+      "tags": [
+        "konsept"
+      ],
+      "firstFrame": "references/seated-apple-start-v1.png",
+      "prompt": "The woman starts standing just in front of the bench, with one whole red apple on the seat directly behind her. She bends her hips and knees and slowly sits down onto the apple. As her weight settles onto the seat, the apple visibly flattens and splits beneath her, leaving a little crushed fruit visible beside her hip. She remains seated, looks toward the camera and gives a small, natural smile. Preserve the same woman, clothing, bench and studio. One continuous five-second shot, fixed wide camera, entire body visible. No text or audio."
+    }
+  ]
+}

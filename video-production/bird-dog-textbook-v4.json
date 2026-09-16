@@ -1,0 +1,17 @@
+{
+  "name": "bird-dog-textbook-v4",
+  "resolution": "768P",
+  "duration": 5,
+  "exercises": [
+    {
+      "id": "bird-dog-v4",
+      "name": "Diagonalen – motsatt arm og bein",
+      "description": "Start på alle fire. Strekk én arm og motsatt bein, hold kort og før rolig tilbake.",
+      "region": "Trunk",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/bird-dog.png",
+      "prompt": "Using the woman and setting in the reference image, demonstrate one textbook bird-dog repetition. Start on all fours. Simultaneously lift and extend the RIGHT ARM forward and LEFT LEG backward until aligned with the torso. Pause briefly, then return both to the starting position. Keep the left hand and right knee planted, with the back neutral and pelvis level. Show the complete movement in one continuous five-second shot. Fixed camera, entire body visible. No audio or text."
+    }
+  ]
+}

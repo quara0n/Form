@@ -1,0 +1,72 @@
+{
+  "name": "gluteal-five-v1",
+  "duration": 5,
+  "resolution": "768P",
+  "exercises": [
+    {
+      "id": "gt-wall-v1",
+      "name": "Stående veggpress",
+      "description": "Stå med siden mot veggen. Løft kneet nærmest veggen og press utsiden av kneet mot puten. Hold bekkenet vannrett, hold trykket og sett foten ned.",
+      "region": "Lower body",
+      "equipment": "Wall",
+      "tags": [
+        "hofte",
+        "gluteal tendinopati"
+      ],
+      "firstFrame": "references/gt-wall-v1.png",
+      "prompt": "From standing start, lift the wall-side foot by bending that knee, bringing outside of wall-side knee into the wall cushion. Keep the opposite stance foot planted under its hip and pelvis level. 0-1.2s establish knee contact; 1.2-3.8s press knee sideways into cushion and HOLD completely steady; 3.8-5s release and place foot back on floor. Torso upright, no hip hanging or leaning against wall with pelvis. Hand stays lightly on wall. Cushion fixed. Preserve exact reference woman face hair gray top black leggings barefoot studio and equipment. One continuous five-second full demonstration with complete start and return. Static camera, natural anatomy, no text speech music."
+    },
+    {
+      "id": "gt-abduction-v1",
+      "name": "Stående hofteabduksjon med strikk",
+      "description": "Hold lett i stolen. Før beinet rolig rett ut til siden uten å lene overkroppen. Hold kort og før tilbake uten å krysse midtlinjen.",
+      "region": "Lower body",
+      "equipment": "Resistance band",
+      "tags": [
+        "hofte",
+        "gluteal tendinopati"
+      ],
+      "firstFrame": "references/gt-abduction-v1.png",
+      "prompt": "One complete standing hip abduction. Start both feet hip width. Move leg on image LEFT directly sideways to image LEFT, knee straight and toes forward, stretching ankle loop. Stance leg by chair stays fixed, pelvis level, trunk vertical. 0-0.5s start; 0.5-2s abduct through full controlled hip range about 30 degrees without hiking pelvis; 2-2.6s hold; 2.6-4.5s return to initial hip-width position; final half second still. No crossing legs, no forward kick. Chair and supporting hand stay stable. Preserve exact reference woman face hair gray top black leggings barefoot studio and equipment. One continuous five-second full demonstration with complete start and return. Static camera, natural anatomy, no text speech music."
+    },
+    {
+      "id": "gt-sidestep-v1",
+      "name": "Sidesteg med strikk",
+      "description": "Hold lett bøy i hofter og knær. Ta et kontrollert steg til siden og la den andre foten følge uten å samle føttene. Gå tilbake samme vei.",
+      "region": "Lower body",
+      "equipment": "Resistance band",
+      "tags": [
+        "hofte",
+        "gluteal tendinopati"
+      ],
+      "firstFrame": "references/gt-sidestep-v1.png",
+      "prompt": "One lateral step sequence out and back. Maintain slight squat, level pelvis, toes forward, red band above knees. 0-0.5s hip-width start; 0.5-1.5s step to image LEFT with leftmost foot; 1.5-2.3s trailing foot follows only until feet again hip width. 2.3-3.3s step to image RIGHT with rightmost foot; 3.3-4.5s other foot follows to original hip-width stance; final half second still. Keep band tension, feet never touch or cross, knees follow toes, no bouncing. Full body remains framed. Preserve exact reference woman face hair gray top black leggings barefoot studio and equipment. One continuous five-second full demonstration with complete start and return. Static camera, natural anatomy, no text speech music."
+    },
+    {
+      "id": "gt-stepup-v1",
+      "name": "Oppsteg på lav kasse",
+      "description": "Sett hele foten på kassen og reis deg kontrollert opp. Hold bekkenet stabilt og kneet i retning tærne. Gå rolig ned igjen.",
+      "region": "Lower body",
+      "equipment": "Step",
+      "tags": [
+        "hofte",
+        "gluteal tendinopati"
+      ],
+      "firstFrame": "references/gt-stepup-v1.png",
+      "prompt": "One complete low step-up and return. 0-1s place camera-near foot fully on step; 1-2s press through that foot and straighten its hip and knee to rise fully onto step, other foot joins. 2-2.5s stand tall on step. 2.5-3.7s step the trailing foot BACK down to floor, controlled by lead leg remaining on step; 3.7-5s lead foot returns to floor beside other foot, exact original starting stance. Step stays stationary, pelvis level, knee tracks toes. No jumping, crossing or walking over step. Entire head and feet remain visible. Preserve exact reference woman face hair gray top black leggings barefoot studio and equipment. One continuous five-second full demonstration with complete start and return. Static camera, natural anatomy, no text speech music."
+    },
+    {
+      "id": "gt-hinge-v1",
+      "name": "Støttet ettbeins hoftehengsel",
+      "description": "Hold lett i stolen. Behold lett bøy i standkneet, før hoften bakover og overkroppen frem mens det andre beinet går bakover. Reis deg tilbake med bekkenet stabilt.",
+      "region": "Lower body",
+      "equipment": "Chair",
+      "tags": [
+        "hofte",
+        "gluteal tendinopati"
+      ],
+      "firstFrame": "references/gt-hinge-v1.png",
+      "prompt": "One complete supported single-leg hip hinge. Hand remains lightly on chair. Camera-near leg is stance leg with soft knee and planted foot. 0-0.5s upright start; 0.5-2s hinge at stance HIP, torso tips forward with neutral spine while opposite leg reaches backward off floor as counterbalance. Reach full controlled hinge with torso about 45-60 degrees forward, hips square to floor, no opening pelvis sideways. 2-2.5s brief pause; 2.5-4.5s extend stance hip to return upright and place rear foot alongside; final half second original stance. No squat, no spine rounding, chair stationary, entire extended leg in frame. Preserve exact reference woman face hair gray top black leggings barefoot studio and equipment. One continuous five-second full demonstration with complete start and return. Static camera, natural anatomy, no text speech music."
+    }
+  ]
+}

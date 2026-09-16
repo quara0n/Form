@@ -9,7 +9,13 @@
     "typecheck": "tsc -b",
     "test": "vitest run src",
     "format:check": "prettier --check src tests scripts *.json *.ts index.html",
-    "test:e2e": "playwright test"
+    "test:e2e": "playwright test",
+    "video:doctor": "node scripts/minimax.mjs doctor",
+    "video:plan": "node scripts/minimax.mjs plan",
+    "video:run": "node scripts/minimax.mjs run",
+    "video:sync": "node scripts/minimax.mjs sync",
+    "video:review": "node scripts/minimax.mjs review",
+    "video:test": "node --test scripts/minimax/core.test.mjs"
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
@@ -23,6 +29,8 @@
     "@types/react-dom": "^19.2.0",
     "@vitejs/plugin-react": "^4.7.0",
     "fake-indexeddb": "^6.2.0",
+    "ffmpeg-static": "^5.3.0",
+    "ffprobe-static": "^3.1.0",
     "prettier": "^3.9.6",
     "typescript": "~5.8.3",
     "vite": "^6.4.1",

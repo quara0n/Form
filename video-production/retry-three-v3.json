@@ -1,0 +1,37 @@
+{
+  "name": "retry-three-v3",
+  "resolution": "768P",
+  "duration": 5,
+  "exercises": [
+    {
+      "id": "bird-dog-v3",
+      "name": "Diagonalen – motsatt arm og bein",
+      "description": "Start på alle fire. Strekk én arm og motsatt bein, hold kort og før rolig tilbake.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/bird-dog.png",
+      "prompt": "One complete contralateral bird-dog repetition from the all-fours starting photograph. The arm NEAREST the camera moves forward; the leg FARTHEST from the camera moves backward. These moving limbs belong to OPPOSITE sides of her body. The far-side palm and near-side knee are the two fixed support points throughout the lift. 0.0-0.5s: both palms and both knees on mat. 0.5-2.0s: simultaneously reach the near-side arm forward and extend the far-side leg backward to trunk height. 2.0-2.8s: hold the opposite diagonal with level hips. 2.8-4.5s: return that same hand and that same knee to their original positions. 4.5-5.0s: still on all fours. The supporting near-side knee never leaves the mat and the supporting far-side palm never leaves the mat. Keep all four limbs distinct and anatomically connected. Show the complete hand and foot throughout; fit extension inside the frame, without a camera move. Same woman, gray top, black leggings, bare feet, blue mat and white studio as the starting photograph. Preserve face and clothing. Static camera and lighting. One continuous realistic five-second demonstration. No text, band, speech or music."
+    },
+    {
+      "id": "pelvic-tilt-v3",
+      "name": "Bekkentilt liggende",
+      "description": "Ligg med bøyde knær. Vipp bekkenet slik at korsryggen presses mot matten, hold kort og slipp tilbake til lett svai. Setet blir liggende.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/supine-no-band.png",
+      "prompt": "One complete supine pelvic tilt, shown from resting start through lumbar flattening and back. Her buttocks, sacrum, shoulders and head rest on the mat during the ENTIRE movement. 0.0-0.7s: lie as in the image, knees bent, feet flat, natural small low-back curve. 0.7-2.0s: contract the lower abdominals and ROLL the pelvis backward in place, tipping the front waistband toward the ribs. The lumbar curve visibly flattens DOWNWARD until the lower back presses into the mat. 2.0-3.0s: hold this broad low-back contact. 3.0-4.5s: slowly roll pelvis forward to restore the natural small lumbar curve. 4.5-5.0s: rest in the original position. Show the waist contour changing between curved and flat. The sacrum stays grounded as the pelvis rocks around it; the buttocks do not travel upward. The feet, thighs, knees, arms and chest remain quiet. This is an abdominal pelvic rocking motion, with the body resting on the floor throughout. Same woman, gray top, black leggings, bare feet, blue mat and white studio as the starting photograph. Preserve face and clothing. Static camera and lighting. One continuous realistic five-second demonstration. No text, band, speech or music."
+    },
+    {
+      "id": "side-plank-knees-v3",
+      "name": "Sideplanke på knærne",
+      "description": "Start på siden med bøyde knær og underarmen i matten. Løft hoften, hold kort og senk tilbake. Knærne forblir bøyd.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/side-plank-knees.png",
+      "prompt": "One complete SHORT-LEVER side support repetition ON BENT KNEES. Begin with hips resting on mat, as in the reference. Both thighs point forward from the hips and both shins fold backward at the knees; heels stay behind the knees. Lower forearm and lower knee are the two fixed weight-bearing supports. 0.0-0.5s: hips down, elbow under shoulder, both knees bent approximately 90 degrees. 0.5-2.0s: press the forearm and lower KNEE into mat and lift only the pelvis until shoulder, hip and KNEE form one straight line. 2.0-2.8s: hold. 2.8-4.5s: lower the pelvis gently to the mat. 4.5-5.0s: rest with hips down. Knee joints remain visibly bent for every frame; lower knee stays on the same spot on mat. Feet stay behind knees and never become support points. Upper hand stays on hip. Preserve the bent-knee short lever during the entire rise and descent. Same woman, gray top, black leggings, bare feet, blue mat and white studio as the starting photograph. Preserve face and clothing. Static camera and lighting. One continuous realistic five-second demonstration. No text, band, speech or music."
+    }
+  ]
+}

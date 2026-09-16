@@ -1,0 +1,57 @@
+{
+  "name": "consistent-woman-five",
+  "resolution": "768P",
+  "duration": 5,
+  "exercises": [
+    {
+      "id": "clamshell-red-v1",
+      "name": "Clamshell med raud strikk",
+      "description": "Ligg på sida med bøygde kne og strikk rundt låra over knea. Hald føtene saman, løft øvste kne og senk roleg. Hald bekkenet stabilt.",
+      "region": "Lower body",
+      "equipment": "Resistance band",
+      "tags": [],
+      "firstFrame": "references/clamshell-red.png",
+      "prompt": "Perform one side lying clamshell. Keep both feet touching and the lower leg still. Open the upper knee about 30 degrees against the red elastic loop, briefly pause, then close to the starting position. Pelvis stays stacked without rolling back. Preserve the starting image woman, face, gray top, black leggings, blue mat, white studio and lighting throughout. Static camera, full body visible, one continuous five-second shot, controlled movement, no text or audio."
+    },
+    {
+      "id": "bird-dog-v1",
+      "name": "Diagonalløft på alle fire",
+      "description": "Stå på alle fire. Strekk ein arm og motsett bein, hald bekkenet stabilt og før roleg tilbake.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/bird-dog.png",
+      "prompt": "Starting on all fours, slowly extend the right arm forward and LEFT leg backward simultaneously until aligned with the trunk, briefly hold, then return both to the initial all fours stance. Left palm and right knee remain planted throughout. Only one diagonal repetition, no switching sides. No band. Preserve the starting image woman, face, gray top, black leggings, blue mat, white studio and lighting throughout. Static camera, full body visible, one continuous five-second shot, controlled movement, no text or audio."
+    },
+    {
+      "id": "pelvic-tilt-v1",
+      "name": "Bekkentilt liggande",
+      "description": "Ligg på ryggen med bøygde kne. Vipp bekkenet roleg slik at korsryggen nærmar seg matta, og slepp tilbake. Setet blir liggande på matta.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/supine-no-band.png",
+      "prompt": "Perform one gentle posterior pelvic tilt and release. The pelvis rotates subtly to flatten the small low-back arch toward the mat then returns to neutral. Buttocks stay in contact with mat throughout; never lift into a bridge. Feet and shoulders stay still. No band. Preserve the starting image woman, face, gray top, black leggings, blue mat, white studio and lighting throughout. Static camera, full body visible, one continuous five-second shot, controlled movement, no text or audio."
+    },
+    {
+      "id": "bridge-no-band-v1",
+      "name": "Seteløft utan strikk",
+      "description": "Ligg på ryggen med bøygde kne og føtene i matta. Løft bekkenet, hald kort og senk roleg tilbake.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/supine-no-band.png",
+      "prompt": "Perform one complete glute bridge. Lift pelvis from mat to align shoulders hips and knees, briefly hold, then lower pelvis fully back to mat. Feet remain planted hip width apart, shoulders and head remain resting. No band. Preserve the starting image woman, face, gray top, black leggings, blue mat, white studio and lighting throughout. Static camera, full body visible, one continuous five-second shot, controlled movement, no text or audio."
+    },
+    {
+      "id": "side-plank-knees-v1",
+      "name": "Sideplanke på knea",
+      "description": "Ligg på sida med bøygde kne og olbogen under skuldra. Løft hofta til skuldre, hofte og kne er på linje. Hald kort og senk roleg.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/side-plank-knees.png",
+      "prompt": "Perform one modified side plank supported on the lower forearm and bent knees. Lift hips to form a straight shoulder-hip-knee line, briefly hold then lower gently. Knees stay bent and on mat, elbow remains under shoulder, upper hand stays on hip. Do not straighten legs or support on feet. No band. Preserve the starting image woman, face, gray top, black leggings, blue mat, white studio and lighting throughout. Static camera, full body visible, one continuous five-second shot, controlled movement, no text or audio."
+    }
+  ]
+}

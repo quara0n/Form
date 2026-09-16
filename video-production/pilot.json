@@ -1,0 +1,17 @@
+{
+  "name": "first-pilot",
+  "resolution": "768P",
+  "duration": 5,
+  "exercises": [
+    {
+      "id": "bridge-band-v1",
+      "name": "Seteløft med strikk rundt låra",
+      "description": "Ligg på ryggen med bøygde kne og føtene i golvet. Ha strikken rundt låra over knea. Løft bekkenet og senk roleg tilbake.",
+      "region": "Lower body",
+      "equipment": "Resistance band",
+      "tags": ["hofte", "sete", "seteløft", "bridge", "strikk"],
+      "firstFrame": "",
+      "prompt": "One adult demonstrates one complete controlled supine glute bridge in five seconds. Start lying on an exercise mat with knees bent and both feet flat. A closed resistance loop is around both thighs just above the knees. Lift the pelvis, briefly hold, then lower back to the mat. Both feet remain planted and the knees stay at a constant distance. Static three-quarter side camera, full body and band visible throughout, plain studio background, consistent lighting, one continuous shot. No captions, no speech, no music."
+    }
+  ]
+}

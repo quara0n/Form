@@ -1,0 +1,17 @@
+{
+  "name": "bird-dog-front-v5",
+  "resolution": "768P",
+  "duration": 5,
+  "exercises": [
+    {
+      "id": "bird-dog-v5",
+      "name": "Diagonalen – motsatt arm og bein",
+      "description": "Start på alle fire. Strekk én arm og motsatt bein, hold kort og før rolig tilbake.",
+      "region": "Trunk",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/bird-dog-front-v5.png",
+      "prompt": "A single controlled bird-dog repetition. From hands and knees, the woman reaches her right hand forward while extending her left leg backward. Her left palm and right knee remain grounded throughout. She pauses with the raised arm and opposite leg aligned with her torso, then returns the hand and knee together to the mat. Her pelvis stays level and her back remains neutral. Preserve the woman and setting from the image. Fixed wide camera, all limbs fully visible throughout. One continuous five-second shot, silent."
+    }
+  ]
+}

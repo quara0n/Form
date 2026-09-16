@@ -34,6 +34,8 @@ Browser tests use an installed Google Chrome and start the local server automati
 
 ## Exercise content
 
+To produce new exercise videos through MiniMax H3 Max, follow [MiniMax setup](docs/minimax-setup.md). Start with `npm run video:doctor` and `npm run video:plan`; both are free local checks. Paid generation requires an explicit `--submit` flag and budget.
+
 The catalogue is in `src/data/exercises.json`; matching videos and posters are in `public/exercises`. See [media rights](docs/media-rights.md) for sources, attribution and licences. Video preview and print handouts retain attribution. No ExorLive assets are included.
 
 `scripts/download-media.mjs` downloads the documented originals. With the local server running, `node scripts/make-posters.mjs` regenerates matching video stills using Chrome.

@@ -1,0 +1,37 @@
+{
+  "name": "retry-three-v2",
+  "duration": 5,
+  "resolution": "768P",
+  "exercises": [
+    {
+      "id": "bird-dog-v2",
+      "name": "Diagonalen – motsatt arm og bein",
+      "description": "Hold motsatt arm og bein strukket. Før dem rolig tilbake til alle fire.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/bird-dog-v2.png",
+      "prompt": "Begin in the exact extended opposite-arm-and-leg pose in the image. 0-1 seconds: hold this diagonal without moving the supporting palm or supporting knee. 1-4 seconds: slowly lower ONLY the currently raised hand and bend and lower ONLY the currently raised leg until the palm and knee meet the mat. The original supporting palm and knee stay planted throughout. 4-5 seconds: hold neutral all fours. Do not switch limbs, do not lift a new limb. Preserve limb identity and connections exactly. Keep the exact woman, clothing, mat, studio, face and hairstyle from the image. Locked camera, no zoom, full body stays inside frame. Five seconds, one continuous realistic shot. No captions, speech, music, or resistance band."
+    },
+    {
+      "id": "pelvic-tilt-v2",
+      "name": "Bekkentilt liggende",
+      "description": "Vipp bekkenet rolig mellom lett svai og korsryggkontakt med matten. Setet og øvre rygg blir liggende.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/pelvic-tilt-v2.png",
+      "prompt": "Supine pelvic rocking, one visible anterior-to-posterior pelvic tilt cycle. 0-1 seconds: tip pelvis forward to form a small visible lumbar arch while the buttocks stay grounded. 1-3 seconds: roll the front of the pelvis toward the lower ribs, reducing that arch until the LOWER BACK presses flat against the mat; the waistband visibly rotates toward the ribs. 3-4 seconds: hold low-back contact. 4-5 seconds: release to neutral. Movement is rotation of pelvis, not upward translation. Buttocks and upper back remain on mat for the entire shot, feet fixed, knees quiet, head resting. Keep the exact woman, clothing, mat, studio, face and hairstyle from the image. Locked camera, no zoom, full body stays inside frame. Five seconds, one continuous realistic shot. No captions, speech, music, or resistance band."
+    },
+    {
+      "id": "side-plank-knees-v2",
+      "name": "Sideplanke på knærne",
+      "description": "Hold sideplanken med støtte på underarm og bøyd kne. Senk hoften rolig til matten.",
+      "region": "Lower body",
+      "equipment": "None",
+      "tags": [],
+      "firstFrame": "references/side-plank-v2.png",
+      "prompt": "Begin in the exact raised bent-knee side plank in the image. 0-2 seconds: hold this position supported on lower forearm and lower knee. Both knees remain bent at the SAME 90-degree angle, feet stay behind knees and are not weight bearing. 2-4 seconds: slowly lower pelvis toward mat by pivoting around the planted elbow and planted lower knee. Keep both knees bent throughout; no straightening legs, no sliding knees, no changing support to feet. 4-5 seconds: rest hips on mat with knees still bent. Upper hand remains on hip. Keep the exact woman, clothing, mat, studio, face and hairstyle from the image. Locked camera, no zoom, full body stays inside frame. Five seconds, one continuous realistic shot. No captions, speech, music, or resistance band."
+    }
+  ]
+}

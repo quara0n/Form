@@ -1,0 +1,57 @@
+{
+  "name": "strength-five-v1",
+  "duration": 5,
+  "resolution": "768P",
+  "exercises": [
+    {
+      "id": "shoulder-er-v1",
+      "name": "Utadrotasjon av skulder med strikk",
+      "description": "Hold albuen inntil kroppen og bøyd omtrent 90 grader. Drei underarmen utover, hold kort og før rolig tilbake.",
+      "region": "Upper body",
+      "equipment": "Resistance band",
+      "tags": [],
+      "firstFrame": "references/shoulder-er-v1.png",
+      "prompt": "One complete standing RIGHT shoulder external rotation. Start as photographed with right elbow snug against ribs bent 90 degrees, hand near abdomen. Rotate the forearm outward toward image LEFT, away from the fixed wall anchor at image RIGHT. The hand sweeps horizontally in an arc around the stationary elbow, stretching the red tube. Upper arm stays vertical against ribs; elbow angle stays 90 degrees, wrist straight. 0-0.5s start, 0.5-2s rotate outward, 2-2.8s pause, 2.8-4.5s controlled return, final half second still. Torso, shoulder girdle and feet remain still. Do not row, extend elbow or lift upper arm. Wall anchor stays fixed. Preserve exactly the reference woman, face, gray top, black leggings, blue mat, white studio and lighting. Fixed camera, full body visible throughout, one continuous five-second shot, no text, speech or music."
+    },
+    {
+      "id": "squat-red-v1",
+      "name": "Knebøy med rød strikk",
+      "description": "Stå med strikken rundt lårene over knærne. Bøy hofter og knær, hold knærne i retning tærne og reis deg rolig.",
+      "region": "Lower body",
+      "equipment": "Resistance band",
+      "tags": [],
+      "firstFrame": "references/squat-red-v1.png",
+      "prompt": "One full squat from upright start and back to upright. 0-0.5s stand. 0.5-2s bend hips and knees together, hips back and down until thighs approach horizontal. Knees track over toes, gently pressing outward against the red loop above knees. Both entire feet remain planted with heels down. 2-2.5s pause, 2.5-4.5s rise fully to standing, 4.5-5s stand still. Band stays above both knees; no stepping or bouncing. Preserve exactly the reference woman, face, gray top, black leggings, blue mat, white studio and lighting. Fixed camera, full body visible throughout, one continuous five-second shot, no text, speech or music."
+    },
+    {
+      "id": "bulgarian-v1",
+      "name": "Bulgarsk utfall",
+      "description": "Plasser bakre fot på benken. Bøy fremre kne og senk kroppen, før du presser gjennom fremre fot og reiser deg tilbake.",
+      "region": "Lower body",
+      "equipment": "Bench",
+      "tags": [],
+      "firstFrame": "references/bulgarian-v1.png",
+      "prompt": "One complete rear-foot-elevated split squat from photographed top stance. Front foot stays flat in its exact place and rear instep stays on bench throughout. 0-0.5s top; 0.5-2s bend front knee and lower pelvis vertically, rear knee descending toward floor. Torso inclines slightly forward as one stable unit. 2-2.5s pause at bottom; 2.5-4.5s push through front foot and return to original top stance; 4.5-5s still. Hands on hips, bench stationary, no hopping or foot switches. Preserve exactly the reference woman, face, gray top, black leggings, blue mat, white studio and lighting. Fixed camera, full body visible throughout, one continuous five-second shot, no text, speech or music."
+    },
+    {
+      "id": "abduction-hold-v1",
+      "name": "Statisk hofteabduksjon med strikk",
+      "description": "Ligg på ryggen med bøyde knær. Press knærne litt utover mot strikken og hold stillingen før du slipper rolig tilbake.",
+      "region": "Lower body",
+      "equipment": "Resistance band",
+      "tags": [],
+      "firstFrame": "references/abduction-hold-v1.png",
+      "prompt": "Supine isometric hip abduction against red thigh loop. Start resting as image, feet flat and pelvis fully on mat. During first second move both knees a small equal distance outward to tension the red loop. From 1-4 seconds HOLD exactly this knee separation steadily against the elastic resistance. Final second release slowly toward starting separation. No repeated opening and closing. Feet remain in place, knees bent, buttocks and upper back grounded, no pelvis lift. Preserve exactly the reference woman, face, gray top, black leggings, blue mat, white studio and lighting. Fixed camera, full body visible throughout, one continuous five-second shot, no text, speech or music."
+    },
+    {
+      "id": "adduction-ball-v1",
+      "name": "Statisk adduksjon med håndball",
+      "description": "Ligg på ryggen med bøyde knær og håndball mellom knærne. Klem knærne mot ballen, hold og slipp trykket rolig.",
+      "region": "Lower body",
+      "equipment": "Ball",
+      "tags": [],
+      "firstFrame": "references/adduction-ball-v1.png",
+      "prompt": "Supine isometric hip adduction squeezing the small handball between inner knees. Start relaxed as image with both soles flat, pelvis and back resting on mat. During first second gently press BOTH knees inward against the ball, with only tiny visible compression, retaining its round shape. From 1-4 seconds HOLD steady inward pressure without visible joint motion; final second relax pressure while keeping ball securely between knees. Ball remains same size and color and never escapes or disappears. No leg lift, no pelvis lift, no repeated pumping. Preserve exactly the reference woman, face, gray top, black leggings, blue mat, white studio and lighting. Fixed camera, full body visible throughout, one continuous five-second shot, no text, speech or music."
+    }
+  ]
+}
