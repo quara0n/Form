@@ -114,6 +114,51 @@ test("sends a verified local first-frame image with adaptive aspect ratio", asyn
     /^data:image\/jpeg;base64,/,
   );
 });
+test("sends a last frame after the first frame", async () => {
+  const { jobs } = await fixture([
+    {
+      ...exercise,
+      firstFrame: path.resolve("public/exercises/squat.jpg"),
+      lastFrame: path.resolve("public/exercises/squat.jpg"),
+    },
+  ]);
+  assert.equal(jobs[0].payload.ratio, "adaptive");
+  assert.deepEqual(
+    jobs[0].payload.content.map((part) => part.role),
+    [undefined, "first_frame", "last_frame"],
+  );
+});
+test("accepts a last frame on its own", async () => {
+  const { jobs } = await fixture([
+    { ...exercise, lastFrame: path.resolve("public/exercises/squat.jpg") },
+  ]);
+  assert.equal(jobs[0].payload.ratio, "adaptive");
+  assert.equal(jobs[0].payload.content[1].role, "last_frame");
+});
+test("rejects a last frame that is not an image", async () => {
+  await assert.rejects(
+    () => fixture([{ ...exercise, lastFrame: path.resolve("package.json") }]),
+    /Last frame must be a local PNG, JPEG or WebP image/,
+  );
+});
+test("changing only the last frame changes the fingerprint", async () => {
+  const firstFrame = path.resolve("public/exercises/squat.jpg");
+  const { jobs: first } = await fixture([
+    {
+      ...exercise,
+      firstFrame,
+      lastFrame: path.resolve("public/exercises/row.jpg"),
+    },
+  ]);
+  const { jobs: second } = await fixture([
+    {
+      ...exercise,
+      firstFrame,
+      lastFrame: path.resolve("public/exercises/deadlift.jpg"),
+    },
+  ]);
+  assert.notEqual(first[0].fingerprint, second[0].fingerprint);
+});
 test("escapes review content", async () => {
   const { dir } = await fixture();
   await gallery(

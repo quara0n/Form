@@ -119,7 +119,7 @@ async function main() {
     );
     for (const job of jobs)
       console.log(
-        `${job.id}: ${state.jobs[job.id]?.status || "draft"} | ${job.payload.resolution}, 5s | ${job.exercise.firstFrame ? "first-frame image" : "TEXT ONLY — no start image set"}`,
+        `${job.id}: ${state.jobs[job.id]?.status || "draft"} | ${job.payload.resolution}, 5s | ${[job.exercise.firstFrame && "first-frame", job.exercise.lastFrame && "last-frame"].filter(Boolean).join(" + ") || "TEXT ONLY — no frame images set"}`,
       );
     if (command === "plan" || (command === "run" && !options.submit)) {
       console.log(

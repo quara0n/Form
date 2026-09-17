@@ -1,4 +1,8 @@
 import { test, expect } from "@playwright/test";
+import { readFileSync } from "node:fs";
+const librarySize =
+  JSON.parse(readFileSync("src/data/exercises.json", "utf8")).length +
+  JSON.parse(readFileSync("src/data/generated-exercises.json", "utf8")).length;
 test("builds independent prescriptions, persists them and prints current data", async ({
   page,
 }) => {
@@ -124,7 +128,7 @@ test("mobile workspace retains programme and has no horizontal overflow", async 
 });
 test("desktop library and all media render", async ({ page }) => {
   await page.goto("/");
-  await expect(page.locator(".exercise-card")).toHaveCount(36);
+  await expect(page.locator(".exercise-card")).toHaveCount(librarySize);
   await page.screenshot({ path: "test-results/desktop.png", fullPage: true });
   for (const img of await page.locator(".exercise-image img").all()) {
     await img.scrollIntoViewIfNeeded();

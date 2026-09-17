@@ -49,12 +49,13 @@ export async function compile(manifestFile) {
     )
       throw new Error(`Invalid name, description or prompt: ${exercise.id}`);
     const content = [{ type: "text", text: exercise.prompt }];
-    let imageHash = null;
-    if (exercise.firstFrame) {
-      const file = path.resolve(
-        path.dirname(manifestFile),
-        exercise.firstFrame,
-      );
+    const imageHashes = {};
+    for (const [field, role, label] of [
+      ["firstFrame", "first_frame", "First frame"],
+      ["lastFrame", "last_frame", "Last frame"],
+    ]) {
+      if (!exercise[field]) continue;
+      const file = path.resolve(path.dirname(manifestFile), exercise[field]);
       const extension = path.extname(file).toLowerCase();
       const mime = {
         ".png": "png",
@@ -63,10 +64,10 @@ export async function compile(manifestFile) {
         ".webp": "webp",
       }[extension];
       if (!mime)
-        throw new Error("First frame must be a local PNG, JPEG or WebP image.");
+        throw new Error(`${label} must be a local PNG, JPEG or WebP image.`);
       const bytes = await readFile(file);
       if (bytes.length > 30 * 1024 * 1024)
-        throw new Error("First frame exceeds 30 MB.");
+        throw new Error(`${label} exceeds 30 MB.`);
       const info = await probe(file);
       const stream = info.streams.find((s) => s.codec_type === "video");
       if (
@@ -76,14 +77,14 @@ export async function compile(manifestFile) {
         stream.width / stream.height < 0.4 ||
         stream.width / stream.height > 2.5
       )
-        throw new Error("First frame dimensions are outside MiniMax limits.");
-      imageHash = hash(bytes);
+        throw new Error(`${label} dimensions are outside MiniMax limits.`);
+      imageHashes[role] = hash(bytes);
       content.push({
         type: "image_url",
         image_url: {
           url: `data:image/${mime};base64,${bytes.toString("base64")}`,
         },
-        role: "first_frame",
+        role,
       });
     }
     const payload = {
@@ -91,7 +92,7 @@ export async function compile(manifestFile) {
       content,
       duration: 5,
       resolution: manifest.resolution,
-      ratio: exercise.firstFrame ? "adaptive" : "16:9",
+      ratio: exercise.firstFrame || exercise.lastFrame ? "adaptive" : "16:9",
     };
     jobs.push({
       id: exercise.id,
@@ -100,7 +101,7 @@ export async function compile(manifestFile) {
       fingerprint: hash(
         JSON.stringify({
           exercise,
-          imageHash,
+          imageHashes,
           resolution: manifest.resolution,
           model: MODEL,
         }),

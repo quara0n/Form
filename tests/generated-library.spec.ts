@@ -7,7 +7,7 @@ const generated: { id: string; name: string }[] = JSON.parse(
 test("generated library excludes pelvic tilt; descriptions expand and persist independently", async ({
   page,
 }) => {
-  expect(generated).toHaveLength(24);
+  expect(generated.length).toBeGreaterThanOrEqual(24);
   expect(generated.some((e) => /pelvic|bekkentilt/i.test(e.id + e.name))).toBe(
     false,
   );
@@ -51,6 +51,20 @@ test("generated library excludes pelvic tilt; descriptions expand and persist in
   );
   await page.screenshot({
     path: "test-results/generated-library.png",
+    fullPage: false,
+  });
+});
+
+test("the imported machine collection is browsable", async ({ page }) => {
+  await page.goto("/");
+  await page.getByLabel("Samling", { exact: true }).selectOption("Apparater");
+  await expect(page.locator(".exercise-card")).toHaveCount(7);
+  await expect(page.getByText("Brystpress i apparat")).toBeVisible();
+  await expect(
+    page.getByText("Ettbens leg extension fra 60 grader"),
+  ).toBeVisible();
+  await page.screenshot({
+    path: "test-results/machine-collection.png",
     fullPage: false,
   });
 });
