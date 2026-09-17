@@ -75,6 +75,45 @@ export const newProgramme = (): Programme => ({
   updatedAt: new Date().toISOString(),
 });
 export function addExercise(p: Programme, exercise: Exercise): Programme {
+  return addPrescription(p, exercise);
+}
+export interface PrescriptionValues {
+  sets?: string;
+  reps?: string;
+  duration?: string;
+  durationUnit?: "sec" | "min";
+  load?: string;
+  hold?: string;
+  rest?: string;
+  frequency?: string;
+  side?: "Left" | "Right" | "Both";
+  tempo?: string;
+}
+const prescriptionOrder = [
+  "sets",
+  "reps",
+  "duration",
+  "load",
+  "hold",
+  "rest",
+  "frequency",
+  "side",
+  "tempo",
+] as const satisfies readonly (keyof PrescriptionValues)[];
+export function addPrescription(
+  p: Programme,
+  exercise: Exercise,
+  values: PrescriptionValues = {},
+): Programme {
+  const parameters = prescriptionOrder
+    .filter(
+      (key) => values[key] !== undefined || key === "sets" || key === "reps",
+    )
+    .map((key) => ({
+      ...newParameter(key),
+      value: values[key] === undefined ? "" : String(values[key]),
+      ...(key === "duration" ? { unit: values.durationUnit || "sec" } : {}),
+    }));
   return {
     ...p,
     items: [
@@ -82,7 +121,7 @@ export function addExercise(p: Programme, exercise: Exercise): Programme {
       {
         id: uid(),
         exercise: structuredClone(exercise),
-        parameters: [newParameter("sets"), newParameter("reps")],
+        parameters,
         notes: "",
       },
     ],

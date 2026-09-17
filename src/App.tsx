@@ -1,4 +1,4 @@
-import { useState } from "react";
+import { useEffect, useState } from "react";
 import {
   ArrowUpRight,
   BookOpen,
@@ -7,6 +7,7 @@ import {
   FolderOpen,
   Leaf,
   LoaderCircle,
+  Mic,
   Plus,
   Printer,
   X,
@@ -19,6 +20,7 @@ import catalogue from "./data/exercises.json";
 import generated from "./data/generated-exercises.json";
 import {
   addExercise,
+  addPrescription,
   validateProgramme,
   type Exercise,
   type Programme,
@@ -28,6 +30,28 @@ import { ExerciseLibrary } from "./features/library/ExerciseLibrary";
 import { ProgrammeBuilder } from "./features/builder/ProgrammeBuilder";
 import { ProgrammeHandout } from "./features/print/ProgrammeHandout";
 import { Modal } from "./components/Modal";
+import {
+  parseSpokenCommand,
+  type SpokenPrescription,
+} from "./features/voice/parseSpokenCommand";
+import {
+  VoiceCommandPanel,
+  type VoiceOutcome,
+} from "./features/voice/VoiceCommandPanel";
+
+function describePrescription(item: SpokenPrescription): string {
+  const dose = [
+    item.sets && `${item.sets} sett`,
+    item.reps && `${item.reps} reps`,
+    item.duration &&
+      `${item.duration} ${item.durationUnit === "min" ? "min" : "sek"}`,
+    item.rest && `${item.rest} sek pause`,
+  ].filter(Boolean);
+  const unsure = (item.matchScore ?? 1) < 0.9;
+  const heard = unsure && item.heard ? ` (usikker, hørte «${item.heard}»)` : "";
+  return `${item.exercise.name}${dose.length ? ` — ${dose.join(", ")}` : ""}${heard}`;
+}
+
 export default function App() {
   const workspace = useProgramme();
   const { programme, setProgramme, status, error, savedProgrammes } = workspace;
@@ -39,6 +63,7 @@ export default function App() {
   const [toast, setToast] = useState("");
   const [confirmDelete, setConfirmDelete] = useState<Programme | null>(null);
   const [busy, setBusy] = useState(false);
+  const [voiceOpen, setVoiceOpen] = useState(false);
   const exercises = [...generated, ...catalogue] as Exercise[];
   const counts = programme.items.reduce<Record<string, number>>(
     (all, item) => ({
@@ -71,6 +96,45 @@ export default function App() {
     if (!errors.length) setPrintOpen(true);
     else setMobileView("programme");
   }
+  function handleVoiceCommand(transcript: string): VoiceOutcome {
+    const result = parseSpokenCommand(transcript, exercises);
+    if (!result.items.length)
+      return {
+        added: [],
+        unmatched: result.unmatched.length ? result.unmatched : [transcript],
+        message: "Fant ingen øvelser i det du sa.",
+      };
+    if (status === "loading")
+      return {
+        added: [],
+        unmatched: [],
+        message: "Arbeidsområdet lastes fortsatt. Prøv igjen om et øyeblikk.",
+      };
+    setProgramme((p) =>
+      result.items.reduce(
+        (next, item) => addPrescription(next, item.exercise, item),
+        p,
+      ),
+    );
+    setToast(
+      `${result.items.length} øvelse${result.items.length === 1 ? "" : "r"} lagt til fra tale`,
+    );
+    return {
+      added: result.items.map(describePrescription),
+      unmatched: result.unmatched,
+      message: `${result.items.length} øvelse${result.items.length === 1 ? "" : "r"} lagt til i programmet.`,
+    };
+  }
+  useEffect(() => {
+    function onKeyDown(event: KeyboardEvent) {
+      if (event.ctrlKey && event.code === "Space") {
+        event.preventDefault();
+        setVoiceOpen((open) => !open);
+      }
+    }
+    window.addEventListener("keydown", onKeyDown);
+    return () => window.removeEventListener("keydown", onKeyDown);
+  }, []);
   return (
     <>
       <div className="app-shell">
@@ -167,6 +231,15 @@ export default function App() {
                 </div>
                 <button
                   className="icon-button"
+                  aria-label="Tale til program"
+                  title="Tale til program (Ctrl+Space)"
+                  aria-pressed={voiceOpen}
+                  onClick={() => setVoiceOpen((open) => !open)}
+                >
+                  <Mic size={19} />
+                </button>
+                <button
+                  className="icon-button"
                   aria-label="New programme"
                   title="New programme"
                   disabled={busy || status === "loading"}
@@ -180,6 +253,12 @@ export default function App() {
                   <Plus size={20} />
                 </button>
               </div>
+              {voiceOpen && (
+                <VoiceCommandPanel
+                  onCommand={handleVoiceCommand}
+                  onClose={() => setVoiceOpen(false)}
+                />
+              )}
               {status === "loading" ? (
                 <div className="loading-state">
                   <LoaderCircle className="spinning" /> Opening your workspace…
