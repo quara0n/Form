@@ -19,6 +19,6 @@
   "17": "bird-dog-front-v5-review.md",
   "18": "bird-dog-textbook-v4-review.md",
   "19": "parseSpokenCommand.ts",
-  "20": "useDictation.ts",
+  "20": "useVoiceCapture.ts",
   "21": "import-approved.mjs"
 }

@@ -6,9 +6,9 @@
     "semantic_hash": ""
   },
   "package.json": {
-    "mtime": 1789678571.058773,
-    "seen": 1789680392.8768713,
-    "ast_hash": "7acc3ec6fdecd779d9ac16e0c79efd9b",
+    "mtime": 1789287374.2272575,
+    "seen": 1789287470.1341202,
+    "ast_hash": "8cc5d07fea5f7630c33203f0a486ba0b",
     "semantic_hash": ""
   },
   "playwright.config.ts": {
@@ -30,9 +30,9 @@
     "semantic_hash": ""
   },
   "src/App.tsx": {
-    "mtime": 1789679909.9098828,
-    "seen": 1789680392.8768883,
-    "ast_hash": "75ab9b427d9e025074df6414e40e6032",
+    "mtime": 1789676902.850224,
+    "seen": 1789678157.9135368,
+    "ast_hash": "2c0359a424d5a02f138af36259fa62cf",
     "semantic_hash": ""
   },
   "src/components/Modal.tsx": {
@@ -126,9 +126,9 @@
     "semantic_hash": ""
   },
   "vite.config.ts": {
-    "mtime": 1789680240.6761248,
-    "seen": 1789680392.8769495,
-    "ast_hash": "5c1d653244e9c5a85fdd10821532042c",
+    "mtime": 1789068984.284694,
+    "seen": 1789197011.3088746,
+    "ast_hash": "42f04eb037a3058cc84002517ce9510d",
     "semantic_hash": ""
   },
   "AGENTS.md": {
@@ -138,9 +138,9 @@
     "semantic_hash": ""
   },
   "README.md": {
-    "mtime": 1789680373.0906136,
-    "seen": 1789680392.8769517,
-    "ast_hash": "4bc6a74fe545a367903ac98d24f447c8",
+    "mtime": 1789678034.1121447,
+    "seen": 1789678157.913596,
+    "ast_hash": "a467e75b557baec2511fd5198cb46658",
     "semantic_hash": ""
   },
   "docs/media-rights.md": {
@@ -810,27 +810,33 @@
     "semantic_hash": ""
   },
   "src/features/voice/VoiceCommandPanel.tsx": {
-    "mtime": 1789680159.6770952,
-    "seen": 1789680392.8769038,
-    "ast_hash": "ba00e99341655f93bf0b4c3c47178609",
+    "mtime": 1789676881.253092,
+    "seen": 1789678157.913551,
+    "ast_hash": "8ec50eb7b53f82aca88870d73a87a4d7",
     "semantic_hash": ""
   },
   "src/features/voice/parseSpokenCommand.test.ts": {
-    "mtime": 1789679766.3426635,
-    "seen": 1789680392.876905,
-    "ast_hash": "dca559067244a2606cc9851dec0977ce",
+    "mtime": 1789677162.9703543,
+    "seen": 1789678157.9135523,
+    "ast_hash": "8099b929914a622058eb5d8a0e35cfa6",
     "semantic_hash": ""
   },
   "src/features/voice/parseSpokenCommand.ts": {
-    "mtime": 1789680064.3711123,
-    "seen": 1789680392.8769064,
-    "ast_hash": "fc682d0a1ad6d4292c37b0a2274c8b54",
+    "mtime": 1789678083.9146912,
+    "seen": 1789678157.913554,
+    "ast_hash": "8858447a1f594552f36a534e8e31b4fd",
+    "semantic_hash": ""
+  },
+  "src/features/voice/useVoiceCapture.ts": {
+    "mtime": 1789677163.0879416,
+    "seen": 1789678157.913555,
+    "ast_hash": "259c78b197c35b150cbfca11c2612a30",
     "semantic_hash": ""
   },
   "tests/voice-command.spec.ts": {
-    "mtime": 1789680228.5415313,
-    "seen": 1789680392.876921,
-    "ast_hash": "7137013cd00a8ee305d99129ad82f8f7",
+    "mtime": 1789677873.3868642,
+    "seen": 1789678157.9135668,
+    "ast_hash": "e71738740e307d202761ee22977a02d8",
     "semantic_hash": ""
   },
   "video-production/apparater-del2b-v1.json": {
@@ -945,12 +951,6 @@
     "mtime": 1789671149.5238721,
     "seen": 1789678157.9137304,
     "ast_hash": "1e245975de42c96eb33932cf9097dc55",
-    "semantic_hash": ""
-  },
-  "src/features/voice/useDictation.ts": {
-    "mtime": 1789680240.9407718,
-    "seen": 1789680392.8769083,
-    "ast_hash": "a850dc98ae0851c6e5d2caa5e69091bc",
     "semantic_hash": ""
   }
 }

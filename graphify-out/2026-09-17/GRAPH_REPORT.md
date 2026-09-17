@@ -1,11 +1,11 @@
 # Graph Report - Rehab  (2026-09-17)
 
 ## Corpus Check
-- 64 files · ~117,403 words
+- 64 files · ~115,260 words
 - Verdict: corpus is large enough that graph structure adds value.
 
 ## Summary
-- 303 nodes · 496 edges · 22 communities (15 shown, 7 thin omitted)
+- 281 nodes · 454 edges · 22 communities (15 shown, 7 thin omitted)
 - Extraction: 99% EXTRACTED · 1% INFERRED · 0% AMBIGUOUS · INFERRED: 4 edges (avg confidence: 0.85)
 - Token cost: 0 input · 0 output
 
@@ -35,20 +35,20 @@
 - bird-dog-front-v5-review.md
 - bird-dog-textbook-v4-review.md
 - parseSpokenCommand.ts
-- useDictation.ts
+- useVoiceCapture.ts
 - import-approved.mjs
 
 ## God Nodes (most connected - your core abstractions)
 1. `scripts` - 13 edges
-2. `parseSpokenCommand()` - 12 edges
-3. `compilerOptions` - 12 edges
-4. `@playwright/test` - 10 edges
-5. `useProgramme()` - 10 edges
-6. `Product Contract` - 10 edges
-7. `react` - 9 edges
-8. `main()` - 9 edges
-9. `App()` - 9 edges
-10. `Exercise` - 8 edges
+2. `compilerOptions` - 12 edges
+3. `@playwright/test` - 10 edges
+4. `useProgramme()` - 10 edges
+5. `Product Contract` - 10 edges
+6. `react` - 9 edges
+7. `main()` - 9 edges
+8. `App()` - 9 edges
+9. `uid()` - 8 edges
+10. `parseSpokenCommand()` - 8 edges
 
 ## Surprising Connections (you probably didn't know these)
 - `fixture()` --calls--> `compile()`  [EXTRACTED]
@@ -76,7 +76,7 @@ Cohesion: 0.10
 Nodes (33): lucide-react, react, App(), add(), handleVoiceCommand(), previewPrint(), describePrescription(), Modal() (+25 more)
 
 ### Community 2 - "package.json"
-Cohesion: 0.09
+Cohesion: 0.11
 Nodes (18): dependencies, lucide-react, react, react-dom, name, private, type, version (+10 more)
 
 ### Community 3 - "Product Contract"
@@ -116,36 +116,36 @@ Cohesion: 0.29
 Nodes (6): Budget arithmetic, not a quote, Decisions before implementation / paid pilot, Proposed exercise video production workflow, Proposed local production tool, Recommended initial configuration, Verified provider facts
 
 ### Community 19 - "parseSpokenCommand.ts"
-Cohesion: 0.12
-Nodes (31): allMarkerWords, candidates(), compact(), containsWord(), defaultAliases, dosagePenalty(), dosageWords, ExerciseMatch (+23 more)
+Cohesion: 0.22
+Nodes (16): candidates(), levenshtein(), matchExercise(), normalize(), numberWords, parseDosage(), parseSpokenCommand(), replaceNumberWords() (+8 more)
 
-### Community 20 - "useDictation.ts"
-Cohesion: 0.15
-Nodes (12): Dictation, DictationEngine, Microphone, SpeechAlternative, SpeechErrorEvent, SpeechEvent, SpeechRecognitionConstructor, SpeechRecognitionLike (+4 more)
+### Community 20 - "useVoiceCapture.ts"
+Cohesion: 0.18
+Nodes (10): SpeechAlternative, SpeechErrorEvent, SpeechEvent, SpeechRecognitionConstructor, SpeechRecognitionLike, SpeechResult, SpeechResultList, useVoiceCapture() (+2 more)
 
 ### Community 21 - "import-approved.mjs"
 Cohesion: 0.25
 Nodes (3): imported, options, skipped
 
 ## Knowledge Gaps
-- **130 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+125 more)
-  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 163 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
+- **125 isolated node(s):** `name`, `version`, `private`, `type`, `dev` (+120 more)
+  These have ≤1 connection - possible missing edges or undocumented components. (Counts symbols only; 153 node(s) total have ≤1 connection when file, concept and rationale nodes are included.)
 - **7 thin communities (<3 nodes) omitted from report** — run `graphify query` to explore isolated nodes.
 
 ## Suggested Questions
 _Questions this graph is uniquely positioned to answer:_
 
-- **Why does `react` connect `programme.ts` to `programmeRepository.test.ts`, `package.json`, `useDictation.ts`?**
-  _High betweenness centrality (0.128) - this node is a cross-community bridge._
-- **Why does `lucide-react` connect `programme.ts` to `package.json`?**
-  _High betweenness centrality (0.057) - this node is a cross-community bridge._
-- **Why does `vitest` connect `package.json` to `programmeRepository.test.ts`, `programme.ts`, `parseSpokenCommand.ts`?**
+- **Why does `react` connect `programme.ts` to `programmeRepository.test.ts`, `package.json`, `useVoiceCapture.ts`?**
+  _High betweenness centrality (0.122) - this node is a cross-community bridge._
+- **Why does `scripts` connect `scripts` to `package.json`?**
+  _High betweenness centrality (0.056) - this node is a cross-community bridge._
+- **Why does `devDependencies` connect `devDependencies` to `package.json`?**
   _High betweenness centrality (0.056) - this node is a cross-community bridge._
 - **What connects `name`, `version`, `private` to the rest of the system?**
-  _130 weakly-connected nodes found - possible documentation gaps or missing edges._
+  _125 weakly-connected nodes found - possible documentation gaps or missing edges._
 - **Should `programme.ts` be split into smaller, more focused modules?**
   _Cohesion score 0.10083256244218317 - nodes in this community are weakly interconnected._
 - **Should `package.json` be split into smaller, more focused modules?**
-  _Cohesion score 0.08695652173913043 - nodes in this community are weakly interconnected._
+  _Cohesion score 0.10526315789473684 - nodes in this community are weakly interconnected._
 - **Should `Product Contract` be split into smaller, more focused modules?**
   _Cohesion score 0.07692307692307693 - nodes in this community are weakly interconnected._
