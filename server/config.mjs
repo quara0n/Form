@@ -37,6 +37,8 @@ export const config = {
   distDir: resolve(rootDir, "dist"),
   sessionDays: 30,
   secureCookies: process.env.FORM_SECURE_COOKIES === "1",
+  /** Antall dager en delt pasientlenke er gyldig. 0 = ingen utløpsdato. */
+  shareDays: Number(process.env.FORM_SHARE_DAYS ?? 180),
   transcriptionModel: process.env.FORMTALE_MODEL || "gpt-transcribe",
   maxJsonBytes: 2 * 1024 * 1024,
   maxAudioBytes: 25 * 1024 * 1024,

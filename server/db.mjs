@@ -38,6 +38,18 @@ export function openDatabase(dataDir) {
     .map((column) => column.name);
   if (!columns.includes("share_token"))
     db.exec("ALTER TABLE programmes ADD COLUMN share_token TEXT");
+  if (!columns.includes("share_expires_at"))
+    db.exec("ALTER TABLE programmes ADD COLUMN share_expires_at TEXT");
+  db.exec(`
+    CREATE TABLE IF NOT EXISTS events (
+      id INTEGER PRIMARY KEY AUTOINCREMENT,
+      user_id TEXT,
+      kind TEXT NOT NULL,
+      detail TEXT NOT NULL DEFAULT '',
+      created_at TEXT NOT NULL
+    );
+    CREATE INDEX IF NOT EXISTS events_user ON events (user_id, created_at);
+  `);
   return db;
 }
 
@@ -106,15 +118,34 @@ export function removeProgramme(db, userId, id) {
   );
 }
 
-export function setShareToken(db, userId, id, token) {
+export function setShareToken(db, userId, id, token, expiresAt) {
   db.prepare(
-    "UPDATE programmes SET share_token = ? WHERE user_id = ? AND id = ?",
-  ).run(token, userId, id);
+    "UPDATE programmes SET share_token = ?, share_expires_at = ? WHERE user_id = ? AND id = ?",
+  ).run(token, expiresAt, userId, id);
 }
 
 export function findProgrammeByShareToken(db, token) {
   const row = db
-    .prepare("SELECT payload FROM programmes WHERE share_token = ?")
+    .prepare(
+      "SELECT payload, share_expires_at FROM programmes WHERE share_token = ?",
+    )
     .get(token);
-  return row ? JSON.parse(row.payload) : undefined;
+  return row
+    ? { programme: JSON.parse(row.payload), expiresAt: row.share_expires_at }
+    : undefined;
+}
+
+/** Revisjonslogg: hvem gjorde hva, uten innholdet i programmene. */
+export function logEvent(db, { userId = null, kind, detail = "" }) {
+  db.prepare(
+    "INSERT INTO events (user_id, kind, detail, created_at) VALUES (?, ?, ?, ?)",
+  ).run(userId, kind, detail, new Date().toISOString());
+}
+
+export function listEvents(db, userId, limit = 50) {
+  return db
+    .prepare(
+      "SELECT kind, detail, created_at FROM events WHERE user_id = ? ORDER BY id DESC LIMIT ?",
+    )
+    .all(userId, limit);
 }

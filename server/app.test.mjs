@@ -277,4 +277,54 @@ describe("innlogging", () => {
     const result = await call("/api/shared/abcdefghijklmnopqrstuvwx");
     assert.equal(result.status, 404);
   });
+
+  test("krever innlogging for tale og revisjonslogg", async () => {
+    const anonymous = await call("/api/transcribe");
+    assert.equal(anonymous.status, 401);
+    const events = await call("/api/events");
+    assert.equal(events.status, 401);
+  });
+
+  test("gir pasientlenken en utløpsdato og stenger den når den er ute", async () => {
+    await call("/api/programmes/utloper", {
+      method: "PUT",
+      body: sampleProgramme("utloper"),
+      cookie,
+    });
+    const share = await call("/api/programmes/utloper/share", {
+      method: "POST",
+      cookie,
+    });
+    assert.ok(Date.parse(share.body.expiresAt) > Date.now());
+
+    // Flytt utløpet bakover i tid, som om lenken har ligget lenge.
+    database
+      .prepare(
+        "UPDATE programmes SET share_expires_at = ? WHERE share_token = ?",
+      )
+      .run("2020-01-01T00:00:00.000Z", share.body.token);
+    const expired = await call(`/api/shared/${share.body.token}`);
+    assert.equal(expired.status, 410);
+
+    // Å dele på nytt gir en frisk lenke.
+    const again = await call("/api/programmes/utloper/share", {
+      method: "POST",
+      cookie,
+    });
+    assert.notEqual(again.body.token, share.body.token);
+    assert.ok(Date.parse(again.body.expiresAt) > Date.now());
+    const fresh = await call(`/api/shared/${again.body.token}`);
+    assert.equal(fresh.status, 200);
+  });
+
+  test("skriver revisjonslogg uten programinnhold", async () => {
+    const result = await call("/api/events", { cookie });
+    assert.equal(result.status, 200);
+    const kinds = result.body.events.map((event) => event.kind);
+    assert.ok(kinds.includes("session.started"));
+    assert.ok(kinds.includes("programme.saved"));
+    assert.ok(kinds.includes("share.created"));
+    const serialised = JSON.stringify(result.body.events);
+    assert.equal(serialised.includes("Hofteprogram"), false);
+  });
 });

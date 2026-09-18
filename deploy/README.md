@@ -82,14 +82,18 @@ node server/index.mjs
 
 ## Miljøvariabler
 
-| Variabel | Betydning |
-| --- | --- |
-| `HOST` / `PORT` | Hvor serveren lytter. `0.0.0.0` i container. |
-| `FORM_PUBLIC_URL` | Adressen som delingslenker og QR-koder bygges fra. |
-| `FORM_DATA_DIR` | Mappe for SQLite-databasen. |
-| `FORM_SECURE_COOKIES` | Sett til `1` bak HTTPS. |
-| `OPENAI_API_KEY` | Nøkkel til tale-til-tekst. |
-| `FORMTALE_MODEL` | Standard `gpt-transcribe`. |
+| Variabel                 | Betydning                                                            |
+| ------------------------ | -------------------------------------------------------------------- |
+| `HOST` / `PORT`          | Hvor serveren lytter. `0.0.0.0` i container.                         |
+| `FORM_PUBLIC_URL`        | Adressen som delingslenker og QR-koder bygges fra.                   |
+| `FORM_DATA_DIR`          | Mappe for SQLite-databasen.                                          |
+| `FORM_SECURE_COOKIES`    | Sett til `1` bak HTTPS.                                              |
+| `OPENAI_API_KEY`         | Nøkkel til tale-til-tekst.                                           |
+| `FORMTALE_MODEL`         | Standard `gpt-transcribe`.                                           |
+| `FORM_SHARE_DAYS`        | Antall dager en pasientlenke er gyldig. 180 som standard, 0 = aldri. |
+| `FORM_BACKUP_PASSPHRASE` | Passord for krypterte sikkerhetskopier.                              |
+| `FORM_DEV_SERVER`        | Sett til 1 for også å starte grensesnittet på 5173.                  |
+| `NODE_EXE`               | Stien til Node-versjonen appen skal kjøre på.                        |
 
 ## Sikkerhetskopi
 
@@ -99,6 +103,38 @@ Kjører du Docker, kan du kjøre samme kommando inne i containeren:
 
 ```sh
 docker compose -f deploy/docker-compose.yml exec app node deploy/backup.mjs /data/backup
+```
+
+Er `FORM_BACKUP_PASSPHRASE` satt, skrives filen kryptert (AES-256-GCM) med
+endelsen `.enc`. Da kan kopien trygt legges på en ekstern disk eller i skyen.
+Passordet ligger i `deploy/.env.local` og må oppbevares et annet sted også —
+uten det kan ikke kopiene åpnes. Slik pakker du ut igjen:
+
+```powershell
+$env:FORM_BACKUP_PASSPHRASE=(Get-Content deploy\.env.local | Select-String 'FORM_BACKUP_PASSPHRASE=').ToString().Split('=',2)[1]
+node deploy\restore.mjs backups\form-2026-09-18T09-15.db.enc gjenopprettet.db
+```
+
+## Glemt passord
+
+Appen sender ikke e-post ennå, så et nytt passord settes lokalt på maskinen.
+Alle innloggede økter for brukeren avsluttes.
+
+```powershell
+node server\reset-password.mjs finne89@gmail.com
+```
+
+Passordet kan også gis som `FORM_RESET_PASSWORD` for automatisk kjøring.
+
+## Revisjonslogg
+
+Serveren fører logg over konto opprettet, innlogging vellykket og mislykket,
+utlogging, program lagret og slettet, lenke laget og rotert, og tale brukt.
+Loggen inneholder bruker, tidspunkt og program-id, aldri innholdet i
+programmet. Den leses med innlogging:
+
+```powershell
+curl -sS -b "form_session=<din kake>" http://127.0.0.1:8787/api/events
 ```
 
 ## Sjekk etter utrulling
@@ -142,7 +178,7 @@ den først er i bruk, og alle er greie å håndtere:
 
 Anbefalt rekkefølge før de første pasientene får en QR-kode:
 
-- Bestem om de AI-genererte videoene skal ut. Slettes de, må det skje *før*
+- Bestem om de AI-genererte videoene skal ut. Slettes de, må det skje _før_
   programmer som bruker dem deles ut.
 - Slå på daglig sikkerhetskopi.
 - Ta en `git tag` på versjonen som settes i drift, så den kan rulles tilbake.

@@ -7,18 +7,18 @@ innføring, og den detaljerte tekniske beskrivelsen.
 
 Tenk på det som en liten klinikk:
 
-| I klinikken | I løsningen |
-| --- | --- |
-| Behandlingsrommet med benk og utstyr | Appen du ser i nettleseren |
-| Låst arkivskap på bakrommet | Serveren og databasen |
-| Nøkkelkortet ditt | Innloggingen |
-| Journalene i skapet | Programmene som er lagret |
-| Kortet du gir pasienten: «Her ser du øvelsene dine» | Pasientlenken og QR-koden |
-| Hemmelig kode på kortet som ingen kan gjette | Delingsnøkkelen i lenken |
-| Gateadressen til klinikken | Domenet |
-| Forsseglet konvolutt | HTTPS |
-| Kopi av arkivet et annet sted | Sikkerhetskopien |
-| Vaktmesteren som bytter utstyr etter stengetid | Oppdateringsskriptet |
+| I klinikken                                         | I løsningen                |
+| --------------------------------------------------- | -------------------------- |
+| Behandlingsrommet med benk og utstyr                | Appen du ser i nettleseren |
+| Låst arkivskap på bakrommet                         | Serveren og databasen      |
+| Nøkkelkortet ditt                                   | Innloggingen               |
+| Journalene i skapet                                 | Programmene som er lagret  |
+| Kortet du gir pasienten: «Her ser du øvelsene dine» | Pasientlenken og QR-koden  |
+| Hemmelig kode på kortet som ingen kan gjette        | Delingsnøkkelen i lenken   |
+| Gateadressen til klinikken                          | Domenet                    |
+| Forsseglet konvolutt                                | HTTPS                      |
+| Kopi av arkivet et annet sted                       | Sikkerhetskopien           |
+| Vaktmesteren som bytter utstyr etter stengetid      | Oppdateringsskriptet       |
 
 ## 2. Enkel teknisk innføring
 
@@ -45,52 +45,55 @@ Appen har sin egen Node-versjon, så den ikke er avhengig av utviklerverktøy.
 
 ### Byggeklosser
 
-| Del | Teknologi |
-| --- | --- |
-| Grensesnitt | React 19, TypeScript, Vite 6 |
-| Server | Node 24, `node:http`, ingen rammeverk |
-| Database | SQLite via `node:sqlite` |
-| QR | `qrcode` (CommonJS, hentes med `require`) |
-| Tale-til-tekst | OpenAI `gpt-transcribe` |
-| Tunnelen | `cloudflared` 2026.9.1, i `tools/` |
-| Tester | Vitest (enhet), `node:test` (API), Playwright (e2e) |
+| Del            | Teknologi                                           |
+| -------------- | --------------------------------------------------- |
+| Grensesnitt    | React 19, TypeScript, Vite 6                        |
+| Server         | Node 24, `node:http`, ingen rammeverk               |
+| Database       | SQLite via `node:sqlite`                            |
+| QR             | `qrcode` (CommonJS, hentes med `require`)           |
+| Tale-til-tekst | OpenAI `gpt-transcribe`                             |
+| Tunnelen       | `cloudflared` 2026.9.1, i `tools/`                  |
+| Tester         | Vitest (enhet), `node:test` (API), Playwright (e2e) |
 
 ### Mappestruktur
 
-| Mappe | Innhold |
-| --- | --- |
-| `src/` | Frontenden: bibliotek, programbygger, utskrift, tale, pasientvisning |
-| `server/` | API, database, innlogging, QR, transkribering |
-| `deploy/` | Start, stopp, oppdatering, backup, Docker-oppsett |
-| `public/` | Logo, ikoner, manifest, tjenestearbeider |
-| `tests/` | Playwright-tester |
+| Mappe     | Innhold                                                              |
+| --------- | -------------------------------------------------------------------- |
+| `src/`    | Frontenden: bibliotek, programbygger, utskrift, tale, pasientvisning |
+| `server/` | API, database, innlogging, QR, transkribering                        |
+| `deploy/` | Start, stopp, oppdatering, backup, Docker-oppsett                    |
+| `public/` | Logo, ikoner, manifest, tjenestearbeider                             |
+| `tests/`  | Playwright-tester                                                    |
 
 ### API
 
-| Metode og sti | Krever innlogging | Gjør |
-| --- | --- | --- |
-| `GET /api/health` | nei | Livstegn |
-| `POST /api/auth/register` | nei | Oppretter konto, setter sesjonskake |
-| `POST /api/auth/login` | nei | Logger inn |
-| `POST /api/auth/logout` | ja | Sletter sesjonen |
-| `GET /api/auth/me` | nei | Sier hvem du er, eller 401 |
-| `GET /api/programmes` | ja | Lister dine programmer |
-| `PUT /api/programmes/:id` | ja | Lagrer med versjonssjekk, 409 ved konflikt |
-| `DELETE /api/programmes/:id?revision=n` | ja | Sletter med versjonssjekk |
-| `POST /api/programmes/:id/share` | ja | Lager eller henter pasientlenke |
-| `DELETE /api/programmes/:id/share` | ja | Roterer nøkkelen, gammel lenke dør |
-| `GET /api/shared/:token` | nei | Programmet bak en delingslenke |
-| `GET /api/shared/:token/qr.svg` | nei | QR-koden som SVG |
-| `GET /api/transcribe` | nei | Om talemodellen er klar |
-| `POST /api/transcribe` | nei | Tar imot lyd, svarer med tekst |
+| Metode og sti                           | Krever innlogging | Gjør                                       |
+| --------------------------------------- | ----------------- | ------------------------------------------ |
+| `GET /api/health`                       | nei               | Livstegn                                   |
+| `POST /api/auth/register`               | nei               | Oppretter konto, setter sesjonskake        |
+| `POST /api/auth/login`                  | nei               | Logger inn                                 |
+| `POST /api/auth/logout`                 | ja                | Sletter sesjonen                           |
+| `GET /api/auth/me`                      | nei               | Sier hvem du er, eller 401                 |
+| `GET /api/programmes`                   | ja                | Lister dine programmer                     |
+| `PUT /api/programmes/:id`               | ja                | Lagrer med versjonssjekk, 409 ved konflikt |
+| `DELETE /api/programmes/:id?revision=n` | ja                | Sletter med versjonssjekk                  |
+| `POST /api/programmes/:id/share`        | ja                | Lager eller henter pasientlenke            |
+| `DELETE /api/programmes/:id/share`      | ja                | Roterer nøkkelen, gammel lenke dør         |
+| `GET /api/shared/:token`                | nei               | Programmet bak en delingslenke             |
+| `GET /api/shared/:token/qr.svg`         | nei               | QR-koden som SVG                           |
+| `GET /api/events`                       | ja                | Siste 50 hendelser for brukeren            |
+| `GET /api/transcribe`                   | ja                | Om talemodellen er klar                    |
+| `POST /api/transcribe`                  | ja                | Tar imot lyd, svarer med tekst             |
 
 ### Datamodell
 
 ```
 users       (id, email unik, password_hash, password_salt, created_at)
 sessions    (token primærnøkkel, user_id, created_at, expires_at)
-programmes  (user_id, id, revision, updated_at, payload JSON, share_token)
+programmes  (user_id, id, revision, updated_at, payload JSON,
+             share_token, share_expires_at)
             primærnøkkel (user_id, id)
+events      (id, user_id, kind, detail, created_at)
 ```
 
 `payload` er hele programmet med `schemaVersion: 1`, øvelser og parametere.
@@ -106,6 +109,12 @@ uten å få 409.
   Bruker `CF-Connecting-IP` når trafikken kommer fra tunnelen.
 - Dataskille: alle spørringer er bundet til innlogget bruker; testet på tvers.
 - Delingslenke: 192 tilfeldige bit, viser bare ett program, ingen konto.
+  Lenken utløper etter `FORM_SHARE_DAYS`, 180 dager som standard. Å dele på nytt
+  gir en frisk lenke, og rotering stenger den gamle.
+- Tale-endepunktet krever innlogging, så ingen kan bruke opp kvoten din.
+- Revisjonslogg: konto opprettet, innlogging vellykket og mislykket, utlogging,
+  program lagret og slettet, lenke laget og rotert, og tale brukt. Loggen har
+  bruker, tid og program-id — aldri innholdet i programmet.
 - Hemmeligheter: OpenAI-nøkkelen ligger på serveren.
 - Hoder: CSP, `X-Frame-Options: DENY`, `nosniff`, `Referrer-Policy`.
 - Ingen åpne innkommende porter; tunnelen går utenfra og inn.
@@ -134,26 +143,30 @@ forespørselens egen adresse.
 
 - Utvikling: Vite på 5173, som videresender `/api` til 127.0.0.1:8787.
 - Drift på klinikkmaskinen: Node serverer både API og den bygde appen på 8787,
-bundet til 127.0.0.1. `cloudflared` gir https uten brannmuråpning.
+  bundet til 127.0.0.1. `cloudflared` gir https uten brannmuråpning.
 - Alternativ på egen server: `Dockerfile` og `deploy/docker-compose.yml` med
-Caddy, som henter Let's Encrypt-sertifikat automatisk.
+  Caddy, som henter Let's Encrypt-sertifikat automatisk.
 - Fast adresse forutsetter eget domene og en navngitt tunnel. En midlertidig
-tunnel får ny adresse ved hver omstart, og da slutter utskrevne QR-koder å
-virke.
+  tunnel får ny adresse ved hver omstart, og da slutter utskrevne QR-koder å
+  virke.
 
 ### Drift på maskinen
 
-| Fil | Gjør |
-| --- | --- |
-| `deploy/start.ps1` | Starter server og tunnel, leser `deploy/.env.local` |
-| `deploy/stop.ps1` | Stopper tjenestene trygt |
-| `deploy/update.ps1` | Backup, stopp, hent kode, bygg, start |
-| `deploy/backup.mjs` | Konsistent kopi av databasen mens den kjører |
-| `deploy/backup-task.ps1` | Kalles av oppgaven `FormRehabBackup` klokka 20 |
+| Fil                         | Gjør                                                |
+| --------------------------- | --------------------------------------------------- |
+| `deploy/start.ps1`          | Starter server og tunnel, leser `deploy/.env.local` |
+| `deploy/stop.ps1`           | Stopper tjenestene trygt                            |
+| `deploy/update.ps1`         | Backup, stopp, hent kode, bygg, start               |
+| `deploy/backup.mjs`         | Konsistent kopi av databasen mens den kjører        |
+| `deploy/backup-task.ps1`    | Kalles av oppgaven `FormRehabBackup` klokka 20      |
+| `deploy/restore.mjs`        | Pakker ut en sikkerhetskopi, også kryptert          |
+| `server/reset-password.mjs` | Setter nytt passord lokalt på maskinen              |
 
 Egen Node ligger i `C:\Users\post\FormRehab\runtime`, data i
 `C:\Users\post\FormRehab\data`, sikkerhetskopier i
-`C:\Users\post\FormRehab\backups` (fjorten nyeste beholdes).
+`C:\Users\post\FormRehab\backups`. De fjorten nyeste beholdes, kryptert med
+`FORM_BACKUP_PASSPHRASE` fra `deploy/.env.local`. Uten det passordet kan ikke
+kopiene åpnes, så det må oppbevares utenfor maskinen.
 
 ### Testing
 
@@ -166,7 +179,6 @@ ville gjort, og den dekodede adressen åpnes i et telefonmål for å bekrefte lo
 
 - Domene og navngitt tunnel, slik at adressen står fast.
 - Databehandleravtale med OpenAI, og avklaring av behandlingsansvar.
-- Utløpsdato på pasientlenker.
-- Revisjonslogg, glemt passord, e-postbekreftelse og to-faktor.
-- Kryptert sikkerhetskopi utenfor maskinen, og BitLocker på disken.
+- E-postbekreftelse, glemt passord over e-post, og to-faktor.
+- En kopi av sikkerhetsbackupen på et annet sted enn maskinen, og BitLocker.
 - Beslutning om de AI-genererte videoene skal ut av biblioteket.

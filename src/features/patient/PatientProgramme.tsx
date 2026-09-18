@@ -5,7 +5,8 @@ import { formatParameter, type Programme } from "../../domain/programme";
 type State =
   | { status: "loading" }
   | { status: "ready"; programme: Programme }
-  | { status: "missing" };
+  | { status: "missing" }
+  | { status: "expired" };
 
 /**
  * Pasientvisningen: åpnes fra lenken eller QR-koden på papiret, uten innlogging.
@@ -21,6 +22,10 @@ export function PatientProgramme({ token }: { token: string }) {
       try {
         const response = await fetch(`/api/shared/${token}`);
         if (cancelled) return;
+        if (response.status === 410) {
+          setState({ status: "expired" });
+          return;
+        }
         if (!response.ok) {
           setState({ status: "missing" });
           return;
@@ -45,14 +50,19 @@ export function PatientProgramme({ token }: { token: string }) {
       </div>
     );
 
-  if (state.status === "missing")
+  if (state.status === "missing" || state.status === "expired")
     return (
       <div className="patient-screen">
         <div className="patient-card patient-empty">
-          <h1>Fant ikke programmet</h1>
+          <h1>
+            {state.status === "expired"
+              ? "Lenken har utløpt"
+              : "Fant ikke programmet"}
+          </h1>
           <p>
-            Lenken kan være trukket tilbake eller skrevet feil. Be klinikken om
-            en ny lenke.
+            {state.status === "expired"
+              ? "Av sikkerhetshensyn er lenker bare gyldige en periode. Ta kontakt med klinikken, så får du en ny."
+              : "Lenken kan være trukket tilbake eller skrevet feil. Be klinikken om en ny lenke."}
           </p>
         </div>
       </div>

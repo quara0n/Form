@@ -23,3 +23,7 @@ Get-ChildItem $target -Filter "form-*.db" -ErrorAction SilentlyContinue |
   Sort-Object LastWriteTime -Descending |
   Select-Object -Skip 14 |
   Remove-Item -Force -ErrorAction SilentlyContinue
+Get-ChildItem $target -Filter "form-*.db.enc" -ErrorAction SilentlyContinue |
+  Sort-Object LastWriteTime -Descending |
+  Select-Object -Skip 14 |
+  Remove-Item -Force -ErrorAction SilentlyContinue

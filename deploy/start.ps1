@@ -98,6 +98,13 @@ for ($i = 0; $i -lt 20; $i++) {
     if ($response.StatusCode -eq 200) {
       Write-Status "Serveren svarer."
       if (Test-Path $serverLog) { Get-Content $serverLog | Where-Object { $_ } | ForEach-Object { Write-Status "  $_" } }
+      if ($settings["FORM_DEV_SERVER"] -eq "1") {
+        Write-Status "Starter utviklingsserver pa 5173"
+        Start-Process -FilePath $nodeExe `
+          -ArgumentList "node_modules\vite\bin\vite.js", "--host", "127.0.0.1", "--port", "5173", "--strictPort" `
+          -WorkingDirectory $root -RedirectStandardOutput (Join-Path $PSScriptRoot "vite.log") `
+          -RedirectStandardError (Join-Path $PSScriptRoot "vite.log.err") -WindowStyle Hidden
+      }
       if ($publicUrl) { Write-Status "Pasientadresse: $publicUrl" }
       exit 0
     }

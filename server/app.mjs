@@ -7,7 +7,9 @@ import {
   findProgrammeByShareToken,
   findUserByEmail,
   findUserById,
+  listEvents,
   listProgrammes,
+  logEvent,
   putProgramme,
   removeProgramme,
   setShareToken,
@@ -114,6 +116,17 @@ function sessionCookieHeader(token, maxAgeSeconds) {
 }
 
 /** Enkel hastighetsbegrensning på innlogging og registrering. */
+function shareExpiry() {
+  if (!config.shareDays) return null;
+  return new Date(
+    Date.now() + config.shareDays * 24 * 60 * 60 * 1000,
+  ).toISOString();
+}
+
+function shareIsExpired(expiresAt) {
+  return Boolean(expiresAt) && Date.parse(expiresAt) < Date.now();
+}
+
 function createLimiter({ windowMs, max }) {
   const hits = new Map();
   return function allow(key) {
@@ -186,6 +199,7 @@ export function createApp({
       });
       const user = findUserById(database, id);
       const session = startSession(database, id, config.sessionDays);
+      logEvent(database, { userId: id, kind: "account.created" });
       return send(
         response,
         201,
@@ -200,9 +214,15 @@ export function createApp({
     }
 
     const user = findUserByEmail(database, email);
-    if (!user || !verifyPassword(password, user))
+    if (!user || !verifyPassword(password, user)) {
+      logEvent(database, {
+        userId: user?.id ?? null,
+        kind: "session.failed",
+      });
       return sendError(response, 401, "Feil e-post eller passord.");
+    }
     const session = startSession(database, user.id, config.sessionDays);
+    logEvent(database, { userId: user.id, kind: "session.started" });
     return send(
       response,
       200,
@@ -234,7 +254,13 @@ export function createApp({
         }
 
         if (pathname === "/api/auth/logout" && method === "POST") {
+          const ending = currentUser(database, request);
           endSession(database, readCookie(request, sessionCookie));
+          if (ending)
+            logEvent(database, {
+              userId: ending.user.id,
+              kind: "session.ended",
+            });
           return send(
             response,
             204,
@@ -257,6 +283,9 @@ export function createApp({
           );
 
         if (pathname === "/api/transcribe") {
+          // Tale koster penger, så endepunktet krever innlogging.
+          const listener = currentUser(database, request);
+          if (!listener) return sendError(response, 401, "Ikke innlogget.");
           if (method === "GET")
             return send(response, 200, {
               ready: ready(),
@@ -272,6 +301,11 @@ export function createApp({
             audio,
             request.headers["content-type"],
           );
+          logEvent(database, {
+            userId: listener.user.id,
+            kind: "transcribe.used",
+            detail: result.model,
+          });
           return send(response, 200, result);
         }
 
@@ -279,18 +313,27 @@ export function createApp({
         // programmet — aldri kontoopplysninger.
         const shared = pathname.match(/^\/api\/shared\/([A-Za-z0-9_-]{16,})$/);
         if (shared && method === "GET") {
-          const programme = findProgrammeByShareToken(database, shared[1]);
-          if (!programme)
-            return sendError(response, 404, "Fant ikke programmet.");
-          return send(response, 200, { programme });
+          const found = findProgrammeByShareToken(database, shared[1]);
+          if (!found) return sendError(response, 404, "Fant ikke programmet.");
+          if (shareIsExpired(found.expiresAt))
+            return sendError(
+              response,
+              410,
+              "Lenken har utlopt. Be klinikken om en ny lenke.",
+            );
+          return send(response, 200, {
+            programme: found.programme,
+            expiresAt: found.expiresAt,
+          });
         }
         const sharedQr = pathname.match(
           /^\/api\/shared\/([A-Za-z0-9_-]{16,})\/qr\.svg$/,
         );
         if (sharedQr && method === "GET") {
-          const programme = findProgrammeByShareToken(database, sharedQr[1]);
-          if (!programme)
-            return sendError(response, 404, "Fant ikke programmet.");
+          const found = findProgrammeByShareToken(database, sharedQr[1]);
+          if (!found) return sendError(response, 404, "Fant ikke programmet.");
+          if (shareIsExpired(found.expiresAt))
+            return sendError(response, 410, "Lenken har utlopt.");
           const shareUrl = `${publicBase(url)}/p/${sharedQr[1]}`;
           const svg = await qrSvg(shareUrl);
           response.writeHead(200, {
@@ -310,21 +353,33 @@ export function createApp({
             programmes: listProgrammes(database, userId),
           });
 
+        if (pathname === "/api/events" && method === "GET")
+          return send(response, 200, {
+            events: listEvents(database, userId, 50),
+          });
+
         const match = pathname.match(/^\/api\/programmes\/([^/]+)$/);
         const share = pathname.match(/^\/api\/programmes\/([^/]+)\/share$/);
         if (share && method === "POST") {
           const id = decodeURIComponent(share[1]);
           const stored = findProgramme(database, userId, id);
           if (!stored) return sendError(response, 404, "Fant ikke programmet.");
-          const token =
-            stored.share_token || randomBytes(24).toString("base64url");
-          if (!stored.share_token) setShareToken(database, userId, id, token);
+          // Er lenken utløpt, lages en ny med frisk frist.
+          const needsNew =
+            !stored.share_token || shareIsExpired(stored.share_expires_at);
+          const token = needsNew
+            ? randomBytes(24).toString("base64url")
+            : stored.share_token;
+          const expiresAt = needsNew ? shareExpiry() : stored.share_expires_at;
+          if (needsNew) setShareToken(database, userId, id, token, expiresAt);
+          logEvent(database, { userId, kind: "share.created", detail: id });
           const base = publicBase(url);
           return send(response, 200, {
             token,
             path: `/p/${token}`,
             url: `${base}/p/${token}`,
             qr: `${base}/api/shared/${token}/qr.svg`,
+            expiresAt,
           });
         }
         if (share && method === "DELETE") {
@@ -336,7 +391,9 @@ export function createApp({
             userId,
             id,
             randomBytes(24).toString("base64url"),
+            shareExpiry(),
           );
+          logEvent(database, { userId, kind: "share.rotated", detail: id });
           return send(response, 204, {});
         }
         if (match) {
@@ -371,6 +428,11 @@ export function createApp({
               updatedAt: saved.updatedAt,
               payload: JSON.stringify(saved),
             });
+            logEvent(database, {
+              userId,
+              kind: "programme.saved",
+              detail: `${id}@${saved.revision}`,
+            });
             return send(response, 200, {
               programme: { ...saved, shareToken: stored?.share_token || null },
             });
@@ -385,6 +447,11 @@ export function createApp({
                 "Programmet er endret et annet sted. Last inn på nytt.",
               );
             removeProgramme(database, userId, id);
+            logEvent(database, {
+              userId,
+              kind: "programme.deleted",
+              detail: id,
+            });
             return send(response, 204, {});
           }
         }
