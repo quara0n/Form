@@ -30,8 +30,18 @@ $port = if ($settings["PORT"]) { $settings["PORT"] } else { "8787" }
 $hostName = if ($settings["HOST"]) { $settings["HOST"] } else { "127.0.0.1" }
 $nodeExe = if ($settings["NODE_EXE"]) { $settings["NODE_EXE"] } else { (Get-Command node).Source }
 
+# --- Sjekk om tunnelen allerede kjører, før vi stopper noe ---
+$existingTunnel = $false
+if (Test-Path $tunnelPidFile) {
+  $running = Get-Content $tunnelPidFile | Select-Object -First 1
+  if ($running -and (Get-Process -Id ([int]$running) -ErrorAction SilentlyContinue)) {
+    $existingTunnel = $true
+  }
+}
+
 # --- Stopp det som kjører fra før ---
-foreach ($pidFile in @($serverPidFile, $tunnelPidFile)) {
+$stopFiles = if ($existingTunnel) { @($serverPidFile) } else { @($serverPidFile, $tunnelPidFile) }
+foreach ($pidFile in $stopFiles) {
   if (Test-Path $pidFile) {
     $old = Get-Content $pidFile | Select-Object -First 1
     if ($old) { Stop-Process -Id ([int]$old) -ErrorAction SilentlyContinue }
@@ -50,6 +60,15 @@ Start-Sleep -Seconds 1
 # --- Tunnel (valgfritt) ---
 $publicUrl = $settings["FORM_PUBLIC_URL"]
 $cloudflared = Join-Path $root "tools\cloudflared.exe"
+if ($settings["FORM_QUICK_TUNNEL"] -eq "1" -and $existingTunnel) {
+  # Tunnelen kjorer allerede: behold adressen i stedet for a lage en ny.
+  if (Test-Path "$tunnelLog.err") {
+    $match = Select-String -Path "$tunnelLog.err" `
+      -Pattern "https://[a-z0-9-]+\.trycloudflare\.com" | Select-Object -Last 1
+    if ($match) { $publicUrl = $match.Matches.Value }
+  }
+  Write-Status "Beholder eksisterende tunnel: $publicUrl"
+}
 if ($settings["FORM_TUNNEL_TOKEN"]) {
   Write-Status "Starter navngitt tunnel"
   $tunnel = Start-Process -FilePath $cloudflared `
@@ -57,7 +76,7 @@ if ($settings["FORM_TUNNEL_TOKEN"]) {
     -WorkingDirectory $root -RedirectStandardOutput $tunnelLog `
     -RedirectStandardError "$tunnelLog.err" -WindowStyle Hidden -PassThru
   $tunnel.Id | Out-File -FilePath $tunnelPidFile -Encoding ascii
-} elseif ($settings["FORM_QUICK_TUNNEL"] -eq "1") {
+} elseif ($settings["FORM_QUICK_TUNNEL"] -eq "1" -and -not $existingTunnel) {
   Write-Status "Starter midlertidig tunnel (tilfeldig adresse)"
   $tunnel = Start-Process -FilePath $cloudflared `
     -ArgumentList "tunnel", "--url", "http://127.0.0.1:$port", "--no-autoupdate" `

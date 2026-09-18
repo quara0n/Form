@@ -28,7 +28,7 @@ if (-not $SkipBackup) {
 }
 
 Write-Host "2/6  Stopper tjenestene mens vi bygger"
-& (Join-Path $PSScriptRoot "stop.ps1") -Quiet
+& (Join-Path $PSScriptRoot "stop.ps1") -Quiet -KeepTunnel
 
 if (-not $SkipPull -and (git remote)) {
   Write-Host "3/6  Henter siste kode"

@@ -2,7 +2,10 @@
 # mens avhengigheter installeres eller appen bygges pa nytt.
 param(
   [int]$Port = 0,
-  [switch]$Quiet
+  [switch]$Quiet,
+  # Behold tunnelen. Da beholder den midlertidige adressen seg gjennom en
+  # oppdatering, og QR-koder som alt er skrevet ut slutter ikke a virke.
+  [switch]$KeepTunnel
 )
 
 $root = Split-Path -Parent $PSScriptRoot
@@ -18,7 +21,8 @@ if (Test-Path $settingsPath) {
 }
 if (-not $Port) { $Port = if ($settings["PORT"]) { [int]$settings["PORT"] } else { 8787 } }
 
-foreach ($pidFile in "server.pid", "tunnel.pid") {
+$pidFiles = if ($KeepTunnel) { @("server.pid") } else { @("server.pid", "tunnel.pid") }
+foreach ($pidFile in $pidFiles) {
   $path = Join-Path $PSScriptRoot ".$pidFile"
   if (Test-Path $path) {
     $old = Get-Content $path | Select-Object -First 1
