@@ -156,9 +156,13 @@ powershell -ExecutionPolicy Bypass -File deploy\update.ps1
 ```
 
 Den tar sikkerhetskopi av databasen, henter siste kode, installerer nye
-avhengigheter bare hvis de er endret, bygger appen på nytt og starter serveren
-og tunnelen. Tar noen sekunder når ingenting er endret, opp mot et minutt når
-avhengighetene må installeres. Databasen røres ikke.
+avhengigheter bare hvis de er endret, **stopper tjenestene mens den bygger**,
+og starter serveren og tunnelen på nytt. Tar noen sekunder når ingenting er
+endret, opp mot et minutt når avhengighetene må installeres. Databasen røres
+ikke.
+
+Stoppet er ikke valgfritt: kjører serveren eller utviklingsserveren mens `npm`
+bytter ut pakker, låser binærfiler seg og installasjonen blir ødelagt.
 
 Innstillingene ligger i `deploy/.env.local` (ignorert av git). Der står port,
 om det skal brukes midlertidig tunnel, og eventuelt tunnel-token og domene.
@@ -181,3 +185,24 @@ powershell -File deploy\update.ps1 -SkipPull
 Merk: en midlertidig tunnel får ny adresse hver gang den starter, og da slutter
 QR-koder som allerede er skrevet ut å virke. Med navngitt tunnel på eget domene
 er adressen fast, og oppdateringer blir usynlige for pasientene.
+
+## Egen Node-versjon og data utenfor OneDrive
+
+Appen har sin egen Node i `C:\Users\post\FormRehab\runtime`, og `NODE_EXE` i
+`deploy/.env.local` peker på den. Da er ikke appen avhengig av utviklerverktøy
+som kan bli ryddet bort, og planlagte oppgaver finner den uten at `node` ligger
+i systemets PATH.
+
+Pasientdataene ligger i `C:\Users\post\FormRehab\data`, altså utenfor OneDrive,
+og sikkerhetskopiene i `C:\Users\post\FormRehab\backups`. Det var viktig: lå
+databasen i OneDrive, ble pasientopplysninger synkronisert til skyen uten at vi
+hadde bestemt det.
+
+Den daglige sikkerhetskopien ligger som oppgaven `FormRehabBackup` i
+Oppgavelisten og kjører klokka 20:00. Den beholder de fjorten nyeste filene.
+Kontroller den med:
+
+```powershell
+schtasks /Query /TN FormRehabBackup /FO LIST
+Get-ChildItem C:\Users\post\FormRehab\backups
+```
