@@ -50,7 +50,10 @@ function describePrescription(item: SpokenPrescription): string {
     item.reps && `${item.reps} reps`,
     item.duration &&
       `${item.duration} ${item.durationUnit === "min" ? "min" : "sek"}`,
+    item.hold && `${item.hold} sek hold`,
+    item.load && `${item.load} kg`,
     item.rest && `${item.rest} sek pause`,
+    item.tempo && `tempo ${item.tempo}`,
   ].filter(Boolean);
   const unsure = (item.matchScore ?? 1) < 0.9;
   const heard = unsure && item.heard ? ` (usikker, hørte «${item.heard}»)` : "";

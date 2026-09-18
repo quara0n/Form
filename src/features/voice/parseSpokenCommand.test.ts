@@ -248,3 +248,57 @@ test("tar imot vanlige varianter av «alle skal ha»", () => {
     ).toEqual(["10", "10", "10"]);
   }
 });
+
+test("gir alle øvelsene dosen når man sier «begge to» eller «alle»", () => {
+  const both = parseSpokenCommand(
+    "clamshell og seteløft, begge to skal ha 3 sett og 10 reps",
+    exercises,
+  );
+  expect(both.items.map((item) => item.sets)).toEqual(["3", "3"]);
+  expect(both.items.map((item) => item.reps)).toEqual(["10", "10"]);
+
+  const all = parseSpokenCommand(
+    "clamshell og seteløft, alle skal ha 3 sett og 12 reps",
+    exercises,
+  );
+  expect(all.items.map((item) => item.reps)).toEqual(["12", "12"]);
+});
+
+test("forstår «legg til» og de andre parameterne", () => {
+  const pause = parseSpokenCommand(
+    "clamshell og seteløft, legg til 2 min pause på begge",
+    exercises,
+  );
+  expect(pause.items.map((item) => item.rest)).toEqual(["120", "120"]);
+
+  const emptyPause = parseSpokenCommand("clamshell, legg til pause", exercises);
+  expect(emptyPause.items[0].rest).toBe("");
+
+  const hold = parseSpokenCommand(
+    "clamshell, legg til hold 30 sekunder",
+    exercises,
+  );
+  expect(hold.items[0].hold).toBe("30");
+
+  const load = parseSpokenCommand("clamshell, legg til 10 kg", exercises);
+  expect(load.items[0].load).toBe("10");
+
+  const tempo = parseSpokenCommand(
+    "clamshell, legg til tempo 3-1-1",
+    exercises,
+  );
+  expect(tempo.items[0].tempo).toBe("3-1-1");
+});
+
+test("ser bort fra muntlig fyll og tenkelyder", () => {
+  const result = parseSpokenCommand(
+    "ja då tenke eg at clamshell og seteløft, alle skal ha 3 sett og 10 reps",
+    exercises,
+  );
+  expect(result.items.map((item) => item.exercise.name)).toEqual([
+    "Clamshell med rød strikk",
+    "Seteløft med strikk",
+  ]);
+  expect(result.items.map((item) => item.sets)).toEqual(["3", "3"]);
+  expect(result.unmatched).toEqual([]);
+});

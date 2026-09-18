@@ -6,7 +6,10 @@ export interface SpokenPrescription {
   reps?: string;
   duration?: string;
   durationUnit?: "sec" | "min";
+  load?: string;
+  hold?: string;
   rest?: string;
+  tempo?: string;
   frequency?: string;
   side?: "Left" | "Right" | "Both";
   matchScore?: number;
@@ -81,6 +84,8 @@ const stopWords = new Set([
   "gjøre",
   "tar",
   "ta",
+  "legg",
+  "inn",
   "kan",
   "vil",
   "trenger",
@@ -114,6 +119,30 @@ const stopWords = new Set([
   "maskinen",
   "øvelse",
   "øvelsen",
+  // Muntlige fyllord og tenkelyder: «ja då tenke eg at …».
+  "ja",
+  "nei",
+  "då",
+  "da",
+  "eg",
+  "tenke",
+  "tenker",
+  "tru",
+  "tror",
+  "mener",
+  "meiner",
+  "sier",
+  "si",
+  "sant",
+  "sånn",
+  "øh",
+  "eh",
+  "hmm",
+  "mhm",
+  "okey",
+  "jepp",
+  "greit",
+  "litt",
   // Mengdeord og pekere hører til doseringen, ikke til øvelsesnavn.
   "alle",
   "all",
@@ -122,6 +151,9 @@ const stopWords = new Set([
   "samtlige",
   "begge",
 ]);
+
+/** Formuleringer som innleder en presisering: «legg til 2 min pause». */
+const addPhrases = ["legg til", "legg inn", "sett inn", "ta med", "legg på"];
 
 /**
  * fold() skriver om ø, å og doble bokstaver, så ordene må sjekkes i begge
@@ -171,7 +203,7 @@ function saysAll(text: string): boolean {
 
 const letterClass = "a-zæøå0-9";
 const dosageWordList =
-  "reps?|rep|repetisjon\\w*|gjentakel\\w*|sett|settene|setta|settet|set|sets|ganger|gang|eks|kryss|x|pause\\w*|hvile|kvil\\w*|rest|sek\\w*|sec|min\\w*|minutt\\w*|kilo|kg|dag\\w*|annenhver|uke\\w*|per|venstre|høyre|hoyre|begge|sider?";
+  "reps?|rep|repetisjon\\w*|gjentakel\\w*|sett|settene|setta|settet|set|sets|ganger|gang|eks|kryss|x|pause\\w*|hvile|kvil\\w*|rest|hold\\w*|tempo|belastning|frekvens|sek\\w*|sec|min\\w*|minutt\\w*|kilo|kg|dag\\w*|annenhver|uke\\w*|per|venstre|høyre|hoyre|begge|sider?";
 const dosageWords = new RegExp(
   `(?:^|[^${letterClass}])(?:${dosageWordList})(?=$|[^${letterClass}])`,
   "gi",
@@ -561,7 +593,10 @@ function parseDosage(segment: string): {
       | "reps"
       | "duration"
       | "durationUnit"
+      | "load"
+      | "hold"
       | "rest"
+      | "tempo"
       | "frequency"
       | "side"
     >
@@ -632,6 +667,56 @@ function parseDosage(segment: string): {
     /(annenhver dag|hver dag|daglig|\d+\s*ganger?\s*(?:i|per)\s*uken?|\d+\s*ganger?\s*daglig)/i,
   );
   if (frequency) values.frequency = frequency[0].trim();
+
+  // Belastning: «10 kg», «7,5 kilo».
+  const load = text.match(/(\d+(?:[.,]\d+)?)\s*(?:kg|kilo|kiloer)/i);
+  if (load) values.load = load[1].replace(",", ".");
+
+  // Hold: «hold 30 sek», «hold i 20 sekunder», «30 sek hold».
+  const hold =
+    text.match(
+      new RegExp(`hold\\w*\\s*(?:i\\s*)?(\\d+)\\s*(${timeWord})?`, "i"),
+    ) || text.match(new RegExp(`(\\d+)\\s*(${timeWord})\\s*hold\\w*`, "i"));
+  if (hold) {
+    const amount = Number(hold[1]);
+    const kind = hold[2] ? unit(hold[2]) : "sec";
+    values.hold = String(kind === "min" ? amount * 60 : amount);
+  }
+
+  // Tempo: «tempo 3-1-1», «rolig tempo», «tempo kontrollert».
+  const tempo =
+    text.match(
+      /tempo\s*([0-9]+(?:[-–][0-9]+)*|rolig|rask|kontrollert|moderat)/i,
+    ) || text.match(/(rolig|rask|kontrollert|moderat)\s+tempo/i);
+  if (tempo) values.tempo = tempo[1];
+
+  /**
+   * «Legg til pause» uten tall: da lages parameteren tom, så den ligger klar
+   * i programmet og kan fylles ut der. Samme for de andre parameterne.
+   */
+  if (containsWord(text, addPhrases)) {
+    if (
+      !values.rest &&
+      containsWord(text, ["pause", "pauser", "hvile", "rest"])
+    )
+      values.rest = "";
+    if (!values.hold && containsWord(text, ["hold"])) values.hold = "";
+    if (!values.tempo && containsWord(text, ["tempo"])) values.tempo = "";
+    if (
+      !values.load &&
+      containsWord(text, ["belastning", "vekt", "load", "kg", "kilo"])
+    )
+      values.load = "";
+    if (
+      !values.duration &&
+      containsWord(text, ["varighet", "duration", "tid"])
+    ) {
+      values.duration = "";
+      values.durationUnit = "sec";
+    }
+    if (!values.frequency && containsWord(text, ["frekvens", "frequency"]))
+      values.frequency = "";
+  }
 
   if (containsWord(text, ["venstre"])) values.side = "Left";
   else if (containsWord(text, ["høyre", "hoyre"])) values.side = "Right";
