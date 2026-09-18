@@ -73,6 +73,14 @@ const stopWords = new Set([
   "er",
   "har",
   "skal",
+  // Verb som binder sammen navn og dosering: «alle skal ha 3 sett».
+  "ha",
+  "få",
+  "får",
+  "kjøre",
+  "gjøre",
+  "tar",
+  "ta",
   "kan",
   "vil",
   "trenger",
@@ -124,15 +132,46 @@ const foldedStopWords = new Set([...stopWords].map((word) => fold(word)));
 const allMarkerWords = [
   "alle",
   "all",
+  "begge",
+  "alle øvelser",
+  "alle øvelsene",
+  "begge øvelser",
+  "begge øvelsene",
+  "begge øvinger",
+  "begge øvingene",
+  "begge to",
+  "alle skal ha",
+  "alle skal kjøre",
+  "alle skal gjøre",
+  "alle skal",
+  "alle får",
+  "alle tar",
   "øvelsene",
   "mellom settene",
   "mellom setta",
   "mellom set",
 ];
 
+/** «begge sider» beskriver utførelse, ikke at dosen gjelder alle øvelsene. */
+const sidePhrases = [
+  "begge sider",
+  "begge side",
+  "begge bein",
+  "begge ben",
+  "begge armer",
+  "begge arm",
+  "begge kne",
+];
+
+/** Sant når teksten sier at dosen gjelder alle øvelsene. */
+function saysAll(text: string): boolean {
+  if (containsWord(text, sidePhrases)) return false;
+  return containsWord(text, allMarkerWords);
+}
+
 const letterClass = "a-zæøå0-9";
 const dosageWordList =
-  "reps?|rep|repetisjon\\w*|gjentakel\\w*|sett|settene|setta|settet|set|sets|ganger|gang|eks|kryss|x|pause\\w*|hvile|kvil\\w*|rest|sek\\w*|sec|min\\w*|minutt\\w*|kilo|kg|dag\\w*|annenhver|uke\\w*|per|venstre|høyre|hoyre|begge";
+  "reps?|rep|repetisjon\\w*|gjentakel\\w*|sett|settene|setta|settet|set|sets|ganger|gang|eks|kryss|x|pause\\w*|hvile|kvil\\w*|rest|sek\\w*|sec|min\\w*|minutt\\w*|kilo|kg|dag\\w*|annenhver|uke\\w*|per|venstre|høyre|hoyre|begge|sider?";
 const dosageWords = new RegExp(
   `(?:^|[^${letterClass}])(?:${dosageWordList})(?=$|[^${letterClass}])`,
   "gi",
@@ -184,9 +223,7 @@ export function parseSpokenCommand(
     if (!chunk) return;
     const { values } = parseDosage(chunk);
     const target = index === 0 ? match : accepted[index - 1];
-    const indexes = indexesFor(
-      containsWord(chunk, allMarkerWords) ? items : [target],
-    );
+    const indexes = indexesFor(saysAll(chunk) ? items : [target]);
     if (Object.keys(values).length) {
       for (const itemIndex of indexes) Object.assign(items[itemIndex], values);
       return;
@@ -202,7 +239,7 @@ export function parseSpokenCommand(
     const { values } = parseDosage(tail);
     const spread =
       !items.length ||
-      containsWord(tail, allMarkerWords) ||
+      saysAll(tail) ||
       containsWord(tail, ["pause", "pauser", "hvile", "rest"]);
     if (Object.keys(values).length) {
       const targets = spread ? items : [items[items.length - 1]];
@@ -241,33 +278,47 @@ function findMatches(words: string[], exercises: Exercise[]): WindowMatch[] {
     ) {
       const heard = words.slice(start, start + length).join(" ");
       const trimmed = trimWindow(heard);
-      if (!fold(trimmed) || tokens(trimmed).length === 0) continue;
+      if (!fold(trimmed.text) || tokens(trimmed.text).length === 0) continue;
       if (tokens(stripDosage(heard)).length === 0) continue;
-      const ranked = rankExercises(trimmed, exercises);
+      const ranked = rankExercises(trimmed.text, exercises);
       const best = ranked[0];
       if (!best) continue;
       const runnerUp = ranked[1]?.score ?? 0;
       const ambiguous = best.score - runnerUp < 0.05;
       const threshold = length === 1 ? 0.72 : 0.62;
-      const score = best.score - dosagePenalty(trimmed, best.exercise);
+      const score = best.score - dosagePenalty(trimmed.text, best.exercise);
       if (score < threshold) continue;
       matches.push({
         ...best,
         score: ambiguous ? score * 0.85 : score,
-        start,
-        end: start + length,
-        heard: trimmed,
+        // Vinduet kuttes til selve navnet, slik at ordene rundt — for eksempel
+        // «alle skal ha» — blir liggende utenfor og kan styre doseringen.
+        start: start + trimmed.leading,
+        end: start + length - trimmed.trailing,
+        heard: trimmed.text,
       });
     }
   }
   return matches;
 }
 
-function trimWindow(heard: string): string {
+function trimWindow(heard: string): {
+  text: string;
+  leading: number;
+  trailing: number;
+} {
   const parts = heard.split(/\s+/);
-  while (parts.length && isFiller(parts[0])) parts.shift();
-  while (parts.length && isFiller(parts[parts.length - 1])) parts.pop();
-  return parts.join(" ");
+  let leading = 0;
+  let trailing = 0;
+  while (parts.length && isFiller(parts[0])) {
+    parts.shift();
+    leading += 1;
+  }
+  while (parts.length && isFiller(parts[parts.length - 1])) {
+    parts.pop();
+    trailing += 1;
+  }
+  return { text: parts.join(" "), leading, trailing };
 }
 
 function isFiller(word: string): boolean {
@@ -300,6 +351,8 @@ function dosagePenalty(heard: string, exercise: Exercise): number {
       "høyre",
       "hoyre",
       "begge",
+      "side",
+      "sider",
     ]) || heard.includes(" x ");
   const spokenDigits: string[] = heard.match(/\d+/g) || [];
   const nameDigits: string[] = exercise.name.match(/\d+/g) || [];
@@ -582,7 +635,16 @@ function parseDosage(segment: string): {
 
   if (containsWord(text, ["venstre"])) values.side = "Left";
   else if (containsWord(text, ["høyre", "hoyre"])) values.side = "Right";
-  else if (containsWord(text, ["begge"])) values.side = "Both";
+  else if (
+    containsWord(text, sidePhrases) ||
+    // «begge» alene betyr begge sider, men «begge øvelser» handler om antall
+    // øvelser og skal ikke legge inn en side. Det samme gjelder «på begge»,
+    // som peker tilbake på øvelsene som nettopp ble nevnt.
+    (containsWord(text, ["begge"]) &&
+      !containsWord(text, ["på begge", "pa begge"]) &&
+      !containsWord(text, ["øvelse", "øvelser", "øvelsene", "øvinger"]))
+  )
+    values.side = "Both";
 
   return { values };
 }

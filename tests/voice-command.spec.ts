@@ -84,3 +84,26 @@ test("understands misspelled free speech and keeps the exercise order", async ({
     "3 øvelser lagt til i programmet",
   );
 });
+
+test("gir dosen til alle øvelsene når setningen sier «på begge øvelser»", async ({
+  page,
+}) => {
+  await page.goto("/");
+  await expect(page.getByText("Ready when you are")).toBeVisible();
+  await page.getByRole("button", { name: "Tale til program" }).click();
+  await page
+    .getByLabel("Skriv kommando")
+    .fill("knebøy, clamshell med strikk, 3 sett og 10 reps på begge øvelser");
+  await page.getByRole("button", { name: "Bruk kommando" }).click();
+
+  const cards = page.locator(".prescription-card");
+  await expect(cards).toHaveCount(2);
+  await expect(cards.nth(0)).toContainText("Knebøy med rød strikk");
+  await expect(cards.nth(1)).toContainText("Clamshell med rød strikk");
+  for (const card of [cards.nth(0), cards.nth(1)]) {
+    await expect(card.getByLabel("Sets", { exact: true })).toHaveValue("3");
+    await expect(card.getByLabel("Reps", { exact: true })).toHaveValue("10");
+  }
+  // «begge» peker på øvelsene, ikke på sider, så ingen side skal være lagt inn.
+  await expect(page.getByLabel("Side", { exact: true })).toHaveCount(0);
+});

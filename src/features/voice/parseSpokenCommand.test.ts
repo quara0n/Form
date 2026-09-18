@@ -165,3 +165,86 @@ test("adds sets, reps and a pause at the end to every named exercise", () => {
   expect(result.items.map((item) => item.rest)).toEqual(["120", "120", "120"]);
   expect(result.unmatched).toEqual([]);
 });
+
+test("gir dosen til begge øvelsene når setningen sier «på begge øvelser»", () => {
+  const result = parseSpokenCommand(
+    "knebøy, clamshell med strikk, 3 sett og 10 reps på begge øvelser",
+    exercises,
+  );
+  expect(result.items.map((item) => item.exercise.name)).toEqual([
+    "Knebøy med rød strikk",
+    "Clamshell med rød strikk",
+  ]);
+  expect(result.items.map((item) => item.sets)).toEqual(["3", "3"]);
+  expect(result.items.map((item) => item.reps)).toEqual(["10", "10"]);
+  // «begge» peker på øvelsene, ikke på sider, så ingen side skal legges inn.
+  expect(result.items.map((item) => item.side)).toEqual([undefined, undefined]);
+});
+
+test("beholder «begge sider» som side, ikke som alle øvelsene", () => {
+  const sides = parseSpokenCommand(
+    "clamshell med strikk 3 x 10 begge sider",
+    exercises,
+  );
+  expect(sides.items[0]).toMatchObject({ sets: "3", reps: "10", side: "Both" });
+
+  const both = parseSpokenCommand(
+    "knebøy, clamshell med strikk og 3 sett og 10 reps på begge",
+    exercises,
+  );
+  expect(both.items.map((item) => item.sets)).toEqual(["3", "3"]);
+  expect(both.items.map((item) => item.side)).toEqual([undefined, undefined]);
+});
+
+test("tolker ikke sideord som øvelsesnavn", () => {
+  // «sider» begynner likt «Sideplanke» og ble tidligere tolket som en øvelse.
+  const result = parseSpokenCommand(
+    "clamshell med strikk begge sider 3 x 10",
+    exercises,
+  );
+  expect(result.items.map((item) => item.exercise.name)).toEqual([
+    "Clamshell med rød strikk",
+  ]);
+  expect(result.items[0]).toMatchObject({ sets: "3", reps: "10" });
+});
+
+test("gir alle øvelsene dosen når setningen sier «alle skal ha»", () => {
+  const result = parseSpokenCommand(
+    "Clamshell, seteløft, diagonal, alle skal ha 3 sett med 10 reps.",
+    exercises,
+  );
+  expect(result.items.map((item) => item.exercise.name)).toEqual([
+    "Clamshell med rød strikk",
+    "Seteløft med strikk",
+    "Diagonalen – forsøk 1",
+  ]);
+  expect(result.items.map((item) => item.sets)).toEqual(["3", "3", "3"]);
+  expect(result.items.map((item) => item.reps)).toEqual(["10", "10", "10"]);
+  // «hørte» skal vise øvelsesnavnet, ikke ordene rundt.
+  expect(result.items.map((item) => item.heard)).toEqual([
+    "clamshell",
+    "seteløft",
+    "diagonal",
+  ]);
+});
+
+test("tar imot vanlige varianter av «alle skal ha»", () => {
+  const variants = [
+    "clamshell, seteløft og diagonal, alle skal ha 3 sett og 10 reps",
+    "clamshell, seteløft og diagonal, alle skal kjøre 3 x 10",
+    "clamshell, seteløft og diagonal, alle får 3 sett og 10 reps",
+    "clamshell, seteløft og diagonal, alle øvelsene skal ha 3 sett og 10 reps",
+    "clamshell, seteløft og diagonal, 3 sett og 10 reps på alle",
+  ];
+  for (const sentence of variants) {
+    const result = parseSpokenCommand(sentence, exercises);
+    expect(
+      result.items.map((item) => item.sets),
+      sentence,
+    ).toEqual(["3", "3", "3"]);
+    expect(
+      result.items.map((item) => item.reps),
+      sentence,
+    ).toEqual(["10", "10", "10"]);
+  }
+});
