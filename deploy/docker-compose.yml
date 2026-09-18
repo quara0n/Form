@@ -1,0 +1,39 @@
+# FormRehab bak Caddy, som ordner HTTPS automatisk via Let's Encrypt.
+# Sett DOMAIN i .env ved siden av denne filen, for eksempel:
+#   DOMAIN=formrehab.no
+services:
+  app:
+    build: ..
+    restart: unless-stopped
+    environment:
+      HOST: 0.0.0.0
+      PORT: "8787"
+      FORM_DATA_DIR: /data
+      FORM_PUBLIC_URL: https://${DOMAIN}
+      FORM_SECURE_COOKIES: "1"
+      OPENAI_API_KEY: ${OPENAI_API_KEY}
+      FORMTALE_MODEL: ${FORMTALE_MODEL:-gpt-transcribe}
+    volumes:
+      - form-data:/data
+    expose:
+      - "8787"
+
+  caddy:
+    image: caddy:2-alpine
+    restart: unless-stopped
+    depends_on:
+      - app
+    ports:
+      - "80:80"
+      - "443:443"
+    environment:
+      DOMAIN: ${DOMAIN}
+    volumes:
+      - ./Caddyfile:/etc/caddy/Caddyfile:ro
+      - caddy-data:/data
+      - caddy-config:/config
+
+volumes:
+  form-data:
+  caddy-data:
+  caddy-config:

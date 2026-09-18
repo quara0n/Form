@@ -1,5 +1,12 @@
 node_modules/
 dist/
+server/data/
+tools/
+deploy/.env.local
+deploy/*.pid
+deploy/*.log
+deploy/*.log.err
+backups/
 test-results/
 playwright-report/
 .DS_Store

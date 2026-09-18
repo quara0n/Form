@@ -1,0 +1,23 @@
+# systemd-enhet for den som kjører serveren direkte på en maskin med Node.
+# Legg filen i /etc/systemd/system/formrehab.service og kjør:
+#   systemctl daemon-reload && systemctl enable --now formrehab
+[Unit]
+Description=FormRehab (GPS Helse)
+After=network-online.target
+Wants=network-online.target
+
+[Service]
+Type=simple
+User=formrehab
+WorkingDirectory=/opt/formrehab
+EnvironmentFile=/opt/formrehab/.env
+ExecStart=/usr/bin/node server/index.mjs
+Restart=always
+RestartSec=5
+NoNewPrivileges=true
+PrivateTmp=true
+ProtectSystem=strict
+ReadWritePaths=/opt/formrehab/server/data
+
+[Install]
+WantedBy=multi-user.target

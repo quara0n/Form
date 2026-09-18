@@ -7,6 +7,7 @@ import {
   FolderOpen,
   Leaf,
   LoaderCircle,
+  Mail,
   Mic,
   Plus,
   Printer,
@@ -30,6 +31,7 @@ import { ExerciseLibrary } from "./features/library/ExerciseLibrary";
 import { ProgrammeBuilder } from "./features/builder/ProgrammeBuilder";
 import { ProgrammeHandout } from "./features/print/ProgrammeHandout";
 import { Modal } from "./components/Modal";
+import { useAuth } from "./features/auth/AuthGate";
 import {
   parseSpokenCommand,
   type SpokenPrescription,
@@ -38,6 +40,9 @@ import {
   VoiceCommandPanel,
   type VoiceOutcome,
 } from "./features/voice/VoiceCommandPanel";
+
+const standardEmailBody =
+  "Hei,\n\nSe vedlagt treningsprogram.\n\nMvh\nRune Finne\nGPS Helse";
 
 function describePrescription(item: SpokenPrescription): string {
   const dose = [
@@ -53,6 +58,7 @@ function describePrescription(item: SpokenPrescription): string {
 }
 
 export default function App() {
+  const auth = useAuth();
   const workspace = useProgramme();
   const { programme, setProgramme, status, error, savedProgrammes } = workspace;
   const [savedOpen, setSavedOpen] = useState(false);
@@ -64,6 +70,10 @@ export default function App() {
   const [confirmDelete, setConfirmDelete] = useState<Programme | null>(null);
   const [busy, setBusy] = useState(false);
   const [voiceOpen, setVoiceOpen] = useState(false);
+  const [emailOpen, setEmailOpen] = useState(false);
+  const [shareUrl, setShareUrl] = useState<string | null>(null);
+  const [emailTo, setEmailTo] = useState("");
+  const [emailBody, setEmailBody] = useState(standardEmailBody);
   const exercises = [...generated, ...catalogue] as Exercise[];
   const counts = programme.items.reduce<Record<string, number>>(
     (all, item) => ({
@@ -90,11 +100,52 @@ export default function App() {
     setProgramme((p) => addExercise(p, exercise));
     setToast(`${exercise.name} added`);
   }
-  function previewPrint() {
+  async function previewPrint() {
     const errors = validateProgramme(programme);
     setPrintErrors(errors);
-    if (!errors.length) setPrintOpen(true);
-    else setMobileView("programme");
+    if (errors.length) {
+      setMobileView("programme");
+      return;
+    }
+    const token = await ensureShare();
+    setShareUrl(token);
+    setPrintOpen(true);
+  }
+  /**
+   * Lager (eller henter) den åpne pasientlenken. Serveren svarer med den
+   * adressen telefonen faktisk kan nå, så QR-koden ikke peker på localhost.
+   */
+  async function ensureShare(): Promise<string | null> {
+    try {
+      const response = await fetch(
+        `/api/programmes/${encodeURIComponent(programme.id)}/share`,
+        { method: "POST" },
+      );
+      if (!response.ok) return null;
+      const payload = (await response.json()) as { url?: string };
+      return payload.url || null;
+    } catch {
+      return null;
+    }
+  }
+  function emailSubject() {
+    const title = programme.title.trim();
+    return title && title !== "Untitled programme"
+      ? `Treningsprogram – ${title}`
+      : "Treningsprogram";
+  }
+  function emailHref() {
+    const subject = `subject=${encodeURIComponent(emailSubject())}`;
+    const body = `body=${encodeURIComponent(emailBody)}`;
+    return `mailto:${encodeURIComponent(emailTo.trim())}?${subject}&${body}`;
+  }
+  async function copyEmailBody() {
+    try {
+      await navigator.clipboard.writeText(emailBody);
+      setToast("Meldingen er kopiert");
+    } catch {
+      setToast("Kunne ikke kopiere meldingen automatisk");
+    }
   }
   function handleVoiceCommand(transcript: string): VoiceOutcome {
     const result = parseSpokenCommand(transcript, exercises);
@@ -187,13 +238,23 @@ export default function App() {
         </aside>
         <div className="workspace">
           <header className="topbar">
-            <div className="wordmark">
-              form<span>/ rehab</span>
-              <span className="mvp-badge">EARLY EDITION</span>
+            <div className="topbar-brand">
+              <img
+                className="brand-logo"
+                src="/brand/gps-helse.png"
+                alt="GPS Helse"
+                width={101}
+                height={28}
+              />
+              <div className="wordmark">
+                form<span>/ rehab</span>
+                <span className="mvp-badge">EARLY EDITION</span>
+              </div>
             </div>
             <div className="topbar-right">
               <span className="local-label">
-                <span /> Your local workspace
+                <span />{" "}
+                {auth.user ? auth.user.email : "Lokal modus, ikke innlogget"}
               </span>
               <button
                 className="text-button"
@@ -204,6 +265,14 @@ export default function App() {
               >
                 My programmes <ArrowUpRight size={15} />
               </button>
+              {auth.user && (
+                <button
+                  className="text-button"
+                  onClick={() => void auth.signOutNow()}
+                >
+                  Logg ut
+                </button>
+              )}
             </div>
           </header>
           <div className="mobile-switch">
@@ -229,29 +298,48 @@ export default function App() {
                     Your programme <span>{programme.items.length}</span>
                   </h2>
                 </div>
-                <button
-                  className="icon-button"
-                  aria-label="Tale til program"
-                  title="Tale til program (Ctrl+Space)"
-                  aria-pressed={voiceOpen}
-                  onClick={() => setVoiceOpen((open) => !open)}
-                >
-                  <Mic size={19} />
-                </button>
-                <button
-                  className="icon-button"
-                  aria-label="New programme"
-                  title="New programme"
-                  disabled={busy || status === "loading"}
-                  onClick={() =>
-                    void run(workspace.createProgramme, () => {
-                      setPrintErrors([]);
-                      setMobileView("programme");
-                    })
-                  }
-                >
-                  <Plus size={20} />
-                </button>
+                <div className="builder-actions">
+                  <button
+                    className="icon-button"
+                    aria-label="Tale til program"
+                    title="Tale til program (Ctrl+Space)"
+                    aria-pressed={voiceOpen}
+                    onClick={() => setVoiceOpen((open) => !open)}
+                  >
+                    <Mic size={19} />
+                  </button>
+                  <button
+                    className="icon-button"
+                    aria-label="Preview & print"
+                    title="Forhåndsvis og skriv ut"
+                    disabled={status === "loading"}
+                    onClick={() => void previewPrint()}
+                  >
+                    <Printer size={18} />
+                  </button>
+                  <button
+                    className="icon-button"
+                    aria-label="Send e-post"
+                    title="Send programmet på e-post"
+                    onClick={() => setEmailOpen(true)}
+                  >
+                    <Mail size={18} />
+                  </button>
+                  <button
+                    className="icon-button"
+                    aria-label="New programme"
+                    title="New programme"
+                    disabled={busy || status === "loading"}
+                    onClick={() =>
+                      void run(workspace.createProgramme, () => {
+                        setPrintErrors([]);
+                        setMobileView("programme");
+                      })
+                    }
+                  >
+                    <Plus size={20} />
+                  </button>
+                </div>
               </div>
               {voiceOpen && (
                 <VoiceCommandPanel
@@ -330,14 +418,6 @@ export default function App() {
                     {programme.items.length !== 1 ? "s" : ""}
                   </span>
                 </div>
-                <button
-                  className="primary-button full-width"
-                  disabled={status === "loading"}
-                  onClick={previewPrint}
-                >
-                  <Printer size={17} /> Preview & print <ArrowRight size={17} />
-                </button>
-                <p>Thoughtfully prescribed. Ready to put into practice.</p>
               </div>
             </aside>
             <div className="library-container">
@@ -345,6 +425,7 @@ export default function App() {
                 exercises={exercises}
                 onAdd={add}
                 counts={counts}
+                busy={status === "loading"}
               />
             </div>
           </main>
@@ -525,12 +606,50 @@ export default function App() {
               <Printer size={16} /> Print / Save PDF
             </button>
           </div>
-          <ProgrammeHandout programme={programme} />
+          <ProgrammeHandout programme={programme} shareUrl={shareUrl} />
+        </Modal>
+      )}
+      {emailOpen && (
+        <Modal title="Send e-post" onClose={() => setEmailOpen(false)}>
+          <div className="saved-content email-form">
+            <p className="muted">
+              Meldingen er ferdig utfylt. Husk å legge ved PDF-en i
+              e-postklienten — lag den med skriver-ikonet i verktøylinjen først.
+            </p>
+            <label>
+              E-post til
+              <input
+                type="email"
+                value={emailTo}
+                placeholder="navn@klinikk.no"
+                onChange={(event) => setEmailTo(event.target.value)}
+              />
+            </label>
+            <label>
+              Melding
+              <textarea
+                rows={7}
+                value={emailBody}
+                onChange={(event) => setEmailBody(event.target.value)}
+              />
+            </label>
+            <div className="dialog-actions">
+              <button
+                className="secondary-button"
+                onClick={() => void copyEmailBody()}
+              >
+                <Copy size={16} /> Kopier melding
+              </button>
+              <a className="primary-button" href={emailHref()}>
+                <Mail size={16} /> Åpne e-postklient
+              </a>
+            </div>
+          </div>
         </Modal>
       )}
       <div className="print-only">
         {status !== "loading" && validateProgramme(programme).length === 0 ? (
-          <ProgrammeHandout programme={programme} />
+          <ProgrammeHandout programme={programme} shareUrl={shareUrl} />
         ) : (
           <div className="handout">
             <h1>Programme not ready to print</h1>

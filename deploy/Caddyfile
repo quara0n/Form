@@ -1,0 +1,17 @@
+# HTTPS-sertifikatet hentes og fornyes automatisk av Caddy.
+{$DOMAIN} {
+	encode gzip
+	reverse_proxy app:8787
+
+	header {
+		Strict-Transport-Security "max-age=31536000; includeSubDomains"
+		X-Content-Type-Options "nosniff"
+		Referrer-Policy "strict-origin-when-cross-origin"
+		-Server
+	}
+
+	log {
+		output file /data/access.log
+		format console
+	}
+}

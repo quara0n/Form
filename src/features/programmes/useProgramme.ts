@@ -11,7 +11,7 @@ import {
   deleteProgramme,
   listProgrammes,
   saveProgramme,
-} from "../../storage/programmeRepository";
+} from "../../storage/programmeStore";
 
 export type SaveStatus = "loading" | "saving" | "saved" | "error";
 const message = (e: unknown) =>

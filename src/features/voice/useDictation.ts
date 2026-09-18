@@ -50,6 +50,8 @@ export interface Microphone {
 export interface Dictation {
   engine: DictationEngine;
   listening: boolean;
+  level: number;
+  meterActive: boolean;
   transcript: string;
   interim: string;
   error: string;
@@ -64,20 +66,37 @@ export interface Dictation {
 
 const silenceMs = 2500;
 
+type AudioContextConstructor = typeof AudioContext;
+
+function audioContextConstructor(): AudioContextConstructor | undefined {
+  const scoped = window as unknown as {
+    AudioContext?: AudioContextConstructor;
+    webkitAudioContext?: AudioContextConstructor;
+  };
+  return scoped.AudioContext ?? scoped.webkitAudioContext;
+}
+
 export function useDictation(onFinal: (transcript: string) => void): Dictation {
   const recognitionRef = useRef<SpeechRecognitionLike | null>(null);
   const recorderRef = useRef<MediaRecorder | null>(null);
   const streamRef = useRef<MediaStream | null>(null);
   const silenceRef = useRef<number | null>(null);
   const finalTextRef = useRef("");
+  const meterRef = useRef<{
+    context: AudioContext;
+    frame: number;
+  } | null>(null);
   const [engine, setEngine] = useState<DictationEngine>("checking");
   const [listening, setListening] = useState(false);
+  const [level, setLevel] = useState(0);
+  const [meterActive, setMeterActive] = useState(false);
   const [transcript, setTranscript] = useState("");
   const [interim, setInterim] = useState("");
   const [error, setError] = useState("");
   const [note, setNote] = useState("");
   const [microphones, setMicrophones] = useState<Microphone[]>([]);
   const [microphoneId, setMicrophoneId] = useState("");
+  const [probe, setProbe] = useState(0);
 
   const refreshMicrophones = useCallback(() => {
     void navigator.mediaDevices
@@ -110,11 +129,12 @@ export function useDictation(onFinal: (transcript: string) => void): Dictation {
         const payload = (await response.json().catch(() => ({}))) as {
           ready?: boolean;
           error?: string;
+          model?: string;
         };
         if (payload.ready) {
           setEngine("whisper");
           setNote(
-            "Whisper transkriberer opptaket lokalt via utviklingsserveren.",
+            `Opptaket transkriberes av ${payload.model || "talemodellen"} på serveren.`,
           );
         } else {
           setEngine("browser");
@@ -134,6 +154,24 @@ export function useDictation(onFinal: (transcript: string) => void): Dictation {
     return () => {
       cancelled = true;
     };
+  }, [probe]);
+
+  /**
+   * Nøkkelen leses fra .env.openai ved hver forespørsel, så vi spør serveren
+   * på nytt når vinduet får fokus. Da holder det å lime inn nøkkelen og gå
+   * tilbake til nettleseren — ingen omstart eller omlasting.
+   */
+  useEffect(() => {
+    function recheck() {
+      if (document.visibilityState === "visible")
+        setProbe((value) => value + 1);
+    }
+    window.addEventListener("focus", recheck);
+    document.addEventListener("visibilitychange", recheck);
+    return () => {
+      window.removeEventListener("focus", recheck);
+      document.removeEventListener("visibilitychange", recheck);
+    };
   }, []);
 
   const clearSilence = useCallback(() => {
@@ -143,11 +181,60 @@ export function useDictation(onFinal: (transcript: string) => void): Dictation {
     }
   }, []);
 
+  /**
+   * Måler lydstyrken fra mikrofonen slik at ikonet kan vise små bølger mens
+   * noen snakker. Visualiseringen er valgfri: uten Web Audio faller ikonet
+   * tilbake til en rolig animasjon.
+   */
+  const stopMeter = useCallback(() => {
+    const meter = meterRef.current;
+    if (!meter) return;
+    meterRef.current = null;
+    window.cancelAnimationFrame(meter.frame);
+    void meter.context.close().catch(() => undefined);
+    setLevel(0);
+    setMeterActive(false);
+  }, []);
+
+  const startMeter = useCallback((stream: MediaStream) => {
+    const Constructor = audioContextConstructor();
+    if (!Constructor) return;
+    try {
+      const context = new Constructor();
+      const analyser = context.createAnalyser();
+      analyser.fftSize = 256;
+      analyser.smoothingTimeConstant = 0.75;
+      context.createMediaStreamSource(stream).connect(analyser);
+      const samples = new Uint8Array(analyser.fftSize);
+      let smoothed = 0;
+      const tick = () => {
+        analyser.getByteTimeDomainData(samples);
+        let sum = 0;
+        for (const sample of samples) {
+          const value = (sample - 128) / 128;
+          sum += value * value;
+        }
+        const rms = Math.sqrt(sum / samples.length);
+        smoothed = Math.max(rms * 3.4, smoothed * 0.84);
+        setLevel(Math.min(1, smoothed));
+        const meter = meterRef.current;
+        if (meter) meter.frame = window.requestAnimationFrame(tick);
+      };
+      const meter = { context, frame: 0 };
+      meterRef.current = meter;
+      setMeterActive(true);
+      meter.frame = window.requestAnimationFrame(tick);
+    } catch {
+      setMeterActive(false);
+    }
+  }, []);
+
   const stop = useCallback(() => {
     clearSilence();
+    stopMeter();
     if (recorderRef.current?.state === "recording") recorderRef.current.stop();
     recognitionRef.current?.stop();
-  }, [clearSilence]);
+  }, [clearSilence, stopMeter]);
 
   const startBrowserSpeech = useCallback(() => {
     const Constructor =
@@ -195,11 +282,16 @@ export function useDictation(onFinal: (transcript: string) => void): Dictation {
           ? "Mikrofonen er ikke tillatt. Gi nettleseren tilgang og prøv igjen."
           : code === "no-speech"
             ? "Jeg hørte ingenting. Prøv en gang til."
-            : `Talegjenkjenningen stoppet (${code}). Prøv igjen, eller skriv kommandoen.`,
+            : code === "network"
+              ? "Nettleserens talegjenkjenning får ikke kontakt med taletjenesten — den krever nettilgang til Google og hører derfor ingenting. Legg OpenAI-nøkkelen i .env.openai og kom tilbake hit, så bytter panelet til Whisper lokalt. Du kan også skrive kommandoen."
+              : code === "audio-capture"
+                ? "Fant ingen aktiv mikrofon. Sjekk at mikrofonen er tilkoblet og valgt i systeminnstillingene."
+                : `Talegjenkjenningen stoppet (${code}). Prøv igjen, eller skriv kommandoen.`,
       );
     };
     recognition.onend = () => {
       clearSilence();
+      stopMeter();
       setListening(false);
       setInterim("");
       const spoken = finalTextRef.current.trim();
@@ -213,7 +305,7 @@ export function useDictation(onFinal: (transcript: string) => void): Dictation {
       setListening(false);
       setError("Kunne ikke starte mikrofonen. Prøv igjen.");
     }
-  }, [clearSilence, onFinal]);
+  }, [clearSilence, onFinal, stopMeter]);
 
   const startWhisper = useCallback(async () => {
     if (!navigator.mediaDevices?.getUserMedia) {
@@ -235,6 +327,7 @@ export function useDictation(onFinal: (transcript: string) => void): Dictation {
         if (event.data.size) chunks.push(event.data);
       };
       recorder.onstop = async () => {
+        stopMeter();
         streamRef.current?.getTracks().forEach((track) => track.stop());
         streamRef.current = null;
         setListening(false);
@@ -270,6 +363,7 @@ export function useDictation(onFinal: (transcript: string) => void): Dictation {
       };
       recorderRef.current = recorder;
       recorder.start();
+      startMeter(stream);
       setListening(true);
     } catch {
       setError(
@@ -277,7 +371,7 @@ export function useDictation(onFinal: (transcript: string) => void): Dictation {
       );
       setInterim("");
     }
-  }, [microphoneId, onFinal, refreshMicrophones]);
+  }, [microphoneId, onFinal, refreshMicrophones, startMeter, stopMeter]);
 
   const start = useCallback(() => {
     if (engine === "whisper") void startWhisper();
@@ -290,14 +384,17 @@ export function useDictation(onFinal: (transcript: string) => void): Dictation {
       recognitionRef.current?.abort();
       if (recorderRef.current?.state === "recording")
         recorderRef.current.stop();
+      stopMeter();
       streamRef.current?.getTracks().forEach((track) => track.stop());
     },
-    [clearSilence],
+    [clearSilence, stopMeter],
   );
 
   return {
     engine,
     listening,
+    level,
+    meterActive,
     transcript,
     interim,
     error,

@@ -1,0 +1,12 @@
+.git
+node_modules
+dist
+server/data
+test-results
+playwright-report
+video-production
+graphify-out
+.env
+.env.*
+!.env.minimax.example
+*.tsbuildinfo

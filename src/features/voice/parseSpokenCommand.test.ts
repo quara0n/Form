@@ -122,3 +122,46 @@ test("catches dosage words on their own", () => {
   const compact = parseSpokenCommand("flyes 4x8", exercises);
   expect(compact.items[0]).toMatchObject({ sets: "4", reps: "8" });
 });
+
+test("applies a dose that ends with «på alle» to every exercise", () => {
+  const result = parseSpokenCommand(
+    "bekkenløft, diagonalen, knebøy og 3 sett og 10 reps på alle",
+    exercises,
+  );
+  expect(result.items.map((item) => item.exercise.name)).toEqual([
+    "Seteløft uten strikk",
+    "Diagonalen – forsøk 1",
+    "Knebøy med rød strikk",
+  ]);
+  expect(result.items.map((item) => item.sets)).toEqual(["3", "3", "3"]);
+  expect(result.items.map((item) => item.reps)).toEqual(["10", "10", "10"]);
+  expect(result.unmatched).toEqual([]);
+});
+
+test("adds a spoken pause as rest on the exercise it follows", () => {
+  const result = parseSpokenCommand(
+    "diagonalen 3 x 10 og 2 min pause",
+    exercises,
+  );
+  expect(result.items[0]).toMatchObject({
+    sets: "3",
+    reps: "10",
+    rest: "120",
+  });
+});
+
+test("adds sets, reps and a pause at the end to every named exercise", () => {
+  const result = parseSpokenCommand(
+    "bekkenløft, diagonalen og knebøy, 3 sett og 10 reps på alle, 2 min pause",
+    exercises,
+  );
+  expect(result.items.map((item) => item.exercise.name)).toEqual([
+    "Seteløft uten strikk",
+    "Diagonalen – forsøk 1",
+    "Knebøy med rød strikk",
+  ]);
+  expect(result.items.map((item) => item.sets)).toEqual(["3", "3", "3"]);
+  expect(result.items.map((item) => item.reps)).toEqual(["10", "10", "10"]);
+  expect(result.items.map((item) => item.rest)).toEqual(["120", "120", "120"]);
+  expect(result.unmatched).toEqual([]);
+});

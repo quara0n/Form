@@ -15,10 +15,12 @@ export function ExerciseLibrary({
   exercises,
   onAdd,
   counts,
+  busy = false,
 }: {
   exercises: Exercise[];
   onAdd: (e: Exercise) => void;
   counts: Record<string, number>;
+  busy?: boolean;
 }) {
   const [query, setQuery] = useState("");
   const [region, setRegion] = useState("");
@@ -43,22 +45,6 @@ export function ExerciseLibrary({
   }
   return (
     <section className="library" aria-label="Exercise library">
-      <div className="section-eyebrow">YOUR CLINICAL TOOLKIT</div>
-      <div className="library-title">
-        <div>
-          <h1>
-            A little movement.
-            <br />
-            <span>A lot of possibility.</span>
-          </h1>
-          <p>Find the right exercises. Build a programme that fits.</p>
-        </div>
-        <span className="edition">
-          THE STARTER
-          <br />
-          COLLECTION <span>↗</span>
-        </span>
-      </div>
       <div className="search-row">
         <div className="search-field">
           <Search size={20} />
@@ -184,6 +170,7 @@ export function ExerciseLibrary({
                   <button
                     className="add-exercise"
                     aria-label={`Add ${e.name}`}
+                    disabled={busy}
                     onClick={() => onAdd(e)}
                   >
                     <Plus size={17} />
@@ -267,6 +254,7 @@ export function ExerciseLibrary({
             </div>
             <button
               className="primary-button full-width"
+              disabled={busy}
               onClick={() => onAdd(preview)}
             >
               <Plus size={18} /> Add to programme

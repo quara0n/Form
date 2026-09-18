@@ -106,7 +106,20 @@ const stopWords = new Set([
   "maskinen",
   "øvelse",
   "øvelsen",
+  // Mengdeord og pekere hører til doseringen, ikke til øvelsesnavn.
+  "alle",
+  "all",
+  "alt",
+  "hver",
+  "samtlige",
+  "begge",
 ]);
+
+/**
+ * fold() skriver om ø, å og doble bokstaver, så ordene må sjekkes i begge
+ * former for at f.eks. «øvelsene» og «alle» ikke teller som navneord.
+ */
+const foldedStopWords = new Set([...stopWords].map((word) => fold(word)));
 
 const allMarkerWords = [
   "alle",
@@ -141,10 +154,12 @@ const defaultAliases: Record<string, string[]> = {
   "bench-press": ["benkpress", "benk press"],
   "incline-press": ["skråbenk", "skrabenk"],
   deadlift: ["markløft", "markloft"],
-  squat: ["knebøy", "kneboy"],
   "half-squat": ["halv knebøy", "halv kneboy"],
   "toe-lift": ["tåhev", "tahev"],
   "bicep-curl": ["bicepscurl", "biceps curl"],
+  // «bekkenløft» er det vanlige navnet på seteløft uten utstyr.
+  "bridge-no-band-v1": ["bekkenløft"],
+  "bridge-band-v1": ["bekkenløft med strikk"],
 };
 
 export function parseSpokenCommand(
@@ -209,6 +224,11 @@ export function parseSpokenCommand(
 
 function meaningful(text: string): boolean {
   return tokens(text).length >= 2;
+}
+
+/** Sant når teksten bare består av doseringsord og fyllord, ikke flere navn. */
+function isDosageOnly(text: string): boolean {
+  return tokens(stripDosage(text)).length === 0;
 }
 
 function findMatches(words: string[], exercises: Exercise[]): WindowMatch[] {
@@ -350,7 +370,12 @@ export function stripDosage(text: string): string {
 function tokens(text: string): string[] {
   return fold(text)
     .split(/\s+/)
-    .filter((token) => token.length > 2 && !stopWords.has(token));
+    .filter(
+      (token) =>
+        token.length > 2 &&
+        !stopWords.has(token) &&
+        !foldedStopWords.has(token),
+    );
 }
 
 function compact(text: string): string {
@@ -396,10 +421,12 @@ function candidates(exercise: Exercise): { text: string; weight: number }[] {
     { text: exercise.name, weight: 1 },
     { text: exercise.id.replace(/-/g, " "), weight: 1 },
     { text: exercise.name.replace(/\s+i\s+apparat(et)?$/i, ""), weight: 1 },
-    ...aliases.map((alias) => ({ text: alias, weight: 1 })),
+    // Et alias er en oversettelse eller et kallenavn, og skal tape mot et
+    // faktisk navn i biblioteket når begge treffer like godt.
+    ...aliases.map((alias) => ({ text: alias, weight: 0.94 })),
     ...(defaultAliases[exercise.id] || []).map((alias) => ({
       text: alias,
-      weight: 1,
+      weight: 0.94,
     })),
     ...(exercise.tags || []).map((tag) => ({ text: tag, weight: 0.82 })),
   ].filter((candidate) => candidate.text && !/^form$/i.test(candidate.text));
@@ -419,8 +446,11 @@ export function scoreExercise(segment: string, exercise: Exercise): number {
     let score = 0;
     if (target === query) score = 1;
     else if (targetCompact === queryCompact) score = 0.99;
-    else if (target.startsWith(`${query} `) || query.startsWith(`${target} `))
-      score = 0.95;
+    else if (target.startsWith(`${query} `)) score = 0.95;
+    else if (query.startsWith(`${target} `))
+      // Navnet står først i segmentet. Resten må være dosering eller fyllord;
+      // ellers er dette et vindu som rommer flere øvelsesnavn.
+      score = isDosageOnly(query.slice(target.length)) ? 0.95 : 0;
     else if (
       (targetCompact.includes(queryCompact) ||
         queryCompact.includes(targetCompact)) &&

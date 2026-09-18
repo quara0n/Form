@@ -5,6 +5,8 @@
   "type": "module",
   "scripts": {
     "dev": "vite --host 127.0.0.1 --port 5173 --strictPort",
+    "api": "node server/index.mjs",
+    "test:api": "node --test server/app.test.mjs",
     "build": "tsc -b && vite build",
     "typecheck": "tsc -b",
     "test": "vitest run src",
@@ -19,6 +21,7 @@
   },
   "dependencies": {
     "lucide-react": "^0.468.0",
+    "qrcode": "^1.5.4",
     "react": "^19.2.0",
     "react-dom": "^19.2.0"
   },
