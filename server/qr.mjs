@@ -1,19 +1,20 @@
-let rendererPromise;
+import { createRequire } from "node:module";
+
+const require = createRequire(import.meta.url);
+let qrcode;
 
 /**
  * QR-koden tegnes på serveren slik at papirversjonen kan lenke rett til
- * pasientvisningen. Pakken lastes først når den faktisk trengs.
+ * pasientvisningen. qrcode er en CommonJS-pakke, så vi henter den med
+ * require — import() klarer ikke å løse opp hovedfilen i alle Node-versjoner.
  */
-async function renderer() {
-  rendererPromise ??= import("qrcode").then(
-    (module) => module.default || module,
-  );
-  return rendererPromise;
+function renderer() {
+  qrcode ??= require("qrcode");
+  return qrcode;
 }
 
 export async function qrSvg(text) {
-  const qrcode = await renderer();
-  return qrcode.toString(text, {
+  return renderer().toString(text, {
     type: "svg",
     margin: 1,
     errorCorrectionLevel: "M",

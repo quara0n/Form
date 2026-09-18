@@ -28,6 +28,7 @@ if (Test-Path $settingsPath) {
 }
 $port = if ($settings["PORT"]) { $settings["PORT"] } else { "8787" }
 $hostName = if ($settings["HOST"]) { $settings["HOST"] } else { "127.0.0.1" }
+$nodeExe = if ($settings["NODE_EXE"]) { $settings["NODE_EXE"] } else { (Get-Command node).Source }
 
 # --- Stopp det som kjører fra før ---
 foreach ($pidFile in @($serverPidFile, $tunnelPidFile)) {
@@ -83,7 +84,7 @@ if ($settings["FORM_DATA_DIR"]) { $env:FORM_DATA_DIR = $settings["FORM_DATA_DIR"
 if ($settings["OPENAI_API_KEY"]) { $env:OPENAI_API_KEY = $settings["OPENAI_API_KEY"] }
 
 Write-Status "Starter serveren pa http://$hostName`:$port"
-$server = Start-Process -FilePath (Get-Command node).Source `
+$server = Start-Process -FilePath $nodeExe `
   -ArgumentList "server\index.mjs" -WorkingDirectory $root `
   -RedirectStandardOutput $serverLog -RedirectStandardError "$serverLog.err" `
   -WindowStyle Hidden -PassThru
@@ -106,3 +107,4 @@ for ($i = 0; $i -lt 20; $i++) {
 }
 Write-Error "Serveren svarte ikke. Se $serverLog og $serverLog.err"
 exit 1
+
