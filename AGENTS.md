@@ -1,5 +1,37 @@
 ## graphify
 
+## FormRehab: slik jobber du i dette prosjektet
+
+Appen er en React-frontend (`src/`) og en Node-server (`server/`) som deler
+samme prosess i drift. Utdypende dokumentasjon ligger i `docs/teknisk-oversikt.md`
+og `deploy/README.md`.
+
+Start og stopp på denne maskinen:
+
+```powershell
+Start-Process powershell -ArgumentList '-ExecutionPolicy','Bypass','-WindowStyle','Hidden','-File','deploy\start.ps1'
+powershell -ExecutionPolicy Bypass -File deploy\stop.ps1
+powershell -ExecutionPolicy Bypass -File deploy\update.ps1 -SkipPull   # backup, stopp, bygg, start
+```
+
+Innstillinger ligger i `deploy/.env.local` (ignorert av git): port, egen Node i
+`NODE_EXE`, data utenfor OneDrive i `FORM_DATA_DIR`, og passord for krypterte
+sikkerhetskopier. `node` finnes ikke i systemets PATH — bruk `NODE_EXE`.
+
+Tester: `NODE_EXE node_modules\typescript\bin\tsc -b`,
+`NODE_EXE --test server/app.test.mjs`, `NODE_EXE node_modules\vitest\vitest.mjs run src`,
+`NODE_EXE node_modules\@playwright\test\cli.js test`.
+
+Regler som er dyrekjøpte:
+
+- Stopp tjenestene før `npm ci` eller andre pakkeoperasjoner. Kjører de, låses
+  binærfiler i `node_modules` og installasjonen blir ødelagt.
+- `prettier --write` skal bare kjøres på filer du faktisk har endret; prosjektet
+  ligger i OneDrive og store omskrivinger gir støy.
+- Roter ikke delingsnøkkelen for et program som allerede er skrevet ut, og
+  slett ikke videofiler som lagrede programmer peker på.
+- Legg aldri pasientdata i `src/` eller andre mapper som synkes av OneDrive.
+
 This project has a knowledge graph at graphify-out/ with god nodes, community structure, and cross-file relationships.
 
 When the user types `/graphify`, use the installed graphify skill or instructions before doing anything else.
