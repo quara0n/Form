@@ -13,6 +13,10 @@ if (Test-Path $settingsPath) {
 }
 
 if ($settings["FORM_DATA_DIR"]) { $env:FORM_DATA_DIR = $settings["FORM_DATA_DIR"] }
+# Uten dette ville de nattlige kopiene blitt liggende ukrypterte.
+if ($settings["FORM_BACKUP_PASSPHRASE"]) {
+  $env:FORM_BACKUP_PASSPHRASE = $settings["FORM_BACKUP_PASSPHRASE"]
+}
 $target = if ($settings["FORM_BACKUP_DIR"]) { $settings["FORM_BACKUP_DIR"] } else { Join-Path $root "backups" }
 $nodeExe = if ($settings["NODE_EXE"]) { $settings["NODE_EXE"] } else { "node" }
 
