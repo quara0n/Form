@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("native print blocks invalid drafts and prints current accessible custom values", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page.emulateMedia({ media: "print" });
   await expect(page.locator(".print-only")).toContainText(

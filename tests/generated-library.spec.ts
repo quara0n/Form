@@ -11,7 +11,7 @@ test("generated library excludes pelvic tilt; descriptions expand and persist in
   expect(generated.some((e) => /pelvic|bekkentilt/i.test(e.id + e.name))).toBe(
     false,
   );
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page
     .getByLabel("Samling", { exact: true })
@@ -56,7 +56,7 @@ test("generated library excludes pelvic tilt; descriptions expand and persist in
 });
 
 test("the imported machine collection is browsable", async ({ page }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await page.getByLabel("Samling", { exact: true }).selectOption("Apparater");
   await expect(page.locator(".exercise-card")).toHaveCount(7);
   await expect(page.getByText("Brystpress i apparat")).toBeVisible();

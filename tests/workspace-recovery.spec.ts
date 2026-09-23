@@ -4,13 +4,13 @@ test("retains conflicting edits as a copy and confirms deletion", async ({
   page,
   context,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page.getByRole("button", { name: "Add Squat", exact: true }).click();
   await page.getByLabel("PROGRAMME NAME").fill("Shared draft");
   await expect(page.getByText("Saved on this device")).toBeVisible();
   const second = await context.newPage();
-  await second.goto("/");
+  await second.goto("/app");
   await expect(second.getByLabel("PROGRAMME NAME")).toHaveValue("Shared draft");
   await page.getByLabel("Sets", { exact: true }).fill("3");
   await expect(page.getByText("Saved on this device")).toBeVisible();
@@ -61,7 +61,7 @@ test("retains conflicting edits as a copy and confirms deletion", async ({
 test("prints five mixed exercises with long notes and all parameter types", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   for (const name of [
     "Squat",

@@ -1,0 +1,403 @@
+.form-brand {
+  display: inline-flex;
+  align-items: center;
+  gap: 12px;
+  white-space: nowrap;
+  color: #081847;
+}
+.form-brand-word {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: 30px;
+  line-height: 1;
+  font-weight: 650;
+  letter-spacing: -0.055em;
+}
+.form-symbol {
+  display: inline-block;
+  width: 29px;
+  height: 29px;
+  flex: 0 0 auto;
+  border-radius: 48% 48% 48% 6%;
+  transform: rotate(-45deg);
+  background: linear-gradient(135deg, #0a2670 0 53%, #b9d3ff 54% 100%);
+  box-shadow: 0 3px 8px #184ca522;
+}
+.form-brand-compact .form-symbol {
+  width: 27px;
+  height: 27px;
+}
+
+.app-shell {
+  color: #101d4c;
+  background: #f0f6ff;
+}
+.app-shell .nav-rail {
+  background: linear-gradient(180deg, #f2f7ff, #e8f1ff);
+  border-right: 1px solid #d9e6fb;
+}
+.app-shell .brand-mark {
+  color: #1646a8;
+}
+.app-shell .nav-rail nav button,
+.app-shell .help-button {
+  color: #315eaf;
+}
+.app-shell .nav-rail nav button:hover,
+.app-shell .nav-rail nav button.active {
+  color: #1459e5;
+  background: #dceaff;
+}
+.app-shell .avatar {
+  color: #0a2a71;
+  background: #d9e8ff;
+  border-color: #f2f7ff;
+}
+.app-shell .workspace {
+  background: #f0f6ff;
+}
+.app-shell .topbar {
+  position: relative;
+  overflow: hidden;
+  background: linear-gradient(110deg, #fff 0%, #fff 58%, #edf5ff 100%);
+  border-bottom-color: #dce9fb;
+}
+.app-shell .topbar::after {
+  content: "";
+  position: absolute;
+  right: 11%;
+  top: -122px;
+  width: 230px;
+  height: 230px;
+  border: 26px solid #dceafe6b;
+  border-radius: 50%;
+  pointer-events: none;
+}
+.app-shell .topbar > * {
+  position: relative;
+  z-index: 1;
+}
+.app-shell .topbar-brand {
+  gap: 28px;
+}
+.app-shell .workspace-label {
+  font-size: 12px;
+  color: #1455cc;
+  font-weight: 650;
+  padding: 10px 0;
+  border-bottom: 2px solid #1459e5;
+}
+.app-shell .topbar-right {
+  color: #193875;
+}
+.app-shell .text-button {
+  font-size: 12px;
+  color: #123d95;
+  font-weight: 600;
+}
+.app-shell .text-button:hover {
+  color: #135beb;
+}
+.app-shell .workspace-content {
+  grid-template-columns: minmax(350px, 0.88fr) minmax(0, 1.12fr);
+  max-width: none;
+  gap: 10px;
+  padding: 11px;
+}
+.app-shell .builder-panel,
+.app-shell .library-container {
+  border: 1px solid #dce8fb;
+  border-radius: 13px;
+  background: #fff;
+  box-shadow: 0 3px 15px #153d8210;
+}
+.app-shell .builder-panel {
+  overflow: hidden;
+}
+.app-shell .builder-header {
+  padding: 26px 24px 18px;
+  border-bottom: 0;
+  background: linear-gradient(145deg, #fff, #f8fbff);
+}
+.app-shell .builder-header h2,
+.app-shell .library-intro h1 {
+  font-family: Georgia, "Times New Roman", serif;
+  font-size: clamp(27px, 2.5vw, 38px);
+  color: #0b1949;
+  letter-spacing: -0.04em;
+  line-height: 1.1;
+}
+.app-shell .builder-header h2 {
+  margin: 6px 0 0;
+}
+.app-shell .builder-header .section-eyebrow {
+  color: #4f73ba;
+}
+.app-shell .builder-subtitle {
+  margin: 8px 0 0;
+  font-size: 12px;
+  line-height: 1.4;
+  color: #6279aa;
+}
+.app-shell .builder-actions {
+  gap: 4px;
+  align-self: flex-start;
+}
+.app-shell .builder-actions .icon-button {
+  background: #f0f5ff;
+  border: 1px solid #e0eafb;
+  color: #2854a7;
+  border-radius: 9px;
+}
+.app-shell .builder-actions .icon-button:hover {
+  background: #dceaff;
+  color: #1057dc;
+}
+.app-shell .programme-meta {
+  padding: 12px 24px 17px;
+}
+.app-shell .programme-title {
+  padding: 11px 12px;
+  border: 1px solid #d6e3fa;
+  border-radius: 8px;
+  font-size: 14px;
+  color: #132c66;
+  background: #fff;
+}
+.app-shell .programme-title:focus {
+  outline: 2px solid #5c8ff1;
+  outline-offset: 1px;
+}
+.app-shell .programme-items {
+  padding: 0 22px 22px;
+}
+.app-shell .prescription-card {
+  border-color: #dde8fa;
+  border-radius: 10px;
+  padding: 14px;
+  margin-bottom: 10px;
+  box-shadow: 0 2px 8px #1845830b;
+}
+.app-shell .exercise-number {
+  display: inline-grid;
+  place-items: center;
+  width: 26px;
+  height: 26px;
+  border-radius: 50%;
+  background: #e5efff;
+  color: #1557d6;
+  font-weight: 750;
+  font-size: 12px;
+}
+.app-shell .parameter-input {
+  border-color: #cfdff8;
+  border-radius: 7px;
+}
+.app-shell .parameter-input:focus-within {
+  border-color: #326fe5;
+  box-shadow: 0 0 0 2px #3275ed25;
+}
+.app-shell .builder-footer {
+  flex-direction: column-reverse;
+  align-items: stretch;
+  gap: 8px;
+  padding: 13px 22px 15px;
+  border-top: 1px solid #e5edfb;
+  background: #fbfdff;
+}
+.app-shell .builder-footer-actions {
+  display: grid;
+  grid-template-columns: repeat(3, minmax(0, 1fr));
+  gap: 8px;
+}
+.app-shell .builder-footer-actions button {
+  display: inline-flex;
+  justify-content: center;
+  align-items: center;
+  gap: 7px;
+  min-height: 40px;
+  border: 1px solid #d5e2f8;
+  border-radius: 8px;
+  background: #fff;
+  color: #244783;
+  font-size: 12px;
+  font-weight: 600;
+}
+.app-shell .builder-footer-actions button:hover {
+  background: #eaf2ff;
+}
+.app-shell .builder-footer-actions .builder-print {
+  border-color: #1459e5;
+  background: #1459e5;
+  color: #fff;
+}
+.app-shell .builder-footer-actions .builder-print:hover {
+  background: #0e47bd;
+}
+.app-shell .save-status {
+  font-size: 10px;
+  color: #5d77a9;
+}
+.app-shell .library-container {
+  background: linear-gradient(160deg, #fff 20%, #f7fbff 100%);
+}
+.app-shell .library {
+  padding: 26px 24px 30px;
+}
+.app-shell .library-intro {
+  display: flex;
+  align-items: flex-end;
+  justify-content: space-between;
+  margin-bottom: 20px;
+}
+.app-shell .library-intro h1 {
+  margin: 0 0 9px;
+}
+.app-shell .library-intro p {
+  margin: 0;
+  color: #637aaa;
+  font-size: 12px;
+}
+.app-shell .search-field,
+.app-shell .equipment-filter {
+  border-color: #cfdef8;
+  border-radius: 8px;
+}
+.app-shell .search-field:focus-within {
+  border-color: #3274e5;
+  box-shadow: 0 0 0 2px #3275ed25;
+}
+.app-shell .search-field input {
+  height: 44px;
+  font-size: 12px;
+}
+.app-shell .equipment-filter select {
+  height: 43px;
+}
+.app-shell .filter-tabs {
+  padding: 13px 0 15px;
+}
+.app-shell .filter-tabs button {
+  background: #edf3ff;
+  color: #395a99;
+  padding: 8px 13px;
+}
+.app-shell .filter-tabs button.selected {
+  background: #1459e5;
+  color: #fff;
+  border-color: #1459e5;
+}
+.app-shell .filter-tabs button.selected:hover {
+  background: #0d48c1;
+}
+.app-shell .results-heading {
+  border-top: 0;
+  padding: 3px 0 12px;
+}
+.app-shell .results-heading h2 {
+  font-size: 13px;
+  color: #39588e;
+  font-weight: 500;
+}
+.app-shell .exercise-grid {
+  gap: 13px;
+}
+.app-shell .exercise-card {
+  border: 1px solid #dbe7fa;
+  border-radius: 10px;
+  box-shadow: 0 2px 8px #1845830b;
+}
+.app-shell .exercise-card:hover {
+  box-shadow: 0 8px 24px #1246901c;
+}
+.app-shell .exercise-card-body {
+  padding: 12px;
+}
+.app-shell .exercise-card h3 {
+  min-height: 2.5em;
+  color: #0c1b49;
+}
+.app-shell .add-exercise {
+  border: 1px solid #dbe7fc;
+  background: #ebf2ff;
+  color: #1953bf;
+  border-radius: 7px;
+  padding: 7px 9px;
+}
+.app-shell .add-exercise:hover {
+  background: #1459e5;
+  border-color: #1459e5;
+  color: #fff;
+}
+.app-shell .library-foot {
+  margin: 25px 0 10px;
+}
+@media (max-width: 1200px) {
+  .app-shell .library {
+    padding: 22px 20px;
+  }
+  .app-shell .builder-header,
+  .app-shell .programme-meta {
+    padding-left: 20px;
+    padding-right: 20px;
+  }
+  .app-shell .programme-items {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+  .app-shell .builder-footer {
+    padding-left: 17px;
+    padding-right: 17px;
+  }
+}
+@media (max-width: 820px) {
+  .app-shell .workspace-content {
+    display: block;
+    padding: 10px;
+  }
+  .app-shell .builder-panel {
+    overflow: visible;
+  }
+  .app-shell .mobile-switch {
+    margin-bottom: 0;
+  }
+  .app-shell .library {
+    padding: 21px 18px;
+  }
+  .app-shell .builder-footer {
+    position: sticky;
+  }
+}
+@media (max-width: 480px) {
+  .app-shell .topbar-brand {
+    gap: 8px;
+  }
+  .app-shell .form-brand-word {
+    font-size: 20px;
+  }
+  .app-shell .form-symbol {
+    width: 22px;
+    height: 22px;
+  }
+  .app-shell .workspace-label {
+    display: none;
+  }
+  .app-shell .builder-header h2,
+  .app-shell .library-intro h1 {
+    font-size: 26px;
+  }
+  .app-shell .builder-footer-actions button {
+    font-size: 11px;
+    gap: 4px;
+  }
+  .app-shell .builder-footer-actions button svg {
+    width: 14px;
+  }
+  .app-shell .library {
+    padding: 19px 14px;
+  }
+}
+@media print {
+  .app-shell {
+    display: none !important;
+  }
+}

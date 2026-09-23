@@ -45,6 +45,12 @@ export function ExerciseLibrary({
   }
   return (
     <section className="library" aria-label="Exercise library">
+      <div className="library-intro">
+        <div>
+          <h1>Øvelsesbibliotek</h1>
+          <p>Finn og legg til øvelser i pasientens program.</p>
+        </div>
+      </div>
       <div className="search-row">
         <div className="search-field">
           <Search size={20} />

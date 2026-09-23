@@ -5,7 +5,6 @@ import {
   Check,
   CircleHelp,
   FolderOpen,
-  Leaf,
   LoaderCircle,
   Mail,
   Mic,
@@ -31,6 +30,7 @@ import { ExerciseLibrary } from "./features/library/ExerciseLibrary";
 import { ProgrammeBuilder } from "./features/builder/ProgrammeBuilder";
 import { ProgrammeHandout } from "./features/print/ProgrammeHandout";
 import { Modal } from "./components/Modal";
+import { FormBrand } from "./components/FormBrand";
 import { useAuth } from "./features/auth/AuthGate";
 import {
   parseSpokenCommand,
@@ -193,16 +193,8 @@ export default function App() {
     <>
       <div className="app-shell">
         <aside className="nav-rail">
-          <a
-            className="brand-mark"
-            href="#"
-            aria-label="Form home"
-            onClick={(e) => {
-              e.preventDefault();
-              setMobileView("library");
-            }}
-          >
-            <Leaf size={28} />
+          <a className="brand-mark" href="/" aria-label="Form Rehab forside">
+            <FormBrand compact />
           </a>
           <nav>
             <button
@@ -242,17 +234,8 @@ export default function App() {
         <div className="workspace">
           <header className="topbar">
             <div className="topbar-brand">
-              <img
-                className="brand-logo"
-                src="/brand/gps-helse.png"
-                alt="GPS Helse"
-                width={101}
-                height={28}
-              />
-              <div className="wordmark">
-                form<span>/ rehab</span>
-                <span className="mvp-badge">EARLY EDITION</span>
-              </div>
+              <FormBrand />
+              <span className="workspace-label">Arbeidsflate</span>
             </div>
             <div className="topbar-right">
               <span className="local-label">
@@ -261,12 +244,13 @@ export default function App() {
               </span>
               <button
                 className="text-button"
+                aria-label="My programmes"
                 onClick={() => {
                   void workspace.refreshList();
                   setSavedOpen(true);
                 }}
               >
-                My programmes <ArrowUpRight size={15} />
+                Mine programmer <ArrowUpRight size={15} />
               </button>
               {auth.user && (
                 <button
@@ -296,10 +280,13 @@ export default function App() {
             <aside className="builder-panel" aria-label="Programme builder">
               <div className="builder-header">
                 <div>
-                  <span className="section-eyebrow">MAKE IT PERSONAL</span>
+                  <span className="section-eyebrow">PROGRAMBYGGER</span>
                   <h2>
-                    Your programme <span>{programme.items.length}</span>
+                    Mitt program <span>{programme.items.length}</span>
                   </h2>
+                  <p className="builder-subtitle">
+                    Sett sammen et individuelt treningsprogram.
+                  </p>
                 </div>
                 <div className="builder-actions">
                   <button
@@ -397,6 +384,28 @@ export default function App() {
                 </div>
               )}
               <div className="builder-footer">
+                <div className="builder-footer-actions">
+                  <button
+                    className="builder-save"
+                    disabled={status === "loading"}
+                    onClick={() => void workspace.retry()}
+                  >
+                    <Check size={16} /> Lagre
+                  </button>
+                  <button
+                    className="builder-share"
+                    onClick={() => setEmailOpen(true)}
+                  >
+                    <Mail size={16} /> Del
+                  </button>
+                  <button
+                    className="builder-print"
+                    disabled={status === "loading"}
+                    onClick={() => void previewPrint()}
+                  >
+                    <Printer size={16} /> Skriv ut
+                  </button>
+                </div>
                 <div className="save-status" aria-live="polite">
                   {status === "saved" ? (
                     <Check size={14} />

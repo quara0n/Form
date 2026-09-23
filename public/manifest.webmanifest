@@ -3,12 +3,12 @@
   "short_name": "GPS Helse",
   "description": "Treningsprogram fra klinikken, med video av hver øvelse.",
   "lang": "no",
-  "start_url": "/",
+  "start_url": "/app",
   "scope": "/",
   "display": "standalone",
   "orientation": "portrait",
-  "background_color": "#f4f6f1",
-  "theme_color": "#285646",
+  "background_color": "#f0f6ff",
+  "theme_color": "#0b1b46",
   "icons": [
     {
       "src": "/brand/icon-192.png",

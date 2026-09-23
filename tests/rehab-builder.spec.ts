@@ -6,7 +6,7 @@ const librarySize =
 test("builds independent prescriptions, persists them and prints current data", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page.getByRole("button", { name: "Preview & print" }).click();
   await expect(
@@ -72,7 +72,7 @@ test("builds independent prescriptions, persists them and prints current data", 
 test("validates input, handles video failure and keyboard preview", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page
     .getByRole("button", { name: "Preview Squat", exact: true })
@@ -99,7 +99,7 @@ test("mobile workspace retains programme and has no horizontal overflow", async 
   page,
 }) => {
   await page.setViewportSize({ width: 390, height: 844 });
-  await page.goto("/");
+  await page.goto("/app");
   await expect(
     page.getByRole("button", { name: "Add Squat", exact: true }),
   ).toBeVisible();
@@ -127,7 +127,7 @@ test("mobile workspace retains programme and has no horizontal overflow", async 
   await page.screenshot({ path: "test-results/mobile.png", fullPage: true });
 });
 test("desktop library and all media render", async ({ page }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.locator(".exercise-card")).toHaveCount(librarySize);
   await page.screenshot({ path: "test-results/desktop.png", fullPage: true });
   for (const img of await page.locator(".exercise-image img").all()) {

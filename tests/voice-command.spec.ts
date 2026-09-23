@@ -3,7 +3,7 @@ import { test, expect } from "@playwright/test";
 test("a spoken command fills the rehab builder with exercises and dosage", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page.getByRole("button", { name: "Tale til program" }).click();
   await expect(page.getByLabel("Skriv kommando")).toBeVisible();
@@ -45,7 +45,7 @@ test("a spoken command fills the rehab builder with exercises and dosage", async
 });
 
 test("the Ctrl+Space hotkey opens the voice panel", async ({ page }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page.keyboard.press("Control+Space");
   await expect(page.getByLabel("Skriv kommando")).toBeVisible();
@@ -56,7 +56,7 @@ test("the Ctrl+Space hotkey opens the voice panel", async ({ page }) => {
 test("understands misspelled free speech and keeps the exercise order", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page.getByRole("button", { name: "Tale til program" }).click();
   await page
@@ -88,7 +88,7 @@ test("understands misspelled free speech and keeps the exercise order", async ({
 test("gir dosen til alle øvelsene når setningen sier «på begge øvelser»", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page.getByRole("button", { name: "Tale til program" }).click();
   await page

@@ -28,7 +28,7 @@ test("edits made while a save is pending survive completion and reload", async (
     `,
     });
   });
-  await page.goto("/");
+  await page.goto("/app");
   await expect(page.getByText("Ready when you are")).toBeVisible();
   await page.getByRole("button", { name: "Add Squat", exact: true }).click();
   await page.waitForFunction(

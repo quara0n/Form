@@ -6,7 +6,7 @@ const catalogue: { name: string; video: string }[] = [
 ];
 
 test("every bundled video decodes and supports seeking", async ({ page }) => {
-  await page.goto("/");
+  await page.goto("/app");
   for (const exercise of catalogue) {
     const result = await page.evaluate(async (src) => {
       const video = document.createElement("video");
@@ -40,7 +40,7 @@ test("every bundled video decodes and supports seeking", async ({ page }) => {
 test("combines tag search, region and equipment and recovers empty results", async ({
   page,
 }) => {
-  await page.goto("/");
+  await page.goto("/app");
   await page.getByLabel("Search exercises").fill("HINGE");
   await expect(page.locator(".exercise-card")).toHaveCount(1);
   await expect(page.locator(".exercise-card")).toContainText("Deadlift");
