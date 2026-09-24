@@ -1,0 +1,358 @@
+{
+  "name": "apparater-leveranse-v1",
+  "date": "2026-09-24",
+  "durationSeconds": 5,
+  "existingAppVideos": [
+    1,
+    2,
+    3,
+    4,
+    5,
+    6,
+    11
+  ],
+  "existingLibraryMatches": [
+    13,
+    16,
+    38
+  ],
+  "removedCards": [
+    12,
+    36,
+    43,
+    44,
+    47
+  ],
+  "exercises": [
+    {
+      "card": 7,
+      "exercise": "Strake rygghev i apparat",
+      "frame": "approved/kort-07-start.png",
+      "video": "approved/kort-07.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "e3bede56fea28544339e559265d14cbee652eaf435b126a743830dab3edcbb06"
+    },
+    {
+      "card": 8,
+      "exercise": "Mageliggende leg curl i apparat",
+      "frame": "approved/kort-08-start.png",
+      "video": "approved/kort-08.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "c9b6ba7f96cdf3b53c4f49d195b48457aaf4cc3ec6c677a2d12693a7b130c62c"
+    },
+    {
+      "card": 9,
+      "exercise": "Sittende hofteadduksjon i apparat",
+      "frame": "approved/kort-09-start.png",
+      "video": "approved/kort-09.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "652d12b0cdfaab5c028fe8a8acbc51423e28bfad3c8ec54c6e2cfcc7f88cf069"
+    },
+    {
+      "card": 10,
+      "exercise": "Sittende ettbens benpress i apparat",
+      "frame": "approved/kort-10-start.png",
+      "video": "approved/kort-10.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "8e01c702d1cdba99a9ef1ce332a3060672d2b1c23cb5595edf051fe98bdc0210"
+    },
+    {
+      "card": 14,
+      "exercise": "Sittende skulderpress i apparat",
+      "frame": "approved/kort-14-start.png",
+      "video": "approved/kort-14.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Returfasen er laget ved å reversere en godkjent pressfase.",
+      "sha256": "7e25df81dd00dedf964b73bcf58f705455243afbb2c2428d7da66c133fe80e95"
+    },
+    {
+      "card": 15,
+      "exercise": "Roing smalt grep i apparat",
+      "frame": "approved/kort-15-start.png",
+      "video": "approved/kort-15.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "e65bd4b82ef4892403b01b176fbe189fca757db543060529d1c9daae3efabdce"
+    },
+    {
+      "card": 17,
+      "exercise": "Skulderpress i apparat",
+      "frame": "approved/kort-17-start.png",
+      "video": "approved/kort-17.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "f6701987db062dcfa6708ded8c68814c71a2ffd5ce618d9f6af114a485a38a3e"
+    },
+    {
+      "card": 18,
+      "exercise": "Roing bredt grep i apparat",
+      "frame": "approved/kort-18-start.png",
+      "video": "approved/kort-18.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "497be87daa675d29713325d1214a4f2d249a526f38f7cf2489884db3810c9885"
+    },
+    {
+      "card": 19,
+      "exercise": "Rullende rygghev i apparat",
+      "frame": "approved/kort-19-start.png",
+      "video": "approved/kort-19.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "1b00c64d0fdb234a64aa693a3a958f596321f9bf10c881bc8742d7544392a39f"
+    },
+    {
+      "card": 20,
+      "exercise": "Nedtrekk i apparat",
+      "frame": "approved/kort-20-start.png",
+      "video": "approved/kort-20.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "62a975a3140cba63183158e5d12df34ccf392d8cb845f3acb1b39e101a044f85"
+    },
+    {
+      "card": 21,
+      "exercise": "Liggende ettbens leg curl i apparat",
+      "frame": "approved/kort-21-start.png",
+      "video": "approved/kort-21.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "a7a9271c3a9c2b9032c82487baddb478325a6ba6997d0baca76f829efddd0660"
+    },
+    {
+      "card": 22,
+      "exercise": "Preacher curl i apparat",
+      "frame": "approved/kort-22-start.png",
+      "video": "approved/kort-22.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "a5466d7d658cde8d6ae663728c346cf5968267242a5ec1ffdfcbcd64c22dc7c3"
+    },
+    {
+      "card": 23,
+      "exercise": "Crunch i apparat",
+      "frame": "approved/kort-23-start.png",
+      "video": "approved/kort-23.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Kontrollert, moderat krumming av overkroppen; håndtak og vektstabel følger bevegelsen.",
+      "sha256": "48018637d82ce79be544b5e78151a252b87d582f85177f522203b61d595abd22"
+    },
+    {
+      "card": 24,
+      "exercise": "Sittende roing m/smalt grep",
+      "frame": "approved/kort-24-start.png",
+      "video": "approved/kort-24.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Returfasen er laget ved å reversere en godkjent rofase.",
+      "sha256": "1be260bbd8aa22210ec787ba4580a2292e6afc0cf0b82077496d00c5c9a146cf"
+    },
+    {
+      "card": 25,
+      "exercise": "Standing Calf i apparat",
+      "frame": "approved/kort-25-start.png",
+      "video": "approved/kort-25.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Den korrekte tåhevfasen er klippet ut av en lengre generering og reversert for retur.",
+      "sha256": "15109d0288bb1cdf95e4803ac6d170b876b392f12564444697f991d0ba62b7c0"
+    },
+    {
+      "card": 26,
+      "exercise": "Ettbens benpress i apparat",
+      "frame": "approved/kort-26-start.png",
+      "video": "approved/kort-26.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Returfasen er laget ved å reversere en godkjent pressfase.",
+      "sha256": "bfb3681b5c05450fa8ce0c150f02fdeeaba519089953247d1d8772aec5f43fb6"
+    },
+    {
+      "card": 27,
+      "exercise": "Sittende tåhev i apparat, tegning",
+      "frame": "approved/kort-27-start.png",
+      "video": "approved/kort-27.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Godkjent ankelbevegelse; returfasen er reversert.",
+      "sha256": "6b39ca372bc9a664cb6fa8b48e1dd4f4ec02f4c3f91972a1439dd97c01845468"
+    },
+    {
+      "card": 28,
+      "exercise": "Abdominal crunch i apparat",
+      "frame": "approved/kort-28-start.png",
+      "video": "approved/kort-28.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Overkroppen krummes fremover; returfasen er reversert.",
+      "sha256": "15d10cf9ba4f68696b5d44691d1d16d108e85593e8502c16db4231658807ce33"
+    },
+    {
+      "card": 29,
+      "exercise": "Sittende tåhev i apparat, foto",
+      "frame": "approved/kort-29-start.png",
+      "video": "approved/kort-29.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Tåpress uten tydelig benpress; løftefasen er reversert fra kontrollert retur.",
+      "sha256": "cfdd78f7f6d50b26c1297c561a40df93ff729948a5600da97ddf2cef251d60f0"
+    },
+    {
+      "card": 30,
+      "exercise": "Sittende roing i apparat",
+      "frame": "approved/kort-30-start.png",
+      "video": "approved/kort-30.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "76b9f32ca46cd289fb99aede0e50192b47d2175b367a6eef148d02f44257f5bd"
+    },
+    {
+      "card": 31,
+      "exercise": "Sittende back extension i apparat",
+      "frame": "approved/kort-31-start.png",
+      "video": "approved/kort-31.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "44643357bd6fd92a77f9abe1d4c60ea8758eaaa836bdb4e816d8aa0b9716aeb2"
+    },
+    {
+      "card": 32,
+      "exercise": "Stående tåhev i apparat, tegning",
+      "frame": "approved/kort-32-start.png",
+      "video": "approved/kort-32.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Den korrekte tåhevfasen er klippet ut av en lengre generering og reversert for retur.",
+      "sha256": "fd740c5b8f529f5f57c08ae528cc2c8491117899b89e76ec338a5db7d932c6c0"
+    },
+    {
+      "card": 33,
+      "exercise": "Skulderpress i apparat, tredje variant",
+      "frame": "approved/kort-33-start.png",
+      "video": "approved/kort-33.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Press over hodet; returfasen er reversert.",
+      "sha256": "c0093916b0d7a86c982ef41ba0ca283294cc8c1516a78062a312e7def542a5b8"
+    },
+    {
+      "card": 34,
+      "exercise": "Skrå benkpress m/stang på apparat",
+      "frame": "approved/kort-34-start.png",
+      "video": "approved/kort-34.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "b290d6ba0c13dfcb168c757008c452a1fcfc2ccedb80cd01ff2cb3bca294272a"
+    },
+    {
+      "card": 35,
+      "exercise": "Ettbens knebøy på apparat",
+      "frame": "approved/kort-35-start.png",
+      "video": "approved/kort-35.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Ettbens knebøy med fribeinet foran; returfasen er reversert.",
+      "sha256": "c728f64cab16d96e6c5c884508d42fab6fd2a69ef2778416debd83bb46697d51"
+    },
+    {
+      "card": 37,
+      "exercise": "Diverging Low Row i apparat",
+      "frame": "approved/kort-37-start.png",
+      "video": "approved/kort-37.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "81be11654931a88fb2670a8fa23c1e33edb7221e40af476900d2cd76dab6fbf0"
+    },
+    {
+      "card": 39,
+      "exercise": "Converging Chest Press i apparat",
+      "frame": "approved/kort-39-start.png",
+      "video": "approved/kort-39.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Returfasen er laget ved å reversere en godkjent pressfase.",
+      "sha256": "92dd6fa8eb5dec421fca4588dc11aac5d614c6010d413bb9b5d5dfaa2e4a9003"
+    },
+    {
+      "card": 40,
+      "exercise": "Crunch i apparat, annet kort",
+      "frame": "approved/kort-40-start.png",
+      "video": "approved/kort-40.mp4",
+      "model": "MiniMax H3 Max",
+      "qa": "approved",
+      "note": "Overkroppen krummes fremover; returfasen er reversert.",
+      "sha256": "2b0df0458fe58b975763e08dff117d16122ed3e052872411feffe483ca6d44e7"
+    },
+    {
+      "card": 41,
+      "exercise": "Roing fra lavt m/smalt grep i apparat",
+      "frame": "approved/kort-41-start.png",
+      "video": "approved/kort-41.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "b748b867afc9378ab5c92b8b30a192177d21ddfd631558332142f0a76836983b"
+    },
+    {
+      "card": 42,
+      "exercise": "Hack squat apparat",
+      "frame": "approved/kort-42-start.png",
+      "video": "approved/kort-42.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "c18a9418ef30ef0e939d92042105463e2e144a9a33e33b06838f9c731c32e6b7"
+    },
+    {
+      "card": 45,
+      "exercise": "Skrå brystpress i apparat",
+      "frame": "approved/kort-45-start.png",
+      "video": "approved/kort-45.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "5982631863672faf419814517e5d726689835a75118d3c70f9b2efd272e6822d"
+    },
+    {
+      "card": 46,
+      "exercise": "Bicepscurl i apparat",
+      "frame": "approved/kort-46-start.png",
+      "video": "approved/kort-46.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "0cd9821a00edb7260c82af759f126f49d112d12e4f14c644ac9f5822e098f74b"
+    },
+    {
+      "card": 48,
+      "exercise": "Nedtrekk smalt grep i apparat",
+      "frame": "approved/kort-48-start.png",
+      "video": "approved/kort-48.mp4",
+      "model": "Wan 2.2 Turbo",
+      "qa": "approved",
+      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "sha256": "e54e30a4d0bf4d234f8dfab2b55d8ec604aa864a2e9be275a3e6326f3f890a97"
+    }
+  ]
+}
