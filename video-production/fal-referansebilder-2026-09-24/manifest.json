@@ -1,0 +1,225 @@
+{
+  "name": "fal-referansebilder-2026-09-24",
+  "purpose": "Input images for FAL image-to-video generation",
+  "selectedCardCount": 33,
+  "imageCount": 41,
+  "exercises": [
+    {
+      "card": 7,
+      "exercise": "Strake rygghev i apparat",
+      "firstFrame": "kort-07-start.png",
+      "firstSha256": "4478f704488e744080cad20319ee038d8a74475191ff25e3ed98f6aed366d375"
+    },
+    {
+      "card": 8,
+      "exercise": "Mageliggende leg curl i apparat",
+      "firstFrame": "kort-08-start.png",
+      "firstSha256": "066d11a990b25e66e560b1d733d6094877556ad0381f337180204cf831fbaa9c"
+    },
+    {
+      "card": 9,
+      "exercise": "Sittende hofteadduksjon i apparat",
+      "firstFrame": "kort-09-start.png",
+      "firstSha256": "28158cd0ca3460758133314f7ef048f22eb5b02a9d6f1c313834676ca2d98c7d"
+    },
+    {
+      "card": 10,
+      "exercise": "Sittende ettbens benpress i apparat",
+      "firstFrame": "kort-10-start.png",
+      "firstSha256": "f18844667e07bc57d3c74b36b208c491851bd1982514cda7686eb4a251f24347"
+    },
+    {
+      "card": 14,
+      "exercise": "Sittende skulderpress i apparat",
+      "firstFrame": "kort-14-start.png",
+      "firstSha256": "34236d6fc0f817840544223c0b3fae6efaea13f811b5af56427b41c3682dcf63"
+    },
+    {
+      "card": 15,
+      "exercise": "Roing smalt grep i apparat",
+      "firstFrame": "kort-15-start.png",
+      "firstSha256": "f91e66dd96157b558a911b9905282ca6c40fddfb2037b231e1b96c810abd5a25"
+    },
+    {
+      "card": 17,
+      "exercise": "Skulderpress i apparat",
+      "firstFrame": "kort-17-start.png",
+      "firstSha256": "d3166934a9bb4cfa00549ee57b6a36b020808aec59a8b906ee031deaa82d2edd"
+    },
+    {
+      "card": 18,
+      "exercise": "Roing bredt grep i apparat",
+      "firstFrame": "kort-18-start.png",
+      "firstSha256": "017e6793df9d27cdc8970a2424ba6546f21b5c98b9dc1f39a5727ebc896bebc6"
+    },
+    {
+      "card": 19,
+      "exercise": "Rullende rygghev i apparat",
+      "firstFrame": "kort-19-start.png",
+      "firstSha256": "6bf7688264821764c95029861a46fc731b3f6b15550d2b56b2fe613e5a05a0f1"
+    },
+    {
+      "card": 20,
+      "exercise": "Nedtrekk i apparat",
+      "firstFrame": "kort-20-start.png",
+      "firstSha256": "c07999d8c013728374020a1bd6a3644633130a194f199377a8874c7220871515"
+    },
+    {
+      "card": 21,
+      "exercise": "Liggende ettbens leg curl i apparat",
+      "firstFrame": "kort-21-start.png",
+      "firstSha256": "6b304d60cd196ab8fd497bc13f7b9f4492dc62baaa0f3144425e5ba4b8e32084"
+    },
+    {
+      "card": 22,
+      "exercise": "Preacher curl i apparat",
+      "firstFrame": "kort-22-start.png",
+      "firstSha256": "45e30265033e0cc8784f611e130bb01fef813a4bf091ae502c81641a720dfa6c"
+    },
+    {
+      "card": 23,
+      "exercise": "Crunch i apparat",
+      "firstFrame": "kort-23-start.png",
+      "firstSha256": "384b96806747fba1a719c1920cab3dc23cdfc39640427b518d59aee151620c02"
+    },
+    {
+      "card": 24,
+      "exercise": "Sittende roing m/smalt grep",
+      "firstFrame": "kort-24-start.png",
+      "firstSha256": "d902ff15b84dd4c3fc831a0bd6799b4a2c7d125d3d153693140392969deba256"
+    },
+    {
+      "card": 25,
+      "exercise": "Standing Calf i apparat",
+      "firstFrame": "kort-25-start.png",
+      "firstSha256": "c79984dced7d2974ef0593da0fab6f0b0bc89e8140864b6a81d0ed42f9bbbbd5",
+      "lastFrame": "kort-25-slutt.png",
+      "lastSha256": "d79087b7038aca8c3af2110713c94eed6d8daeae006b1caf37360e101f43f796"
+    },
+    {
+      "card": 26,
+      "exercise": "Ettbens benpress i apparat",
+      "firstFrame": "kort-26-start.png",
+      "firstSha256": "332f9b1ab5695b2f36b37905c573a55f5340d6cc0f07bce812055cfa84a1de84"
+    },
+    {
+      "card": 27,
+      "exercise": "Sittende tåhev i apparat, tegning",
+      "firstFrame": "kort-27-start.png",
+      "firstSha256": "6247a5e9ee2a3fe94fc1db7c01f7e3a4475a6eb93bc60968a968fe9b233ba9b9",
+      "lastFrame": "kort-27-slutt.png",
+      "lastSha256": "d7e9698aff51c7c1efef3a66bb6da2187248dca0489e601b53a0ea4a563cd7ce"
+    },
+    {
+      "card": 28,
+      "exercise": "Abdominal crunch i apparat",
+      "firstFrame": "kort-28-start.png",
+      "firstSha256": "c4b3937c234f56fd5fa45aaecdb2056e19b1fcf35e9e5785dc899e8f78b634de",
+      "lastFrame": "kort-28-slutt.png",
+      "lastSha256": "7e4820d2dc8f42cd36024244da359beaa107715b47504150f80b31c02a0a443b"
+    },
+    {
+      "card": 29,
+      "exercise": "Sittende tåhev i apparat, foto",
+      "firstFrame": "kort-29-start.png",
+      "firstSha256": "e26ed7db562e4286cd340b3b642ae824cd53b101ba9318515c0aaffb5ab0adc2",
+      "lastFrame": "kort-29-slutt.png",
+      "lastSha256": "5d923a1f7f3be2cd9b5c6e561c8ee8e83aaa5e90e5e4953cf6f66e2b7b82f04f",
+      "falFirstFrame": "kort-29-slutt.png",
+      "falLastFrame": "kort-29-start.png",
+      "postprocess": "Reverse generated return phase to begin from exercise start, then join the return phase into a five-second cycle."
+    },
+    {
+      "card": 30,
+      "exercise": "Sittende roing i apparat",
+      "firstFrame": "kort-30-start.png",
+      "firstSha256": "3a9fc33f1d31a58484aa38d244af0df1b9d70dd472c6c1495d3b01e3a4032e01"
+    },
+    {
+      "card": 31,
+      "exercise": "Sittende back extension i apparat",
+      "firstFrame": "kort-31-start.png",
+      "firstSha256": "0db37ba5c4dcc677bc2870028354144984072f9d85a36c3ee24045ce0806499b"
+    },
+    {
+      "card": 32,
+      "exercise": "Stående tåhev i apparat, tegning",
+      "firstFrame": "kort-32-start.png",
+      "firstSha256": "cd4ad632eb84cfb7b69514118921520e5844ebbdd5342b0f77bfc464231e74b7",
+      "lastFrame": "kort-32-slutt.png",
+      "lastSha256": "baec7dae6613c08f0df833413687e298baea9d5e8f5b0265c788f0b7c080c91b"
+    },
+    {
+      "card": 33,
+      "exercise": "Skulderpress i apparat, tredje variant",
+      "firstFrame": "kort-33-start.png",
+      "firstSha256": "5c76a652ec63698868d62efdd55ec83d87a927ac04b3fe0b4695c7b94672233a",
+      "lastFrame": "kort-33-slutt.png",
+      "lastSha256": "43d702ec54e99ea626c7207e4829fe7a243e39eda03c5f4330eec1455b38f260"
+    },
+    {
+      "card": 34,
+      "exercise": "Skrå benkpress m/stang på apparat",
+      "firstFrame": "kort-34-start.png",
+      "firstSha256": "3491850f5b41a67312226ad84af17c5f7abcae03a94865608c47b5c043e4b4fb"
+    },
+    {
+      "card": 35,
+      "exercise": "Ettbens knebøy på apparat",
+      "firstFrame": "kort-35-start.png",
+      "firstSha256": "4aed6ed063df13f22eb57049ad7d11e93c2e226045701c40e2773c9308da55ab",
+      "lastFrame": "kort-35-slutt.png",
+      "lastSha256": "0dc7117a4b63b592eefbe7426731e4fe2a1c3f9dff0eb13ad0820624e22296fc"
+    },
+    {
+      "card": 37,
+      "exercise": "Diverging Low Row i apparat",
+      "firstFrame": "kort-37-start.png",
+      "firstSha256": "2a341fa4f091445af55b784ce24d9839e7c8cacbe47cc4036f58dc32e1dc6a8b"
+    },
+    {
+      "card": 39,
+      "exercise": "Converging Chest Press i apparat",
+      "firstFrame": "kort-39-start.png",
+      "firstSha256": "845ef122bab1548b9f61441177d160b99862d75b6c093f88162d9ce036d7ca06"
+    },
+    {
+      "card": 40,
+      "exercise": "Crunch i apparat, annet kort",
+      "firstFrame": "kort-40-start.png",
+      "firstSha256": "bd2ac59b8be99ef86f6266a915cfc78043f46b1eaa463d16431a8c9a2bc89c9a",
+      "lastFrame": "kort-40-slutt.png",
+      "lastSha256": "0045c0b1bf82b0b39656752b12dcd597eb1b50202e171706695f3c0647ea660d"
+    },
+    {
+      "card": 41,
+      "exercise": "Roing fra lavt m/smalt grep i apparat",
+      "firstFrame": "kort-41-start.png",
+      "firstSha256": "a105db6e6057d14070486421e1187b06ffb7e5e7ca43d6e264ccdf993c97f0f8"
+    },
+    {
+      "card": 42,
+      "exercise": "Hack squat apparat",
+      "firstFrame": "kort-42-start.png",
+      "firstSha256": "a6717c1324847c94f624575fcc772c58c9bad1573a7e2421d8875d9d6abd122e"
+    },
+    {
+      "card": 45,
+      "exercise": "Skrå brystpress i apparat",
+      "firstFrame": "kort-45-start.png",
+      "firstSha256": "03fc27752e39e0bf3ab1cf34ebab0f6a3143a6deb33a447e386126f10852520a"
+    },
+    {
+      "card": 46,
+      "exercise": "Bicepscurl i apparat",
+      "firstFrame": "kort-46-start.png",
+      "firstSha256": "95e24fe48da767529d3f5dd9607528bfdc207ccab5678fc7582c29a256337674"
+    },
+    {
+      "card": 48,
+      "exercise": "Nedtrekk smalt grep i apparat",
+      "firstFrame": "kort-48-start.png",
+      "firstSha256": "bbf143cd4faa83cc66ea714ddbb8c8c40f07cf581f020ef961e3dd60c62b5b72"
+    }
+  ]
+}
