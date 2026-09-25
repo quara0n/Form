@@ -30,8 +30,8 @@
       "frame": "approved/kort-07-start.png",
       "video": "approved/kort-07.mp4",
       "model": "Wan 2.2 Turbo",
-      "qa": "approved",
-      "note": "Startstilling, apparat og bevegelsesbane visuelt kontrollert.",
+      "qa": "redo_required",
+      "note": "Ny kontroll 25.09: startbildet viser bare halvveis senking; dyp bunnstilling mangler. Må produseres på nytt.",
       "sha256": "e3bede56fea28544339e559265d14cbee652eaf435b126a743830dab3edcbb06"
     },
     {
@@ -170,8 +170,8 @@
       "frame": "approved/kort-25-start.png",
       "video": "approved/kort-25.mp4",
       "model": "MiniMax H3 Max",
-      "qa": "approved",
-      "note": "Den korrekte tåhevfasen er klippet ut av en lengre generering og reversert for retur.",
+      "qa": "redo_required",
+      "note": "Ny kontroll 25.09: hælen senkes ikke tydelig under tåplatens overflate. Må produseres på nytt.",
       "sha256": "15109d0288bb1cdf95e4803ac6d170b876b392f12564444697f991d0ba62b7c0"
     },
     {
@@ -190,8 +190,8 @@
       "frame": "approved/kort-27-start.png",
       "video": "approved/kort-27.mp4",
       "model": "MiniMax H3 Max",
-      "qa": "approved",
-      "note": "Godkjent ankelbevegelse; returfasen er reversert.",
+      "qa": "review_required",
+      "note": "Ny kontroll 25.09: hælen er under tåplaten i start, men samlet ankelutslag er lite. Krever ny faglig vurdering.",
       "sha256": "6b39ca372bc9a664cb6fa8b48e1dd4f4ec02f4c3f91972a1439dd97c01845468"
     },
     {
@@ -210,8 +210,8 @@
       "frame": "approved/kort-29-start.png",
       "video": "approved/kort-29.mp4",
       "model": "MiniMax H3 Max",
-      "qa": "approved",
-      "note": "Tåpress uten tydelig benpress; løftefasen er reversert fra kontrollert retur.",
+      "qa": "review_required",
+      "note": "Ny kontroll 25.09: liten synlig bevegelse; vurder ankelutslag og stabil knestilling på nytt.",
       "sha256": "cfdd78f7f6d50b26c1297c561a40df93ff729948a5600da97ddf2cef251d60f0"
     },
     {
@@ -240,8 +240,8 @@
       "frame": "approved/kort-32-start.png",
       "video": "approved/kort-32.mp4",
       "model": "MiniMax H3 Max",
-      "qa": "approved",
-      "note": "Den korrekte tåhevfasen er klippet ut av en lengre generering og reversert for retur.",
+      "qa": "redo_required",
+      "note": "Ny kontroll 25.09: for liten synlig senkning og heving av hælen. Må produseres på nytt.",
       "sha256": "fd740c5b8f529f5f57c08ae528cc2c8491117899b89e76ec338a5db7d932c6c0"
     },
     {
