@@ -58,8 +58,10 @@ test("generated library excludes pelvic tilt; descriptions expand and persist in
 test("the imported machine collection is browsable", async ({ page }) => {
   await page.goto("/app");
   await page.getByLabel("Samling", { exact: true }).selectOption("Apparater");
-  await expect(page.locator(".exercise-card")).toHaveCount(7);
-  await expect(page.getByText("Brystpress i apparat")).toBeVisible();
+  await expect(page.locator(".exercise-card")).toHaveCount(16);
+  await expect(
+    page.getByText("Brystpress i apparat", { exact: true }),
+  ).toBeVisible();
   await expect(
     page.getByText("Ettbens leg extension fra 60 grader"),
   ).toBeVisible();
