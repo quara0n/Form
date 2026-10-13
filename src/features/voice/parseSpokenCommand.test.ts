@@ -302,3 +302,44 @@ test("ser bort fra muntlig fyll og tenkelyder", () => {
   expect(result.items.map((item) => item.sets)).toEqual(["3", "3"]);
   expect(result.unmatched).toEqual([]);
 });
+
+test("does not absorb an adjacent exercise into a substring match", () => {
+  const variants: Exercise[] = [
+    { ...exercises[0], id: "pulldown", name: "Nedtrekk til bryst", tags: [] },
+    {
+      ...exercises[0],
+      id: "pulldown-wide",
+      name: "Nedtrekk med bredt grep",
+      tags: [],
+    },
+    { ...exercises[0], id: "leg-press", name: "Benpress", tags: [] },
+  ];
+  const result = parseSpokenCommand("nedtrekk beinpress 3 x 10", variants);
+  expect(result.items.map((item) => item.exercise.id)).toEqual([
+    "pulldown",
+    "leg-press",
+  ]);
+});
+
+test("does not turn an incidental location word into an exercise", () => {
+  const variants: Exercise[] = [
+    { ...exercises[0], id: "chest-press", name: "Brystpress", tags: [] },
+    {
+      ...exercises[0],
+      id: "calf-stretch",
+      name: "Dynamisk tøy av legg mot vegg",
+      tags: ["Vegg"],
+    },
+  ];
+  const result = parseSpokenCommand(
+    "brystpress og håndbak mot veggen",
+    variants,
+  );
+  expect(result.items.map((item) => item.exercise.id)).toEqual(["chest-press"]);
+  expect(result.unmatched.join(" ")).toContain("håndbak");
+  expect(result.unmatched.join(" ")).toContain("veggen");
+  expect(
+    parseSpokenCommand("dynamisk tøy av legg mot vegg", variants).items[0]
+      .exercise.id,
+  ).toBe("calf-stretch");
+});

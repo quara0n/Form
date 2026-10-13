@@ -1,0 +1,1817 @@
+{
+  "date": "2026-10-13",
+  "scope": "User-approved generated exercise videos; existing catalogue and media preserved",
+  "baseCommit": "6c87e9e9873f8267bd5f7f5563cc1eaa64eeddee",
+  "approvedVideoCount": 61,
+  "legacyEntriesPreserved": 40,
+  "totalCatalogueEntries": 101,
+  "allApprovedPlaybackFilesSilent": true,
+  "childsPoseTrimSeconds": 4,
+  "entries": [
+    {
+      "id": "exercise-130-round2-20261004-v1",
+      "name": "Hamstringstøyning med stropp",
+      "sourceId": null,
+      "referenceNumber": 130,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/ROUND-2-USER-REVIEW.json",
+          "statement": "Behold øvelse 4.",
+          "decision": "accepted"
+        },
+        {
+          "file": "video-production/parallel-production-2026-10-04/CATALOGUE-IMPORT.json",
+          "statement": "Can you put the exercises we do have in the exercise builder?",
+          "basis": "Explicit user import request for listed five IDs"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/exercise-130-round2-20261004-v1/video.mp4",
+          "sha256": "6b6a88e2fab0f33774083877c1c93b73802559943a5946a262c7942c4d233c53",
+          "bytes": 661564
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/exercise-130-round2-20261004-v1/poster.jpg",
+          "sha256": "6b9770706e9f61ffac50c7bc399c9e0b5168e4bf1760dc77346715f03cea2db1",
+          "bytes": 12070
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "bolk3-round3-exercise003-firstframe-v1-20261004",
+      "name": "Isometrisk nakkefleksjon mot egen hånd",
+      "sourceId": null,
+      "referenceNumber": 3,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/ROUND-3-USER-REVIEW.json",
+          "statement": "Godkjenn 3 og 4.",
+          "decision": "accepted"
+        },
+        {
+          "file": "video-production/parallel-production-2026-10-04/CATALOGUE-IMPORT.json",
+          "statement": "Can you put the exercises we do have in the exercise builder?",
+          "basis": "Explicit user import request for listed five IDs"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/bolk3-round3-exercise003-firstframe-v1-20261004/video.mp4",
+          "sha256": "119ddeae429772e66a3cf980d320c9b1a1fe20a030523028e656d5256c533067",
+          "bytes": 434658
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/bolk3-round3-exercise003-firstframe-v1-20261004/poster.jpg",
+          "sha256": "9c1c4088d321daab21848c741d50aa1555f2dcfc0eb32e39b7f30db865eb0a55",
+          "bytes": 9610
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "exercise-131-round3-20261004-v1",
+      "name": "Hofteabduksjon liggende med strikk",
+      "sourceId": null,
+      "referenceNumber": 131,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/ROUND-3-USER-REVIEW.json",
+          "statement": "Godkjenn 3 og 4.",
+          "decision": "accepted"
+        },
+        {
+          "file": "video-production/parallel-production-2026-10-04/CATALOGUE-IMPORT.json",
+          "statement": "Can you put the exercises we do have in the exercise builder?",
+          "basis": "Explicit user import request for listed five IDs"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/exercise-131-round3-20261004-v1/video.mp4",
+          "sha256": "b0931376d6d707d1db973afc977a23c0cf282d35bf17fcdefcd90f18957efd06",
+          "bytes": 638043
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/exercise-131-round3-20261004-v1/poster.jpg",
+          "sha256": "1a25304d605d83cdc37642fece61d2b9d6a88aa5c5f2eec738b1f7b7c063d1aa",
+          "bytes": 13699
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261007-w3-exercise-011-firstframe-v1",
+      "name": "Enarms utrotasjon med minibånd",
+      "sourceId": null,
+      "referenceNumber": 11,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/restart-2026-10-07/USER-REVIEW.json",
+          "statement": "øvelse 2 og 10 skal ikke med. legg de i utkast eller hvor de trengs, skal heller ikke inkludere videre på neste øvelser. Inkl 8 øvelser inn i programmet ... Alle øvelsene som ikke er i formrehab legg de inn dersom de er godkjent.",
+          "decision": "accepted"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261007-w3-exercise-011-firstframe-v1/video.mp4",
+          "sha256": "533bf14389dfca4bbd3f7cc040d09def4ba26350be268fa660051e0bdad18351",
+          "bytes": 378013
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261007-w3-exercise-011-firstframe-v1/poster.jpg",
+          "sha256": "d52b1ee92470c3aff55869e0de9ec239051c01f97a264a1393276aabcb82720d",
+          "bytes": 8521
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261007-w3-exercise-029-firstframe-v1",
+      "name": "Sideliggende utrotasjon i skulder med manual",
+      "sourceId": null,
+      "referenceNumber": 29,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/restart-2026-10-07/USER-REVIEW.json",
+          "statement": "øvelse 2 og 10 skal ikke med. legg de i utkast eller hvor de trengs, skal heller ikke inkludere videre på neste øvelser. Inkl 8 øvelser inn i programmet ... Alle øvelsene som ikke er i formrehab legg de inn dersom de er godkjent.",
+          "decision": "accepted"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261007-w3-exercise-029-firstframe-v1/video.mp4",
+          "sha256": "2f084e445ab26d63eac0c6b0da2966d1088aa4db6d1da03602c4908fa6dab7cf",
+          "bytes": 423961
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261007-w3-exercise-029-firstframe-v1/poster.jpg",
+          "sha256": "2c50335e0ec3c43aa3add847243cee216ec3f66bb40608088cb64cd2485fb83c",
+          "bytes": 11976
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261007-w3-exercise-033-firstframe-v1",
+      "name": "Sittende innrotasjon i skulder med strikk",
+      "sourceId": null,
+      "referenceNumber": 33,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/restart-2026-10-07/USER-REVIEW.json",
+          "statement": "øvelse 2 og 10 skal ikke med. legg de i utkast eller hvor de trengs, skal heller ikke inkludere videre på neste øvelser. Inkl 8 øvelser inn i programmet ... Alle øvelsene som ikke er i formrehab legg de inn dersom de er godkjent.",
+          "decision": "accepted"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261007-w3-exercise-033-firstframe-v1/video.mp4",
+          "sha256": "93d9925c27376f8412dfd8c886a345ee6087c78c6a071f184a3d43a29495ae89",
+          "bytes": 398785
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261007-w3-exercise-033-firstframe-v1/poster.jpg",
+          "sha256": "b19c058bbde44fb1bdc82bcd2b0e9e4238e2936df316fea63b273621f9bec9fd",
+          "bytes": 9887
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261007-w3-exercise-045-firstframe-v1",
+      "name": "Skulderpendel med stolstøtte",
+      "sourceId": null,
+      "referenceNumber": 45,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/restart-2026-10-07/USER-REVIEW.json",
+          "statement": "øvelse 2 og 10 skal ikke med. legg de i utkast eller hvor de trengs, skal heller ikke inkludere videre på neste øvelser. Inkl 8 øvelser inn i programmet ... Alle øvelsene som ikke er i formrehab legg de inn dersom de er godkjent.",
+          "decision": "accepted"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261007-w3-exercise-045-firstframe-v1/video.mp4",
+          "sha256": "af35d9abb09148a63ff5dabb1ffe521f84e715a593a9d243d03b87404ecda266",
+          "bytes": 438258
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261007-w3-exercise-045-firstframe-v1/poster.jpg",
+          "sha256": "59b7a4c5044ad7da0687a383e6b9fbe210cc04223155c43e457164c9d1870ad3",
+          "bytes": 10891
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "worker4-exercise-101-firstframe-v1-20261007",
+      "name": "Pallof press med strikk",
+      "sourceId": null,
+      "referenceNumber": 101,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/restart-2026-10-07/USER-REVIEW.json",
+          "statement": "øvelse 2 og 10 skal ikke med. legg de i utkast eller hvor de trengs, skal heller ikke inkludere videre på neste øvelser. Inkl 8 øvelser inn i programmet ... Alle øvelsene som ikke er i formrehab legg de inn dersom de er godkjent.",
+          "decision": "accepted"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/worker4-exercise-101-firstframe-v1-20261007/video.mp4",
+          "sha256": "252db781ec3f8e97ca81f34797ff4477014b03ad9b080876cd8644c6e677f1c0",
+          "bytes": 457268
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/worker4-exercise-101-firstframe-v1-20261007/poster.jpg",
+          "sha256": "5e989f269fc9d419d13daa3d063666a4f402a69a1d3bfe982a55e6b171f7c574",
+          "bytes": 9377
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "worker4-exercise-133-firstframe-v1-20261007",
+      "name": "Liggende strak hoftefleksjon med strikk",
+      "sourceId": null,
+      "referenceNumber": 133,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/restart-2026-10-07/USER-REVIEW.json",
+          "statement": "øvelse 2 og 10 skal ikke med. legg de i utkast eller hvor de trengs, skal heller ikke inkludere videre på neste øvelser. Inkl 8 øvelser inn i programmet ... Alle øvelsene som ikke er i formrehab legg de inn dersom de er godkjent.",
+          "decision": "accepted"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/worker4-exercise-133-firstframe-v1-20261007/video.mp4",
+          "sha256": "c4542ee2c0faa755af156df7d5df7a3f8409edf5b53e1544d0916d907caa5160",
+          "bytes": 478507
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/worker4-exercise-133-firstframe-v1-20261007/poster.jpg",
+          "sha256": "b276d06406f8e8cb294153008b5c089bedfa3218dadeaa060ffa08a198e92b37",
+          "bytes": 10589
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "worker4-exercise-147-firstframe-v1-20261007",
+      "name": "Hælglidning i ryggliggende",
+      "sourceId": null,
+      "referenceNumber": 147,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/restart-2026-10-07/USER-REVIEW.json",
+          "statement": "øvelse 2 og 10 skal ikke med. legg de i utkast eller hvor de trengs, skal heller ikke inkludere videre på neste øvelser. Inkl 8 øvelser inn i programmet ... Alle øvelsene som ikke er i formrehab legg de inn dersom de er godkjent.",
+          "decision": "accepted"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/worker4-exercise-147-firstframe-v1-20261007/video.mp4",
+          "sha256": "f606cfa9da148c124b212264ff5d1cd385519fdd6e7642f419d4d1d6a83f0338",
+          "bytes": 520413
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/worker4-exercise-147-firstframe-v1-20261007/poster.jpg",
+          "sha256": "9f2e36317c788e39081de56e2ed6b43a65ec75014306ef77cf22fc5c742cc6e0",
+          "bytes": 10935
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "worker4-exercise-162-firstframe-v1-20261007",
+      "name": "Ankelpumper",
+      "sourceId": null,
+      "referenceNumber": 162,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/restart-2026-10-07/USER-REVIEW.json",
+          "statement": "øvelse 2 og 10 skal ikke med. legg de i utkast eller hvor de trengs, skal heller ikke inkludere videre på neste øvelser. Inkl 8 øvelser inn i programmet ... Alle øvelsene som ikke er i formrehab legg de inn dersom de er godkjent.",
+          "decision": "accepted"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/worker4-exercise-162-firstframe-v1-20261007/video.mp4",
+          "sha256": "be91b8256e7888de3ad98e0b1d3254486449aa1e99eaea4210c50866ea8b39bb",
+          "bytes": 487807
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/worker4-exercise-162-firstframe-v1-20261007/poster.jpg",
+          "sha256": "d7b8334c7afd97d5347af4405a58ab64f1de9f3cea55aa0a8d64ae1050bebcbb",
+          "bytes": 14172
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "exercise-007-h3max-768p-pilot-v1",
+      "name": "Assistert innrotasjon med hånden bak ryggen",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/CATALOGUE-IMPORT.json",
+          "statement": "Can you put the exercises we do have in the exercise builder?",
+          "basis": "Explicit user import request for listed five IDs"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/exercise-007-h3max-768p-pilot-v1/video.mp4",
+          "sha256": "8945a421c61d055ed045fe547a1c7fdd8692b81f86df4a5ad823fa0617f015a6",
+          "bytes": 506453
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/exercise-007-h3max-768p-pilot-v1/poster.jpg",
+          "sha256": "6b4eed33414da25fe3bd0c1b2c56af1ef2692957ce718a8fa90294d1421736c2",
+          "bytes": 9608
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "exercise-129-pilot-20261004-v1",
+      "name": "Ettbens rumensk markløft med kettlebell",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/CATALOGUE-IMPORT.json",
+          "statement": "Can you put the exercises we do have in the exercise builder?",
+          "basis": "Explicit user import request for listed five IDs"
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/exercise-129-pilot-20261004-v1/video.mp4",
+          "sha256": "55b4c2ac1269590d35c7e54df36fa5f11ac68caf5df636966e823ac4e66fd1e8",
+          "bytes": 659280
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/exercise-129-pilot-20261004-v1/poster.jpg",
+          "sha256": "03d12da03bdd6910256a593996d14a41d9b055d41d687e4511a94d5b70026645",
+          "bytes": 9508
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261009-w3-bird-dog-motionref-v1",
+      "name": "Diagonalhev i firefotstående",
+      "sourceId": 21,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/core-motion-batch-2026-10-09/USER-REVIEW.json",
+          "statement": "1-3 was good. the other ones wtf. Add those three videos into the app or library.",
+          "approvedCard": 1
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261009-w3-bird-dog-motionref-v1/video.mp4",
+          "sha256": "5152c1b0123314b078d031ae86f829ea5228086d72e0be019b7e9c5359f3e702",
+          "bytes": 587576
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261009-w3-bird-dog-motionref-v1/poster.jpg",
+          "sha256": "86c9b6a77a98def3263f3a6ecf470834368929ffc4ccb1082b621cea2e5efcd8",
+          "bytes": 11581
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261009-w4-lumbar-rotation-motionref-v1",
+      "name": "Ryggliggende rotasjon av korsrygg",
+      "sourceId": 7643,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/core-motion-batch-2026-10-09/USER-REVIEW.json",
+          "statement": "1-3 was good. the other ones wtf. Add those three videos into the app or library.",
+          "approvedCard": 2
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261009-w4-lumbar-rotation-motionref-v1/video.mp4",
+          "sha256": "a0df7df44eec68d593bc80683ee290aaaa52df2c44ff68012eb380804d63d3e6",
+          "bytes": 648159
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261009-w4-lumbar-rotation-motionref-v1/poster.jpg",
+          "sha256": "32742578e8896e5b8bc9c1c7ff0aa13ef8c2479b49d768cb15e3e0a5c49b0867",
+          "bytes": 16177
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261009-w3-dead-bug-classic-motionref-v1",
+      "name": "Dead Bug – motsatt arm og ben",
+      "sourceId": 710,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/parallel-production-2026-10-04/core-motion-batch-2026-10-09/USER-REVIEW.json",
+          "statement": "1-3 was good. the other ones wtf. Add those three videos into the app or library.",
+          "approvedCard": 3
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261009-w3-dead-bug-classic-motionref-v1/video.mp4",
+          "sha256": "d1fde8635c931761b0bdff779e52da7421bfd630efc1c13e711835e952760adc",
+          "bytes": 605396
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261009-w3-dead-bug-classic-motionref-v1/poster.jpg",
+          "sha256": "e7489da8bc8ea43536fed658ab136a76b4f2fbef30742345fb00feb4e0ed32ef",
+          "bytes": 11528
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "ettbens-kneboy-til-kasse",
+      "name": "Ettbens knebøy til kasse",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 3
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/ettbens-kneboy-til-kasse/video.mp4",
+          "sha256": "bcd9af9857f9cd03fdffbfd70ab275f41f80cf75e10a5d9b645ca36ebec9cd80",
+          "bytes": 470677
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/ettbens-kneboy-til-kasse/poster.jpg",
+          "sha256": "6f59b84cc6148c9ecfafa6830a77491873de3c8122678f605f22d7d0af5bfe8d",
+          "bytes": 8581
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "bolk3-exercise-001-h3max-ref-v1-20261004",
+      "name": "Aktiv nakkerotasjon sittende",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 5
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/bolk3-exercise-001-h3max-ref-v1-20261004/video.mp4",
+          "sha256": "3dc9b3b3826d2a97e6dc44e8ccae119a5c4e20302140703e7042d604e91d178f",
+          "bytes": 474136
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/bolk3-exercise-001-h3max-ref-v1-20261004/poster.jpg",
+          "sha256": "88ce3ce72364fe903294085e216538e6444b16c478a7c72b79a924fe37df12d8",
+          "bytes": 11891
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261008-w3-exercise-013-firstframe-v1",
+      "name": "Knesittende innrotasjon med kabel og benkstøtte",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 8
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261008-w3-exercise-013-firstframe-v1/video.mp4",
+          "sha256": "14d04022cd4ad3027781f9a76e552df51397a35f61b9e6e86401ddf39bdc3deb",
+          "bytes": 478390
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261008-w3-exercise-013-firstframe-v1/poster.jpg",
+          "sha256": "237e63088883a35197c5643d9430e92e349c5b03fdfc324a989cf74a2a9918df",
+          "bytes": 16679
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261009-w3-exercise-012-referencevideo5-v1",
+      "name": "Innrotasjon fra 90° abduksjon med kabel, ettbensstående",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 13
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261009-w3-exercise-012-referencevideo5-v1/video.mp4",
+          "sha256": "c7ae9300d1d2d68ed95823d4082a72036bb5f620ddadcb5ff6bf526d565d6ce1",
+          "bytes": 501322
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261009-w3-exercise-012-referencevideo5-v1/poster.jpg",
+          "sha256": "dbacbcb6ca1c6afeb02c50888df8aea56a1f9fc97eb640b4686a65e7678f13e8",
+          "bytes": 13596
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "sittende-ettbeins-benpress-apparat",
+      "name": "Sittende ettbeins benpress i apparat",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 14
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/sittende-ettbeins-benpress-apparat/video.mp4",
+          "sha256": "2f4fc049b00e1741ccccc02abbf2ba1f7612e6d3702e28902332592fbfba61ac",
+          "bytes": 572121
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/sittende-ettbeins-benpress-apparat/poster.jpg",
+          "sha256": "32aba6336047499602d192c210839356174d102a8b907a13752c6b67fbdaf1c5",
+          "bytes": 15860
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "worker4-exercise-098-firstframe-v1-20261008",
+      "name": "Nedtrekk med bredt nøytralt grep",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 16
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/worker4-exercise-098-firstframe-v1-20261008/video.mp4",
+          "sha256": "d9b600a67a794276fee28b5f02931d72fd3da6ec6ddc5e4b1b979a39d92cc129",
+          "bytes": 466514
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/worker4-exercise-098-firstframe-v1-20261008/poster.jpg",
+          "sha256": "4dbbaa32a955c9b220cae510dfe8c4f6cd19b8226144272ff08f59e173990508",
+          "bytes": 11933
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261008-w3-exercise-005-firstframe-v1",
+      "name": "Liten nikkebevegelse i ryggliggende",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 18
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261008-w3-exercise-005-firstframe-v1/video.mp4",
+          "sha256": "35d2982a0266676c865f6bd6d13f69a488fc8e028aad4326ead4c52ec1fe4467",
+          "bytes": 436434
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261008-w3-exercise-005-firstframe-v1/poster.jpg",
+          "sha256": "96e6ec52a243ad155b3109a0f734f91bc72ad64a3ff6a3f35a4fb687cd5cf7dc",
+          "bytes": 10951
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "formrehab-20261008-w3-exercise-004-firstframe-v1",
+      "name": "Isometrisk nakkesidebøy mot egen hånd",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 19
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/formrehab-20261008-w3-exercise-004-firstframe-v1/video.mp4",
+          "sha256": "3050f5ee3c6e1e1816c68cc145f50f9c6573b96e5f0c07b5cb5a6b1cd4b33203",
+          "bytes": 456526
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/formrehab-20261008-w3-exercise-004-firstframe-v1/poster.jpg",
+          "sha256": "9b80c93ded4a4fcc8ee31f33776e2b79fa19f74c5b865d73742c8bd208242848",
+          "bytes": 9621
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "mageliggende-leg-curl-apparat",
+      "name": "Mageliggende leg curl i apparat",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 20
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/mageliggende-leg-curl-apparat/video.mp4",
+          "sha256": "d367158078ea117959a81025c0df308a216bc7a40be9dcb0caf36e13af923ffe",
+          "bytes": 624566
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/mageliggende-leg-curl-apparat/poster.jpg",
+          "sha256": "644a44040accb02de843ef1e78561a5bab09b607b2352ee8fa11824032c888e7",
+          "bytes": 14614
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "skulderpress-apparat",
+      "name": "Skulderpress i apparat",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 21
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/skulderpress-apparat/video.mp4",
+          "sha256": "e0c29c16128b30e716cd9c361e46a2d499a190839174fe4d0868a434dd99118a",
+          "bytes": 499125
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/skulderpress-apparat/poster.jpg",
+          "sha256": "132b29e627979c750fc7c38494be3a38b0f62ff3b0df7c1cf7a4b65986f568c8",
+          "bytes": 14566
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "omvendt-flyes-apparat",
+      "name": "Omvendt flyes i apparat",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 22
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/omvendt-flyes-apparat/video.mp4",
+          "sha256": "902cad936b5d714d7dbd4f1f6f9657736ee723841fc376039e2cb291fed10719",
+          "bytes": 454694
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/omvendt-flyes-apparat/poster.jpg",
+          "sha256": "ccac994357e5d6a57cb803bda2c06b15a6f93e4cb5b2d63297529d9c89dd7ce3",
+          "bytes": 12747
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "hopp-opp-pa-apparat",
+      "name": "Hopp opp på kasse",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 23
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/hopp-opp-pa-apparat/video.mp4",
+          "sha256": "2188a0f3c01814ddb5122757be593651c99411979572146fbd760ea9cfeaca7b",
+          "bytes": 542556
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/hopp-opp-pa-apparat/poster.jpg",
+          "sha256": "124719a6ad2dc3e7ebdb8dfaaa72d6f80f893acfa5b4fb216bed1958bd543e01",
+          "bytes": 7899
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "steg-ned-pa-apparat",
+      "name": "Steg ned fra kasse",
+      "sourceId": null,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/library-audit-2026-10-10/USER-REVIEW.json",
+          "statement": "Ok. Vi bruker ett bein, knebøy til kasse. kan vi legge. Nummer 3. Nummer 5. Nummer 8. Nummer 14. Nummer 13. Nummer 16. Nummer 18. Nummer 19. Nummer 20. 21. 22. 23. 24.",
+          "approvedCard": 24
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/steg-ned-pa-apparat/video.mp4",
+          "sha256": "750718bc1c58490e92acc8f2808eca7cd57b9959e4912b8a7eaa1240a64492d5",
+          "bytes": 436778
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/steg-ned-pa-apparat/poster.jpg",
+          "sha256": "7af7946c54e785785f8111a3c6258800ea9a4717906aa4a2f8013639a674ebe7",
+          "bytes": 7128
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "bench-581-barbell-firstframe-v1-20261010",
+      "name": "Flat benkpress med stang",
+      "sourceId": 581,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/bench-press-2026-10-10/USER-REVIEW.json",
+          "authority": "Direct user in this chat 10 October 2026",
+          "approvedCards": [
+            1,
+            2
+          ]
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/bench-581-barbell-firstframe-v1-20261010/video.mp4",
+          "sha256": "edcaf0ccf5ab4c1cab5ff14f88430d263350f42a5667672544f40562648ac656",
+          "bytes": 682328
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/bench-581-barbell-firstframe-v1-20261010/poster.jpg",
+          "sha256": "8b35e54f2925979732cc8fa0b957dd86112546260cb13a139a876fe45b1ee84b",
+          "bytes": 13948
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "bench-85-dumbbell-firstframe-v1-20261010",
+      "name": "Flat benkpress med manualer",
+      "sourceId": 85,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/bench-press-2026-10-10/USER-REVIEW.json",
+          "authority": "Direct user in this chat 10 October 2026",
+          "approvedCards": [
+            1,
+            2
+          ]
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/bench-85-dumbbell-firstframe-v1-20261010/video.mp4",
+          "sha256": "114308ca89dc8ef1ee3ca182f86a3208baf456b6aa274e8e455c9fb9931774b4",
+          "bytes": 534740
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/bench-85-dumbbell-firstframe-v1-20261010/poster.jpg",
+          "sha256": "159857126983f746c8d3407f30dc61d1a1627c91e3c6bde9fde29fdb89ce8b9b",
+          "bytes": 11194
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-065-firstframe-v1",
+      "name": "Bicepscurl med manualer",
+      "sourceId": null,
+      "referenceNumber": 65,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 65
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-065-firstframe-v1/video.mp4",
+          "sha256": "9c607291d1df80ca1a6437cd8d9b32671971a37e4047023fb55ed218ba8d7720",
+          "bytes": 418362
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-065-firstframe-v1/poster.jpg",
+          "sha256": "019e6a3337873085c775a3bc5a6939b3e7734be0d529d3ca430e5fbc5c0c8266",
+          "bytes": 10885
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-066-firstframe-v1",
+      "name": "Bicepscurl med vektstang mot vegg",
+      "sourceId": null,
+      "referenceNumber": 66,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 66
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-066-firstframe-v1/video.mp4",
+          "sha256": "1bb6f10b08ed4a1227ba9f55f170aed69979ac6b8351edc9c5518bf696792dc7",
+          "bytes": 447819
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-066-firstframe-v1/poster.jpg",
+          "sha256": "87dcce24651ae846b2793858cf5fd06f0bf06b3cbe7b163c7e6854e944e67735",
+          "bytes": 9082
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-069-firstframe-v1",
+      "name": "Pushups",
+      "sourceId": null,
+      "referenceNumber": 69,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 69
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-069-firstframe-v1/video.mp4",
+          "sha256": "569afb5a8588e57433055bc8b37644c5989d6096a845d55b75d8fb34c3be3075",
+          "bytes": 648840
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-069-firstframe-v1/poster.jpg",
+          "sha256": "600d065fe0be9109032500770f0a82add6837bb49aa06cd10a34767e90dda773",
+          "bytes": 11943
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-071-firstframe-v1",
+      "name": "Sittende skulderpress med hantler og ryggstøtte",
+      "sourceId": null,
+      "referenceNumber": 71,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 71
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-071-firstframe-v1/video.mp4",
+          "sha256": "dfdb154da3c9eb7fb882f57c2e5cda547a967b953dd66c600a3cf86be40d99a9",
+          "bytes": 510079
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-071-firstframe-v1/poster.jpg",
+          "sha256": "65a02c78b525fb38896d995dfb7ca5e1cdeb5a0a8e30978ae8716456f3193634",
+          "bytes": 9742
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-072-firstframe-v1",
+      "name": "Sittende tricepsstrekk over hodet med manual",
+      "sourceId": null,
+      "referenceNumber": 72,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 72
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-072-firstframe-v1/video.mp4",
+          "sha256": "c9d3a31795b941280af9ddc75953b8861d5a9efa9915b0670714075a8bbe2fb1",
+          "bytes": 493294
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-072-firstframe-v1/poster.jpg",
+          "sha256": "30be88fe600ea8b28df276a136453c1df5205bbc87634f068c053c478834d4d1",
+          "bytes": 9459
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-075-firstframe-v1",
+      "name": "Stående militærpress",
+      "sourceId": null,
+      "referenceNumber": 75,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 75
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-075-firstframe-v1/video.mp4",
+          "sha256": "2164c9ad47c0232013f68175bc240802d3a2f6460bad35e35482786ae894ea3d",
+          "bytes": 457806
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-075-firstframe-v1/poster.jpg",
+          "sha256": "a1c6b08376fbc8375e8a6ebee8f3aac42f519f1df87ffffae0ed34a79fcec974",
+          "bytes": 7617
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-076-firstframe-v1",
+      "name": "Tricepspress i kabelapparat med V-håndtak",
+      "sourceId": null,
+      "referenceNumber": 76,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 76
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-076-firstframe-v1/video.mp4",
+          "sha256": "3fd754c702c9dc524c91037ce778ec2cd6a18418e272084f322cf9a932c538f0",
+          "bytes": 412108
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-076-firstframe-v1/poster.jpg",
+          "sha256": "4149e82ef8ae9be345f04efd1c3e998d6c13d204f1a863f56618eec5ab079075",
+          "bytes": 11277
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-079-firstframe-v1",
+      "name": "Bryststøttet apparatroing med bredt grep",
+      "sourceId": null,
+      "referenceNumber": 79,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 79
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-079-firstframe-v1/video.mp4",
+          "sha256": "605f0df260a00a0622f67e6755b23e2eb5bb041f4f46ce7861881e0932213101",
+          "bytes": 729976
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-079-firstframe-v1/poster.jpg",
+          "sha256": "fcd73278d229b01fd0f4e9cc8b685af2dab911971cfe28cd0fb6c672e2afb35d",
+          "bytes": 15285
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-080-firstframe-v1",
+      "name": "Bryststøttet apparatroing med smalt grep",
+      "sourceId": null,
+      "referenceNumber": 80,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 80
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-080-firstframe-v1/video.mp4",
+          "sha256": "6bab8cb605c8eb1915ee07d4b6e09204fdfb577fa216c4bc801ee384266627c0",
+          "bytes": 672838
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-080-firstframe-v1/poster.jpg",
+          "sha256": "adde6bbad94810cf623a6cbef93dcda673309be16b24963867a5bd4c70b0cb8a",
+          "bytes": 15058
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-091-firstframe-v1",
+      "name": "Fremoverlent roing med vektstang",
+      "sourceId": null,
+      "referenceNumber": 91,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 91
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-091-firstframe-v1/video.mp4",
+          "sha256": "e2510ddfcb1875a2e01a30abf149371998faeaa3ecaeaa34fd732674e1d80c5d",
+          "bytes": 637256
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-091-firstframe-v1/poster.jpg",
+          "sha256": "dcca99700d777690a2d75f91e13837bf74e43ae83ae0d263ba1ac99c29a558ec",
+          "bytes": 12905
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-092-firstframe-v1",
+      "name": "Katt–ku",
+      "sourceId": null,
+      "referenceNumber": 92,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 92
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-092-firstframe-v1/video.mp4",
+          "sha256": "01769365514cbf5bd3ebde9211fa35d6bd5274c5368ee8911ed3b1e22a160f93",
+          "bytes": 532899
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-092-firstframe-v1/poster.jpg",
+          "sha256": "60f7f1a2977d22005e66ce9fa6534ff88b5de05053b6342c18535b9c60c84f44",
+          "bytes": 10447
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected14-20261010-093-firstframe-v1",
+      "name": "Kroppsheving med overhåndsgrep",
+      "sourceId": null,
+      "referenceNumber": 93,
+      "approval": [
+        {
+          "file": "video-production/selected-fourteen-2026-10-10/USER-REVIEW.json",
+          "statement": "legg alle inn i øvelsebiblioteket utenom 89 facepull og 78 bekkenvipp.",
+          "approvedNumber": 93
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected14-20261010-093-firstframe-v1/video.mp4",
+          "sha256": "4d0e1684d19eeeb8b77b0f29e2e4ebaadd8291d1b084525ad1c334d3baea8883",
+          "bytes": 403327
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected14-20261010-093-firstframe-v1/poster.jpg",
+          "sha256": "cf2f40afa7d8dd79d9065b1953d9f1b1b16b3b022248ba7811a2f06abf562950",
+          "bytes": 11082
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected11-20261011-w4-132-firstframe-v1",
+      "name": "Hoftebøyertøyning i halvt knestående",
+      "sourceId": null,
+      "referenceNumber": 132,
+      "approval": [
+        {
+          "file": "video-production/selected-eleven-2026-10-11/USER-REVIEW.json",
+          "statement": "Direct user: Inkluder dei. Ja, godkjenn og legg inn disse fem.",
+          "approvedNumber": 132
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected11-20261011-w4-132-firstframe-v1/video.mp4",
+          "sha256": "83daedc1ae5b761a45938ed63b51e6d55f7f0db53d0d2cf9069ea824ae67767d",
+          "bytes": 483219
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected11-20261011-w4-132-firstframe-v1/poster.jpg",
+          "sha256": "0cbcc58a4baf0873d032e17118aa5e7b2b0615b624851f7a8746db1789f9b2de",
+          "bytes": 9577
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected11-20261011-w3-122-firstframe-v1",
+      "name": "Strake rygghev i apparat",
+      "sourceId": null,
+      "referenceNumber": 122,
+      "approval": [
+        {
+          "file": "video-production/selected-eleven-2026-10-11/USER-REVIEW.json",
+          "statement": "Direct user: Inkluder dei. Ja, godkjenn og legg inn disse fem.",
+          "approvedNumber": 122
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected11-20261011-w3-122-firstframe-v1/video.mp4",
+          "sha256": "942c029d97087f7b5c3f772f1d5cd4ae1f5ba9c34bc7769e0a5acf56643e63da",
+          "bytes": 493579
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected11-20261011-w3-122-firstframe-v1/poster.jpg",
+          "sha256": "d9e1b50de87b4c1c89db544499d709cb9f4c33054ffd56b24c518607d5869292",
+          "bytes": 12128
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected11-20261011-w3-121-firstframe-v1",
+      "name": "Strake benløft med korsryggstøtte",
+      "sourceId": null,
+      "referenceNumber": 121,
+      "approval": [
+        {
+          "file": "video-production/selected-eleven-2026-10-11/USER-REVIEW.json",
+          "statement": "Direct user: Inkluder dei. Ja, godkjenn og legg inn disse fem.",
+          "approvedNumber": 121
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected11-20261011-w3-121-firstframe-v1/video.mp4",
+          "sha256": "0208f806820b7cb18522a03f04de3ad69a4708f6b8640681a59033ff3661f948",
+          "bytes": 509400
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected11-20261011-w3-121-firstframe-v1/poster.jpg",
+          "sha256": "326a4f75380aa6ca5c24274545cf68cb6ab86d8e6aaef89c9ca00bd3164d65f6",
+          "bytes": 10829
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected11-20261011-w3-110-firstframe-v1",
+      "name": "Sittende good morning med vektstang",
+      "sourceId": null,
+      "referenceNumber": 110,
+      "approval": [
+        {
+          "file": "video-production/selected-eleven-2026-10-11/USER-REVIEW.json",
+          "statement": "Direct user: Inkluder dei. Ja, godkjenn og legg inn disse fem.",
+          "approvedNumber": 110
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected11-20261011-w3-110-firstframe-v1/video.mp4",
+          "sha256": "aa8d8b9d83b989a44cc92e5c6e72ec78eab156ad79c13d298bf6fc0e56b868f3",
+          "bytes": 604061
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected11-20261011-w3-110-firstframe-v1/poster.jpg",
+          "sha256": "51fd7ac3d3df8d5e5e6601474da927df68e3fb70149c6713ec81a752102ac3b3",
+          "bytes": 14773
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "selected11-20261011-w3-104-firstframe-v1",
+      "name": "Rullende rygghev i apparat",
+      "sourceId": null,
+      "referenceNumber": 104,
+      "approval": [
+        {
+          "file": "video-production/selected-eleven-2026-10-11/USER-REVIEW.json",
+          "statement": "Direct user: Inkluder dei. Ja, godkjenn og legg inn disse fem.",
+          "approvedNumber": 104
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/selected11-20261011-w3-104-firstframe-v1/video.mp4",
+          "sha256": "ea0fd954a4e16b3902d951bf42f8a2d182977d193d661c535a88091b42ad794e",
+          "bytes": 525733
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/selected11-20261011-w3-104-firstframe-v1/poster.jpg",
+          "sha256": "c4b07dae69a786f2cddcc521d1464923e055db3c650419eda0e3cc5ec196cc59",
+          "bytes": 12158
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "hip-pilot-20261011-10170-twoframes-v1",
+      "name": "Statisk hip thrust på benk med vektstang",
+      "sourceId": 10170,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/hip-two-image-pilot-2026-10-11/USER-REVIEW.json",
+          "statement": "We can add these two exercise, but change Statisk Hip thrust på benk med vektstang. Same statisk Ettbeins seteløft.",
+          "approvedSourceId": 10170
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/hip-pilot-20261011-10170-twoframes-v1/video.mp4",
+          "sha256": "76950928d94d41fde423426cd109923fa2625610445267cad1b47f86dd7baecd",
+          "bytes": 677631
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/hip-pilot-20261011-10170-twoframes-v1/poster.jpg",
+          "sha256": "86dbd56866956c370ac55b369bd71bf51d2d378ae439eff6549ba230a5cf415b",
+          "bytes": 15208
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "hip-pilot-20261011-786-twoframes-v1",
+      "name": "Statisk ettbeins seteløft",
+      "sourceId": 786,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/hip-two-image-pilot-2026-10-11/USER-REVIEW.json",
+          "statement": "We can add these two exercise, but change Statisk Hip thrust på benk med vektstang. Same statisk Ettbeins seteløft.",
+          "approvedSourceId": 786
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/hip-pilot-20261011-786-twoframes-v1/video.mp4",
+          "sha256": "096485747287007e4e6c698e2f8658525ad39f94c10ca87367ba5a459cac80e7",
+          "bytes": 460400
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/hip-pilot-20261011-786-twoframes-v1/poster.jpg",
+          "sha256": "e51cddde9b9bc02a0c1228222bee0dfc22e5d976d0329b889cdb3b046891345b",
+          "bytes": 10772
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "mobility-three-20261011-w4-180-twoframes-v1",
+      "name": "Tøyning av bryst og rygg med støtte på bord",
+      "sourceId": null,
+      "referenceNumber": 180,
+      "approval": [
+        {
+          "file": "video-production/mobility-three-two-image-2026-10-11/USER-REVIEW.json",
+          "statement": "Sure. kjør de alle inn i bilioteket.",
+          "approvedNumber": 180
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/mobility-three-20261011-w4-180-twoframes-v1/video.mp4",
+          "sha256": "61cd63313df212e4f14e263d5f971862d21609c450b92218cf61def820f35d25",
+          "bytes": 487164
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/mobility-three-20261011-w4-180-twoframes-v1/phase1.png",
+          "sha256": "d5731bf19c90a77bacb9689acdae102293238904bf1c8c1c6d7ad479e9305225",
+          "bytes": 1641865
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "mobility-three-20261011-w4-28-twoframes-v1",
+      "name": "Sideliggende innrotasjonsmobilisering av skulder",
+      "sourceId": null,
+      "referenceNumber": 28,
+      "approval": [
+        {
+          "file": "video-production/mobility-three-two-image-2026-10-11/USER-REVIEW.json",
+          "statement": "Sure. kjør de alle inn i bilioteket.",
+          "approvedNumber": 28
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/mobility-three-20261011-w4-28-twoframes-v1/video.mp4",
+          "sha256": "524621133621c69a46a772ed72094bee877d56b1c5718c809ed6e8afc7486f84",
+          "bytes": 458751
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/mobility-three-20261011-w4-28-twoframes-v1/phase1.png",
+          "sha256": "113b743c09c6bc5055a0286d1eb15e25992ed6f1e522f5884cb41e5bec5a63bc",
+          "bytes": 1651802
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "mobility-three-20261011-w4-161-twoframes-v1",
+      "name": "Ankelmobilisering med bøyd kne på kile",
+      "sourceId": null,
+      "referenceNumber": 161,
+      "approval": [
+        {
+          "file": "video-production/mobility-three-two-image-2026-10-11/USER-REVIEW.json",
+          "statement": "Sure. kjør de alle inn i bilioteket.",
+          "approvedNumber": 161
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/mobility-three-20261011-w4-161-twoframes-v1/video.mp4",
+          "sha256": "582e13b82566066a6b3c59964930e0ce70d15e072fe2f859d3f0794151e19783",
+          "bytes": 454213
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/mobility-three-20261011-w4-161-twoframes-v1/phase1.png",
+          "sha256": "ea3804f07038aa6e97fdd1a9230255c29c50b662b02011cb85aa5fedfe2090aa",
+          "bytes": 1349234
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "calf-13313-twoimages-hold-v1-20261011",
+      "name": "Tøyning av lår og legg på stol",
+      "sourceId": 13313,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/calf-ten-video-2026-10-11/USER-REVIEW.json",
+          "statement": "2, 3 og #768 består. Legg de inn i biblioteket når rapporten er klar. De var de eneste som bestod.",
+          "approvedSourceId": 13313
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/calf-13313-twoimages-hold-v1-20261011/video.mp4",
+          "sha256": "7366172598af3142bed1cdb1d40919ebb8cf174add9d21f6a655891483026390",
+          "bytes": 456981
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/calf-13313-twoimages-hold-v1-20261011/phase1.png",
+          "sha256": "cb7c5945bd59d65bedca038c3c3707ee9b8483fbc875fa7c881c8e9db270ed41",
+          "bytes": 1681090
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "calf-11245-twoimages-return-v1-20261011",
+      "name": "Dynamisk tøy av legg mot vegg",
+      "sourceId": 11245,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/calf-ten-video-2026-10-11/USER-REVIEW.json",
+          "statement": "2, 3 og #768 består. Legg de inn i biblioteket når rapporten er klar. De var de eneste som bestod.",
+          "approvedSourceId": 11245
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/calf-11245-twoimages-return-v1-20261011/video.mp4",
+          "sha256": "89c943acd1ac816845aa489be2694e5606a0537ff57e52b35bd8ebf485cd8a7d",
+          "bytes": 543394
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/calf-11245-twoimages-return-v1-20261011/phase1.png",
+          "sha256": "64e802dfc389f5af4479eebd09645183c9290367d6aec534eaaebfe78dab4b50",
+          "bytes": 1704624
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "calf-768-twoimages-return-v1-20261011",
+      "name": "Tåhev med bøyde knær",
+      "sourceId": 768,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/calf-ten-video-2026-10-11/USER-REVIEW.json",
+          "statement": "2, 3 og #768 består. Legg de inn i biblioteket når rapporten er klar. De var de eneste som bestod.",
+          "approvedSourceId": 768
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/calf-768-twoimages-return-v1-20261011/video.mp4",
+          "sha256": "24b2ef26b044475ad126bead43a3602221668581120c06361c39598e477e72ea",
+          "bytes": 451725
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/calf-768-twoimages-return-v1-20261011/phase1.png",
+          "sha256": "a538c9f2a049835868535a28ccf54c7dd4ee8a3bdba13dc76995935fe61feb29",
+          "bytes": 1583106
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "static-pilot-20261011-w3-child332-twoframes-v1",
+      "name": "Barnets stilling",
+      "kind": "sourceId",
+      "sourceId": 332,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/static-two-image-pilot-2026-10-11/USER-REVIEW.json",
+          "statement": "Original accepted except head-size distortion; trim requested and completed, 4.00s",
+          "decision": "accepted_subject_to_requested_trim_completed",
+          "fileSha256": "b1da204b2b49fd5d2a624e8bbd69abd44c8856d175c41da5bf8fac82ca3d5aa2",
+          "verified": true
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/static-pilot-20261011-w3-child332-twoframes-v1/video.mp4",
+          "sha256": "34d2389e2730c9243eb5300e0b125d6b3cb7db18942f4d8e8d77fcc1ac161e1e",
+          "bytes": 649640
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/static-pilot-20261011-w3-child332-twoframes-v1/poster.jpg",
+          "sha256": "6718ef67d10789c20154310f1aa758052ac48278a462001ec57fbf7c6ef9e0f3",
+          "bytes": 12413
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 4
+    },
+    {
+      "id": "static-pilot-20261011-w4-sideplank13799-twoframes-v1",
+      "name": "Statisk sideplanke på albue med strake ben",
+      "kind": "sourceId",
+      "sourceId": 13799,
+      "referenceNumber": null,
+      "approval": [
+        {
+          "file": "video-production/static-two-image-pilot-2026-10-11/USER-REVIEW.json",
+          "statement": "Approved",
+          "decision": "approved",
+          "fileSha256": "b1da204b2b49fd5d2a624e8bbd69abd44c8856d175c41da5bf8fac82ca3d5aa2",
+          "verified": true
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/static-pilot-20261011-w4-sideplank13799-twoframes-v1/video.mp4",
+          "sha256": "fb15c6e076fdcc57de146e06222376f7fe351fac013f2b6ed109311792961854",
+          "bytes": 541012
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/static-pilot-20261011-w4-sideplank13799-twoframes-v1/poster.jpg",
+          "sha256": "47bb27709475ea5e19c487acaa0b29dafb04895043dab309b7b24951c0b55b4a",
+          "bytes": 11903
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "three-stretches-20261011-w4-134-twoframes-v1",
+      "name": "Liggende piriformistøyning",
+      "kind": "referenceNumber",
+      "sourceId": null,
+      "referenceNumber": 134,
+      "approval": [
+        {
+          "file": "video-production/three-stretches-two-image-2026-10-11/USER-REVIEW.json",
+          "statement": "FLOTT! funket.",
+          "approvedNumber": 134,
+          "fileSha256": "c886013afe2d1505531397254e94fda702c2294b4fd93dc8d28f3e1ced8a4c5a",
+          "verified": true
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/three-stretches-20261011-w4-134-twoframes-v1/video.mp4",
+          "sha256": "98f7a068e5ac16d2b519f43243500fcf6d82f0aa602fb71dded469577212ee74",
+          "bytes": 862196
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/three-stretches-20261011-w4-134-twoframes-v1/poster.jpg",
+          "sha256": "6735d0b4bff467bc703a6305a1225a866ea8030f2fdb1af9bfad71f7474dfb72",
+          "bytes": 12033
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "three-stretches-20261011-w4-140-twoframes-v1",
+      "name": "Tøyning av sete med rotasjon av overkroppen",
+      "kind": "referenceNumber",
+      "sourceId": null,
+      "referenceNumber": 140,
+      "approval": [
+        {
+          "file": "video-production/three-stretches-two-image-2026-10-11/USER-REVIEW.json",
+          "statement": "FLOTT! funket.",
+          "approvedNumber": 140,
+          "fileSha256": "c886013afe2d1505531397254e94fda702c2294b4fd93dc8d28f3e1ced8a4c5a",
+          "verified": true
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/three-stretches-20261011-w4-140-twoframes-v1/video.mp4",
+          "sha256": "83ee41eca8bfe4c3d97188a3b1dfc48a9fa95a0a0a04e679d580eed07d0826f1",
+          "bytes": 592959
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/three-stretches-20261011-w4-140-twoframes-v1/poster.jpg",
+          "sha256": "0b4bd7c03c96b497be794a356e6dc96f0ea71e48a5fafe5325a5982011a8764f",
+          "bytes": 11742
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    },
+    {
+      "id": "three-stretches-20261011-w4-139-twoframes-v1",
+      "name": "Sittende piriformistøyning",
+      "kind": "referenceNumber",
+      "sourceId": null,
+      "referenceNumber": 139,
+      "approval": [
+        {
+          "file": "video-production/three-stretches-two-image-2026-10-11/USER-REVIEW.json",
+          "statement": "FLOTT! funket.",
+          "approvedNumber": 139,
+          "fileSha256": "c886013afe2d1505531397254e94fda702c2294b4fd93dc8d28f3e1ced8a4c5a",
+          "verified": true
+        }
+      ],
+      "media": [
+        {
+          "kind": "video",
+          "path": "public/media/generated/three-stretches-20261011-w4-139-twoframes-v1/video.mp4",
+          "sha256": "b3c357fa61f01b7ac8a3d027940510e29da3212ea3b45949e0eb4ebd93cc576f",
+          "bytes": 641815
+        },
+        {
+          "kind": "poster",
+          "path": "public/media/generated/three-stretches-20261011-w4-139-twoframes-v1/poster.jpg",
+          "sha256": "dfe071ed0a66c83815dc524a917b1c574ebfe7b40f2c5d0552b13ae4217a4c72",
+          "bytes": 12800
+        }
+      ],
+      "videoAudioStreams": 0,
+      "durationSeconds": 5.167
+    }
+  ]
+}

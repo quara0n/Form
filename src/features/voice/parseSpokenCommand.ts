@@ -540,7 +540,14 @@ export function scoreExercise(segment: string, exercise: Exercise): number {
       (targetCompact.includes(queryCompact) ||
         queryCompact.includes(targetCompact)) &&
       Math.min(targetCompact.length, queryCompact.length) >=
-        Math.max(targetCompact.length, queryCompact.length) * 0.45
+        Math.max(targetCompact.length, queryCompact.length) * 0.45 &&
+      // A substring must account for every spoken name word, not swallow a
+      // neighbouring exercise or match an incidental tag inside another word.
+      queryTokens.every((queryToken) =>
+        targetTokens.some((targetToken) =>
+          tokenMatches(queryToken, targetToken),
+        ),
+      )
     )
       score = 0.9;
     if (queryTokens.length) {

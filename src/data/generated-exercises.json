@@ -5,7 +5,11 @@
     "description": "Ligg på siden med bøyde knær og strikk over knærne. Hold føttene sammen, løft det øverste kneet og senk rolig med stabilt bekken.",
     "region": "Lower body",
     "equipment": "Resistance band",
-    "tags": ["Grunnøvelser og varianter", "Form", "Clamshell med rød strikk"],
+    "tags": [
+      "Grunnøvelser og varianter",
+      "Form",
+      "Clamshell med rød strikk"
+    ],
     "video": "/media/generated/clamshell-red-v1/video.mp4",
     "poster": "/media/generated/clamshell-red-v1/poster.jpg",
     "source": "/media/generated/clamshell-red-v1/video.mp4",
@@ -20,7 +24,11 @@
     "description": "Stå på alle fire. Strekk motsatt arm og bein, hold bekkenet stabilt og før rolig tilbake.",
     "region": "Trunk",
     "equipment": "None",
-    "tags": ["Grunnøvelser og varianter", "Form", "Diagonalen – forsøk 1"],
+    "tags": [
+      "Grunnøvelser og varianter",
+      "Form",
+      "Diagonalen – forsøk 1"
+    ],
     "video": "/media/generated/bird-dog-v1/video.mp4",
     "poster": "/media/generated/bird-dog-v1/poster.jpg",
     "source": "/media/generated/bird-dog-v1/video.mp4",
@@ -35,7 +43,11 @@
     "description": "Hold motsatt arm og bein strukket. Før dem rolig tilbake til alle fire.",
     "region": "Trunk",
     "equipment": "None",
-    "tags": ["Grunnøvelser og varianter", "Form", "Diagonalen – forsøk 2"],
+    "tags": [
+      "Grunnøvelser og varianter",
+      "Form",
+      "Diagonalen – forsøk 2"
+    ],
     "video": "/media/generated/bird-dog-v2/video.mp4",
     "poster": "/media/generated/bird-dog-v2/poster.jpg",
     "source": "/media/generated/bird-dog-v2/video.mp4",
@@ -50,7 +62,11 @@
     "description": "Stå på alle fire. Strekk motsatt arm og bein, hold bekkenet stabilt og før rolig tilbake.",
     "region": "Trunk",
     "equipment": "None",
-    "tags": ["Grunnøvelser og varianter", "Form", "Diagonalen – forsøk 3"],
+    "tags": [
+      "Grunnøvelser og varianter",
+      "Form",
+      "Diagonalen – forsøk 3"
+    ],
     "video": "/media/generated/bird-dog-v3/video.mp4",
     "poster": "/media/generated/bird-dog-v3/poster.jpg",
     "source": "/media/generated/bird-dog-v3/video.mp4",
@@ -89,7 +105,11 @@
     "description": "Ligg på ryggen med bøyde knær og føttene i matten. Løft bekkenet, hold kort og senk rolig tilbake.",
     "region": "Lower body",
     "equipment": "None",
-    "tags": ["Grunnøvelser og varianter", "Form", "Seteløft uten strikk"],
+    "tags": [
+      "Grunnøvelser og varianter",
+      "Form",
+      "Seteløft uten strikk"
+    ],
     "video": "/media/generated/bridge-no-band-v1/video.mp4",
     "poster": "/media/generated/bridge-no-band-v1/poster.jpg",
     "source": "/media/generated/bridge-no-band-v1/video.mp4",
@@ -371,7 +391,11 @@
     "description": "Plasser bakre fot på benken. Bøy fremre kne og senk kroppen, før du presser gjennom fremre fot og reiser deg tilbake.",
     "region": "Lower body",
     "equipment": "Bench",
-    "tags": ["Styrke med utstyr", "Form", "Bulgarsk utfall"],
+    "tags": [
+      "Styrke med utstyr",
+      "Form",
+      "Bulgarsk utfall"
+    ],
     "video": "/media/generated/bulgarian-v1/video.mp4",
     "poster": "/media/generated/bulgarian-v1/poster.jpg",
     "source": "/media/generated/bulgarian-v1/video.mp4",
@@ -386,7 +410,11 @@
     "description": "Stå med strikken rundt lårene over knærne. Bøy hofter og knær, hold knærne i retning tærne og reis deg rolig.",
     "region": "Lower body",
     "equipment": "Resistance band",
-    "tags": ["Styrke med utstyr", "Form", "Knebøy med rød strikk"],
+    "tags": [
+      "Styrke med utstyr",
+      "Form",
+      "Knebøy med rød strikk"
+    ],
     "video": "/media/generated/squat-red-v1/video.mp4",
     "poster": "/media/generated/squat-red-v1/poster.jpg",
     "source": "/media/generated/squat-red-v1/video.mp4",
@@ -401,7 +429,11 @@
     "description": "Ligg på ryggen med bøyde knær og håndball mellom knærne. Klem knærne mot ballen, hold og slipp trykket rolig.",
     "region": "Lower body",
     "equipment": "Ball",
-    "tags": ["Styrke med utstyr", "Form", "Statisk adduksjon med håndball"],
+    "tags": [
+      "Styrke med utstyr",
+      "Form",
+      "Statisk adduksjon med håndball"
+    ],
     "video": "/media/generated/adduction-ball-v1/video.mp4",
     "poster": "/media/generated/adduction-ball-v1/poster.jpg",
     "source": "/media/generated/adduction-ball-v1/video.mp4",
@@ -416,7 +448,11 @@
     "description": "Ligg på ryggen med bøyde knær. Press knærne litt utover mot strikken og hold stillingen før du slipper rolig tilbake.",
     "region": "Lower body",
     "equipment": "Resistance band",
-    "tags": ["Styrke med utstyr", "Form", "Statisk hofteabduksjon med strikk"],
+    "tags": [
+      "Styrke med utstyr",
+      "Form",
+      "Statisk hofteabduksjon med strikk"
+    ],
     "video": "/media/generated/abduction-hold-v1/video.mp4",
     "poster": "/media/generated/abduction-hold-v1/poster.jpg",
     "source": "/media/generated/abduction-hold-v1/video.mp4",
@@ -431,7 +467,11 @@
     "description": "Hold albuen inntil kroppen og bøyd omtrent 90 grader. Drei underarmen utover, hold kort og før rolig tilbake.",
     "region": "Upper body",
     "equipment": "Resistance band",
-    "tags": ["Styrke med utstyr", "Form", "Utadrotasjon av skulder med strikk"],
+    "tags": [
+      "Styrke med utstyr",
+      "Form",
+      "Utadrotasjon av skulder med strikk"
+    ],
     "video": "/media/generated/shoulder-er-v1/video.mp4",
     "poster": "/media/generated/shoulder-er-v1/poster.jpg",
     "source": "/media/generated/shoulder-er-v1/video.mp4",
@@ -446,7 +486,11 @@
     "description": "Sitt med kneet i knekken på maskinen og den ene ankelen bak puten. Strekk knærne rolig på ett bein, hold kort og senk kontrollert tilbake.",
     "region": "Lower body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Ettbens leg extension fra 60 grader"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Ettbens leg extension fra 60 grader"
+    ],
     "video": "/media/generated/ettbens-leg-extension-apparat/video.mp4",
     "poster": "/media/generated/ettbens-leg-extension-apparat/poster.jpg",
     "source": "/media/generated/ettbens-leg-extension-apparat/video.mp4",
@@ -461,7 +505,11 @@
     "description": "Sitt med ryggen mot puten og underarmene mot putene i brysthøyde. Før armene rolig sammen foran brystet, hold kort og før dem kontrollert ut igjen.",
     "region": "Upper body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Flyes i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Flyes i apparat"
+    ],
     "video": "/media/generated/flyes-apparat/video.mp4",
     "poster": "/media/generated/flyes-apparat/poster.jpg",
     "source": "/media/generated/flyes-apparat/video.mp4",
@@ -476,7 +524,11 @@
     "description": "Sitt med ryggen mot puten og håndtakene i brysthøyde. Press håndtakene rolig fram til armene er strake, hold kort og før dem kontrollert tilbake.",
     "region": "Upper body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Brystpress i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Brystpress i apparat"
+    ],
     "video": "/media/generated/brystpress-apparat/video.mp4",
     "poster": "/media/generated/brystpress-apparat/poster.jpg",
     "source": "/media/generated/brystpress-apparat/video.mp4",
@@ -491,7 +543,11 @@
     "description": "Sitt med lårene under puten og ta i stangen med bredt grep. Trekk stangen rolig ned til øvre del av brystet, hold kort og før den kontrollert opp igjen.",
     "region": "Upper body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Nedtrekk til bryst i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Nedtrekk til bryst i apparat"
+    ],
     "video": "/media/generated/nedtrekk-til-bryst-apparat/video.mp4",
     "poster": "/media/generated/nedtrekk-til-bryst-apparat/poster.jpg",
     "source": "/media/generated/nedtrekk-til-bryst-apparat/video.mp4",
@@ -506,7 +562,11 @@
     "description": "Sitt med knærne i knekken på maskinen og anklene bak puten. Strekk knærne rolig til beina er strake, hold kort og senk kontrollert tilbake.",
     "region": "Lower body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Leg extension i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Leg extension i apparat"
+    ],
     "video": "/media/generated/leg-extension-apparat/video.mp4",
     "poster": "/media/generated/leg-extension-apparat/poster.jpg",
     "source": "/media/generated/leg-extension-apparat/video.mp4",
@@ -521,7 +581,11 @@
     "description": "Sitt med ryggen mot puten og leggene mot den fremre puten. Bøy knærne rolig mot setet, hold kort og før beina kontrollert tilbake.",
     "region": "Lower body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Sittende leg curl i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Sittende leg curl i apparat"
+    ],
     "video": "/media/generated/sittende-leg-curl-apparat/video.mp4",
     "poster": "/media/generated/sittende-leg-curl-apparat/poster.jpg",
     "source": "/media/generated/sittende-leg-curl-apparat/video.mp4",
@@ -536,7 +600,11 @@
     "description": "Sitt i maskinen med føttene i skulderbredde på platen. Press platen rolig opp ved å strekke knærne, hold kort og senk kontrollert tilbake.",
     "region": "Lower body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Benpress i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Benpress i apparat"
+    ],
     "video": "/media/generated/benpress-apparat/video.mp4",
     "poster": "/media/generated/benpress-apparat/poster.jpg",
     "source": "/media/generated/benpress-apparat/video.mp4",
@@ -551,7 +619,11 @@
     "description": "Sitt med ryggen mot puten og knærne fra hverandre. Press lårene rolig sammen mot putene, og før knærne kontrollert ut til startstillingen igjen.",
     "region": "Lower body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Sittende hofteadduksjon i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Sittende hofteadduksjon i apparat"
+    ],
     "video": "/media/generated/hofteadduksjon-apparat-kort-09/video.mp4",
     "poster": "/media/generated/hofteadduksjon-apparat-kort-09/poster.png",
     "source": "/media/generated/hofteadduksjon-apparat-kort-09/video.mp4",
@@ -566,7 +638,11 @@
     "description": "Sitt med ryggen mot puten og hold håndtakene ved skuldrene. Press apparatarmene rolig opp over hodet, og senk dem kontrollert tilbake.",
     "region": "Upper body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Skulderpress i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Skulderpress i apparat"
+    ],
     "video": "/media/generated/skulderpress-apparat-kort-17/video.mp4",
     "poster": "/media/generated/skulderpress-apparat-kort-17/poster.png",
     "source": "/media/generated/skulderpress-apparat-kort-17/video.mp4",
@@ -581,7 +657,11 @@
     "description": "Sitt med lårene under putene og forfoten på fotstøtten. Løft hælene ved å strekke anklene mens knærne holder samme vinkel, og senk hælene rolig igjen.",
     "region": "Lower body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Sittende tåhev i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Sittende tåhev i apparat"
+    ],
     "video": "/media/generated/sittende-tahev-apparat-kort-27/video.mp4",
     "poster": "/media/generated/sittende-tahev-apparat-kort-27/poster.png",
     "source": "/media/generated/sittende-tahev-apparat-kort-27/video.mp4",
@@ -596,7 +676,11 @@
     "description": "Sitt med føttene på støtten og hold i håndtakene. Krumm øvre del av ryggen rolig fremover mot bekkenet, og før overkroppen kontrollert tilbake til oppreist stilling.",
     "region": "Trunk",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Abdominal crunch i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Abdominal crunch i apparat"
+    ],
     "video": "/media/generated/abdominal-crunch-apparat-kort-28/video.mp4",
     "poster": "/media/generated/abdominal-crunch-apparat-kort-28/poster.png",
     "source": "/media/generated/abdominal-crunch-apparat-kort-28/video.mp4",
@@ -611,7 +695,11 @@
     "description": "Ligg på skrå benk med stangen over øvre del av brystet. Press stangen opp langs skinnene til armene er nesten strake, og senk den kontrollert tilbake.",
     "region": "Upper body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Skrå benkpress med stang i Smith-apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Skrå benkpress med stang i Smith-apparat"
+    ],
     "video": "/media/generated/skra-benkpress-smith-kort-34/video.mp4",
     "poster": "/media/generated/skra-benkpress-smith-kort-34/poster.png",
     "source": "/media/generated/skra-benkpress-smith-kort-34/video.mp4",
@@ -626,7 +714,11 @@
     "description": "Stå på ett bein på plattformen og hold i støttehåndtakene. La det frie beinet peke fremover, bøy standkneet kontrollert og press deg opp igjen.",
     "region": "Lower body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Ettbens knebøy med støtteapparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Ettbens knebøy med støtteapparat"
+    ],
     "video": "/media/generated/ettbens-kneboy-apparat-kort-35/video.mp4",
     "poster": "/media/generated/ettbens-kneboy-apparat-kort-35/poster.png",
     "source": "/media/generated/ettbens-kneboy-apparat-kort-35/video.mp4",
@@ -641,7 +733,11 @@
     "description": "Stå med føttene på plattformen og skuldrene under putene. Bøy hofter og knær for å senke sleden kontrollert, og press deg opp til nesten strake bein igjen.",
     "region": "Lower body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Hack squat i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Hack squat i apparat"
+    ],
     "video": "/media/generated/hack-squat-apparat-kort-42/video.mp4",
     "poster": "/media/generated/hack-squat-apparat-kort-42/poster.png",
     "source": "/media/generated/hack-squat-apparat-kort-42/video.mp4",
@@ -656,7 +752,11 @@
     "description": "Sitt med ryggen mot skråputen og håndtakene ved øvre del av brystet. Press apparatarmene opp og frem til armene er nesten strake, og før dem kontrollert tilbake.",
     "region": "Upper body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Skrå brystpress i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Skrå brystpress i apparat"
+    ],
     "video": "/media/generated/skra-brystpress-apparat-kort-45/video.mp4",
     "poster": "/media/generated/skra-brystpress-apparat-kort-45/poster.png",
     "source": "/media/generated/skra-brystpress-apparat-kort-45/video.mp4",
@@ -671,7 +771,11 @@
     "description": "Sitt med lårene under puten og hold de smale håndtakene over hodet. Trekk håndtakene rolig ned mot øvre del av brystet, og før dem kontrollert opp igjen.",
     "region": "Upper body",
     "equipment": "Machine",
-    "tags": ["Apparater", "Form", "Nedtrekk med smalt grep i apparat"],
+    "tags": [
+      "Apparater",
+      "Form",
+      "Nedtrekk med smalt grep i apparat"
+    ],
     "video": "/media/generated/nedtrekk-smalt-apparat-kort-48/video.mp4",
     "poster": "/media/generated/nedtrekk-smalt-apparat-kort-48/poster.png",
     "source": "/media/generated/nedtrekk-smalt-apparat-kort-48/video.mp4",
@@ -679,5 +783,1458 @@
     "license": "AI-generert",
     "collection": "Apparater",
     "reviewNote": ""
+  },
+  {
+    "id": "exercise-130-round2-20261004-v1",
+    "name": "Hamstringstøyning med stropp",
+    "description": "Ligg på ryggen med en stropp rundt foten. Før benet oppover ved hjelp av stroppen, hold kort og senk kontrollert tilbake.",
+    "tags": [
+      "Hofte",
+      "Hamstring",
+      "Bakside lår",
+      "Tøyning",
+      "Stropp",
+      "FormRehab"
+    ],
+    "video": "/media/generated/exercise-130-round2-20261004-v1/video.mp4",
+    "poster": "/media/generated/exercise-130-round2-20261004-v1/poster.jpg",
+    "source": "/media/generated/exercise-130-round2-20261004-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "",
+    "region": "Lower body",
+    "equipment": "Strap",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "bolk3-round3-exercise003-firstframe-v1-20261004",
+    "name": "Isometrisk nakkefleksjon mot egen hånd",
+    "description": "Sitt oppreist. Plasser hånden mot pannen og press hodet lett mot hånden uten å bevege nakken. Slipp trykket og før hånden tilbake.",
+    "tags": [
+      "Nakke",
+      "Isometrisk",
+      "Nakkefleksjon",
+      "FormRehab"
+    ],
+    "video": "/media/generated/bolk3-round3-exercise003-firstframe-v1-20261004/video.mp4",
+    "poster": "/media/generated/bolk3-round3-exercise003-firstframe-v1-20261004/poster.jpg",
+    "source": "/media/generated/bolk3-round3-exercise003-firstframe-v1-20261004/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 4. oktober 2026. Arbeidsarm og håndplassering avviker fra fasebildet; observert avvik er dokumentert i produksjonsrapporten.",
+    "region": "Upper body",
+    "equipment": "Chair",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "exercise-131-round3-20261004-v1",
+    "name": "Hofteabduksjon liggende med strikk",
+    "description": "Ligg på ryggen med bøyde knær og strikk over knærne. Før knærne rolig utover, hold kort og før dem kontrollert sammen igjen. Bekkenet blir på matten.",
+    "tags": [
+      "Hofte",
+      "Sete",
+      "Abduksjon",
+      "Strikk",
+      "FormRehab"
+    ],
+    "video": "/media/generated/exercise-131-round3-20261004-v1/video.mp4",
+    "poster": "/media/generated/exercise-131-round3-20261004-v1/poster.jpg",
+    "source": "/media/generated/exercise-131-round3-20261004-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 4. oktober 2026. Videoen har større kneåpning enn fasebildet og usikker fjern fotkontakt; dokumentert i produksjonsrapporten.",
+    "region": "Lower body",
+    "equipment": "Resistance band",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "formrehab-20261007-w3-exercise-011-firstframe-v1",
+    "name": "Enarms utrotasjon med minibånd",
+    "description": "Stå med albuene bøyd og overarmene inntil kroppen. Før høyre underarm rolig utover mot minibåndet mens venstre hånd holdes i ro. Før underarmen kontrollert tilbake.",
+    "tags": [
+      "Skulder",
+      "Resistance band",
+      "Enarms utrotasjon med minibånd",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261007-w3-exercise-011-firstframe-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261007-w3-exercise-011-firstframe-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261007-w3-exercise-011-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 7. oktober 2026. Videoen viser to repetisjoner i løpet av fem sekunder, i stedet for én langsom repetisjon. Klær og små detaljer er noe mykere enn i referansebildene.",
+    "region": "Upper body",
+    "equipment": "Resistance band",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "formrehab-20261007-w3-exercise-029-firstframe-v1",
+    "name": "Sideliggende utrotasjon i skulder med manual",
+    "description": "Ligg på siden med albuen bøyd og et håndkle mellom overarm og kropp. Roter underarmen oppover med manualen og senk kontrollert tilbake.",
+    "tags": [
+      "Skulder",
+      "Dumbbell",
+      "Sideliggende utrotasjon i skulder med manual",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261007-w3-exercise-029-firstframe-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261007-w3-exercise-029-firstframe-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261007-w3-exercise-029-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 7. oktober 2026. Albuen forskyves under løftet, og håndkleets form og støtte endrer seg. Underarmen avviker fra sluttposisjonen i referansen. Klær og små detaljer er noe mykere enn i referansebildene.",
+    "region": "Upper body",
+    "equipment": "Dumbbell",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "formrehab-20261007-w3-exercise-033-firstframe-v1",
+    "name": "Sittende innrotasjon i skulder med strikk",
+    "description": "Sitt oppreist med albuen bøyd og overarmen inntil kroppen. Før underarmen innover over magen mot strikken. Hold kort og før kontrollert tilbake.",
+    "tags": [
+      "Skulder",
+      "Resistance band",
+      "Sittende innrotasjon i skulder med strikk",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261007-w3-exercise-033-firstframe-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261007-w3-exercise-033-firstframe-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261007-w3-exercise-033-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 7. oktober 2026. Klær og små detaljer er noe mykere enn i referansebildene.",
+    "region": "Upper body",
+    "equipment": "Resistance band",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "formrehab-20261007-w3-exercise-045-firstframe-v1",
+    "name": "Skulderpendel med stolstøtte",
+    "description": "Støtt venstre hånd på stolryggen og len deg lett fremover. La høyre arm henge avslappet og pendle forsiktig fremover og tilbake.",
+    "tags": [
+      "Skulder",
+      "Chair",
+      "Skulderpendel med stolstøtte",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261007-w3-exercise-045-firstframe-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261007-w3-exercise-045-firstframe-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261007-w3-exercise-045-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 7. oktober 2026. Videoen inkluderer en bakoversving utover den valgte start- og sluttbevegelsen. Det er usikkert om skulderen forblir avslappet gjennom hele pendlingen. Klær og små detaljer er noe mykere enn i referansebildene.",
+    "region": "Upper body",
+    "equipment": "Chair",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "worker4-exercise-101-firstframe-v1-20261007",
+    "name": "Pallof press med strikk",
+    "description": "Stå med strikken festet ved siden av deg. Hold hendene foran brystet og press dem rolig fremover uten å rotere overkroppen. Hold kort og før tilbake.",
+    "tags": [
+      "Rygg og kjerne",
+      "Resistance band",
+      "Pallof press med strikk",
+      "FormRehab"
+    ],
+    "video": "/media/generated/worker4-exercise-101-firstframe-v1-20261007/video.mp4",
+    "poster": "/media/generated/worker4-exercise-101-firstframe-v1-20261007/poster.jpg",
+    "source": "/media/generated/worker4-exercise-101-firstframe-v1-20261007/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 7. oktober 2026. Strikkens feste og geometri varierer litt under bevegelsen. Klær og små detaljer er noe mykere enn i referansebildene.",
+    "region": "Core",
+    "equipment": "Resistance band",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "worker4-exercise-133-firstframe-v1-20261007",
+    "name": "Liggende strak hoftefleksjon med strikk",
+    "description": "Ligg på ryggen med strikk rundt anklene. Løft det ene strake benet rolig, hold kort og senk kontrollert tilbake mens det andre benet ligger på matten.",
+    "tags": [
+      "Hofte og sete",
+      "Resistance band",
+      "Liggende strak hoftefleksjon med strikk",
+      "FormRehab"
+    ],
+    "video": "/media/generated/worker4-exercise-133-firstframe-v1-20261007/video.mp4",
+    "poster": "/media/generated/worker4-exercise-133-firstframe-v1-20261007/poster.jpg",
+    "source": "/media/generated/worker4-exercise-133-firstframe-v1-20261007/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 7. oktober 2026. Baksiden av strikkløkken er delvis skjult og kan ikke følges gjennom hele bevegelsen. Klær og små detaljer er noe mykere enn i referansebildene.",
+    "region": "Lower body",
+    "equipment": "Resistance band",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "worker4-exercise-147-firstframe-v1-20261007",
+    "name": "Hælglidning i ryggliggende",
+    "description": "Ligg på ryggen og trekk den ene hælen rolig mot setet slik at kneet bøyes. Hold kort og gli kontrollert tilbake til strakt ben.",
+    "tags": [
+      "Knær og lår",
+      "Bodyweight",
+      "Hælglidning i ryggliggende",
+      "FormRehab"
+    ],
+    "video": "/media/generated/worker4-exercise-147-firstframe-v1-20261007/video.mp4",
+    "poster": "/media/generated/worker4-exercise-147-firstframe-v1-20261007/poster.jpg",
+    "source": "/media/generated/worker4-exercise-147-firstframe-v1-20261007/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 7. oktober 2026. Hælen er delvis skjult ved knebøyen. Kontinuerlig kontakt mellom hæl og matte er ikke bekreftet. Klær og små detaljer er noe mykere enn i referansebildene.",
+    "region": "Lower body",
+    "equipment": "Bodyweight",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "worker4-exercise-162-firstframe-v1-20261007",
+    "name": "Ankelpumper",
+    "description": "Sitt på matten med bena strake. Beveg begge føttene rolig mellom tær opp og tær frem, og før tilbake. Hold knær og overkropp i ro.",
+    "tags": [
+      "Ankel og fot",
+      "Bodyweight",
+      "Ankelpumper",
+      "FormRehab"
+    ],
+    "video": "/media/generated/worker4-exercise-162-firstframe-v1-20261007/video.mp4",
+    "poster": "/media/generated/worker4-exercise-162-firstframe-v1-20261007/poster.jpg",
+    "source": "/media/generated/worker4-exercise-162-firstframe-v1-20261007/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 7. oktober 2026. Kildegrunnlaget er små stillbilder. Kildens tempo og kontinuerlige bevegelse er ikke kontrollert ved ny avspilling. Klær og små detaljer er noe mykere enn i referansebildene.",
+    "region": "Lower body",
+    "equipment": "Bodyweight",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "exercise-007-h3max-768p-pilot-v1",
+    "name": "Assistert innrotasjon med hånden bak ryggen",
+    "description": "Før hånden bak ryggen. Bruk den andre hånden til å hjelpe armen rolig oppover, og før tilbake til utgangsstillingen.",
+    "tags": [
+      "Skulder",
+      "Innrotasjon",
+      "Bevegelighet",
+      "FormRehab"
+    ],
+    "video": "/media/generated/exercise-007-h3max-768p-pilot-v1/video.mp4",
+    "poster": "/media/generated/exercise-007-h3max-768p-pilot-v1/poster.jpg",
+    "source": "/media/generated/exercise-007-h3max-768p-pilot-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "",
+    "region": "Upper body",
+    "equipment": "None",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "exercise-129-pilot-20261004-v1",
+    "name": "Ettbens rumensk markløft med kettlebell",
+    "description": "Stå på ett ben med kettlebell i hånden. Før hoften bakover mens overkroppen senkes og det frie benet føres bakover. Reis deg kontrollert tilbake.",
+    "tags": [
+      "Hofte",
+      "Bakside lår",
+      "Balanse",
+      "Rumensk markløft",
+      "FormRehab"
+    ],
+    "video": "/media/generated/exercise-129-pilot-20261004-v1/video.mp4",
+    "poster": "/media/generated/exercise-129-pilot-20261004-v1/poster.jpg",
+    "source": "/media/generated/exercise-129-pilot-20261004-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "",
+    "region": "Lower body",
+    "equipment": "Kettlebell",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "formrehab-20261009-w3-bird-dog-motionref-v1",
+    "name": "Diagonalhev i firefotstående",
+    "description": "Stå på alle fire. Strekk høyre arm frem og venstre ben bak, hold kort og før begge kontrollert tilbake. Videoen viser én diagonal.",
+    "tags": [
+      "Rygg og kjerne",
+      "Bodyweight",
+      "Diagonalhev i firefotstående",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261009-w3-bird-dog-motionref-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261009-w3-bird-dog-motionref-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261009-w3-bird-dog-motionref-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 9. oktober 2026. Én diagonal med retur; den andre siden vises ikke. Benet løftes noe over hoftehøyde, og bekken-/korsryggstillingen bør vurderes. Klærnes mønster er mykere og studioet noe mørkere enn referansen.",
+    "region": "Trunk",
+    "equipment": "Bodyweight",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "formrehab-20261009-w4-lumbar-rotation-motionref-v1",
+    "name": "Ryggliggende rotasjon av korsrygg",
+    "description": "Ligg på ryggen med bøyde knær og føttene på matten. Hold knærne samlet, før dem rolig til én side og tilbake til midten mens skuldrene blir liggende.",
+    "region": "Trunk",
+    "equipment": "Bodyweight",
+    "tags": [
+      "Rygg og kjerne",
+      "Bodyweight",
+      "Ryggliggende rotasjon av korsrygg",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261009-w4-lumbar-rotation-motionref-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261009-w4-lumbar-rotation-motionref-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261009-w4-lumbar-rotation-motionref-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 9. oktober 2026. Videoen viser én side og retur. Assistentens kontroll flagget begrenset bevegelsesutslag sammenlignet med demonstrasjonen; brukerens godkjenning er beholdt separat fra denne vurderingen. Utseendet har mindre avvik fra referansen.",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "formrehab-20261009-w3-dead-bug-classic-motionref-v1",
+    "name": "Dead Bug – motsatt arm og ben",
+    "description": "Ligg på ryggen med armene opp og hofter og knær bøyd omtrent 90 grader. Før én arm bak hodet og strekk motsatt ben, hold kort og før begge tilbake. Hold bekkenet stabilt.",
+    "tags": [
+      "Rygg og kjerne",
+      "Bodyweight",
+      "Dead Bug – motsatt arm og ben",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261009-w3-dead-bug-classic-motionref-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261009-w3-dead-bug-classic-motionref-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261009-w3-dead-bug-classic-motionref-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent av brukeren 9. oktober 2026. Klassisk Dead Bug med arm og motsatt ben, adskilt fra hæltappvarianten. Én diagonal med retur; fingertuppene ligger nær bildekanten. Ryggtrykk og muskelaktivering kan ikke bekreftes visuelt. Klærnes mønster er mykere og studioet noe mørkere enn referansen.",
+    "region": "Trunk",
+    "equipment": "Bodyweight",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "ettbens-kneboy-til-kasse",
+    "name": "Ettbens knebøy til kasse",
+    "description": "Stå på ett bein foran en kasse. Senk deg rolig til du så vidt berører kassen og press opp igjen.",
+    "region": "Lower body",
+    "equipment": "Step",
+    "tags": [
+      "Knær og lår",
+      "Ettbens knebøy til kasse",
+      "FormRehab"
+    ],
+    "video": "/media/generated/ettbens-kneboy-til-kasse/video.mp4",
+    "poster": "/media/generated/ettbens-kneboy-til-kasse/poster.jpg",
+    "source": "/media/generated/ettbens-kneboy-til-kasse/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 3). Tidligere kontrollmerknad beholdt: Videoutkastet var merket needs-review før brukerens valg.",
+    "visualGroup": "blue"
+  },
+  {
+    "id": "bolk3-exercise-001-h3max-ref-v1-20261004",
+    "name": "Aktiv nakkerotasjon sittende",
+    "description": "Sitt oppreist. Drei hodet rolig mot venstre og før tilbake til midten uten å dreie overkroppen.",
+    "region": "Neck",
+    "equipment": "Chair",
+    "tags": [
+      "Nakke",
+      "Aktiv nakkerotasjon sittende",
+      "FormRehab"
+    ],
+    "video": "/media/generated/bolk3-exercise-001-h3max-ref-v1-20261004/video.mp4",
+    "poster": "/media/generated/bolk3-exercise-001-h3max-ref-v1-20261004/poster.jpg",
+    "source": "/media/generated/bolk3-exercise-001-h3max-ref-v1-20261004/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 5). Tidligere kontrollmerknad beholdt: Nyere v2 finnes, avventer bruker; v1 avvist.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "formrehab-20261008-w3-exercise-013-firstframe-v1",
+    "name": "Knesittende innrotasjon med kabel og benkstøtte",
+    "description": "Sitt på knærne bak benken med albuen støttet på puten. Før underarmen kontrollert inn og ned ved å rotere skulderen, og før tilbake. Behold albuen på samme støttepunkt.",
+    "region": "Upper body",
+    "equipment": "Cable",
+    "tags": [
+      "Skulder og overkropp",
+      "Knesittende innrotasjon med kabel og benkstøtte",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261008-w3-exercise-013-firstframe-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261008-w3-exercise-013-firstframe-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261008-w3-exercise-013-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 8). Tidligere kontrollmerknad beholdt: New video awaiting user review. No import or retry authorized.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "formrehab-20261009-w3-exercise-012-referencevideo5-v1",
+    "name": "Innrotasjon fra 90° abduksjon med kabel, ettbensstående",
+    "description": "Stå på ett ben med albuen løftet til skulderhøyde og bøyd omtrent 90 grader. Roter underarmen inn mot kroppen mot kabelmotstanden, og før rolig tilbake.",
+    "region": "Upper body",
+    "equipment": "Cable",
+    "tags": [
+      "Skulder og overkropp",
+      "Innrotasjon fra 90° abduksjon med kabel, ettbensstående",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261009-w3-exercise-012-referencevideo5-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261009-w3-exercise-012-referencevideo5-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261009-w3-exercise-012-referencevideo5-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 13). Tidligere kontrollmerknad beholdt: Reference-video pilot shows raised elbow, inward rotation and return; endpoint high, design/mechanics flags. Human review pending, no import or extra attempts.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "sittende-ettbeins-benpress-apparat",
+    "name": "Sittende ettbeins benpress i apparat",
+    "description": "Sitt i maskinen med den ene foten på platen. Press platen rolig opp ved å strekke kneet, hold kort og senk kontrollert tilbake.",
+    "region": "Lower body",
+    "equipment": "Machine",
+    "tags": [
+      "Knær og lår",
+      "Sittende ettbeins benpress i apparat",
+      "FormRehab"
+    ],
+    "video": "/media/generated/sittende-ettbeins-benpress-apparat/video.mp4",
+    "poster": "/media/generated/sittende-ettbeins-benpress-apparat/poster.jpg",
+    "source": "/media/generated/sittende-ettbeins-benpress-apparat/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 14). Tidligere kontrollmerknad beholdt: Videoutkastet var merket needs-review før brukerens valg.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "worker4-exercise-098-firstframe-v1-20261008",
+    "name": "Nedtrekk med bredt nøytralt grep",
+    "description": "Sitt med lårene under puten og hold håndtakene med bredt nøytralt grep. Trekk håndtakene ned mot øvre bryst, og før kontrollert tilbake.",
+    "region": "Upper body",
+    "equipment": "Machine",
+    "tags": [
+      "Skulder og overkropp",
+      "Nedtrekk med bredt nøytralt grep",
+      "FormRehab"
+    ],
+    "video": "/media/generated/worker4-exercise-098-firstframe-v1-20261008/video.mp4",
+    "poster": "/media/generated/worker4-exercise-098-firstframe-v1-20261008/poster.jpg",
+    "source": "/media/generated/worker4-exercise-098-firstframe-v1-20261008/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 16). Tidligere kontrollmerknad beholdt: New video awaiting user review. No import or retry authorized.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "formrehab-20261008-w3-exercise-005-firstframe-v1",
+    "name": "Liten nikkebevegelse i ryggliggende",
+    "description": "Ligg på ryggen med bøyde knær og hodet støttet på matten. Gjør en liten nikkebevegelse ved å føre haken forsiktig mot halsen, og slipp tilbake.",
+    "region": "Neck",
+    "equipment": "Bodyweight",
+    "tags": [
+      "Nakke",
+      "Liten nikkebevegelse i ryggliggende",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261008-w3-exercise-005-firstframe-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261008-w3-exercise-005-firstframe-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261008-w3-exercise-005-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 18). Tidligere kontrollmerknad beholdt: New video awaiting user review. No import or retry authorized.",
+    "visualGroup": "sage"
+  },
+  {
+    "id": "formrehab-20261008-w3-exercise-004-firstframe-v1",
+    "name": "Isometrisk nakkesidebøy mot egen hånd",
+    "description": "Sitt oppreist og legg hånden mot siden av hodet. Press hodet lett mot hånden uten å bevege nakken, hold kort og slipp opp.",
+    "region": "Neck",
+    "equipment": "Bodyweight",
+    "tags": [
+      "Nakke",
+      "Isometrisk nakkesidebøy mot egen hånd",
+      "FormRehab"
+    ],
+    "video": "/media/generated/formrehab-20261008-w3-exercise-004-firstframe-v1/video.mp4",
+    "poster": "/media/generated/formrehab-20261008-w3-exercise-004-firstframe-v1/poster.jpg",
+    "source": "/media/generated/formrehab-20261008-w3-exercise-004-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 19). Tidligere kontrollmerknad beholdt: New video awaiting user review. No import or retry authorized.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "mageliggende-leg-curl-apparat",
+    "name": "Mageliggende leg curl i apparat",
+    "description": "Ligg på magen på benken med anklene under rullen. Bøy knærne rolig til hælene er så langt opp mot setet som du kontrollerer, hold kort og strekk beina kontrollert ut igjen.",
+    "region": "Lower body",
+    "equipment": "Machine",
+    "tags": [
+      "Knær og lår",
+      "Mageliggende leg curl i apparat",
+      "FormRehab"
+    ],
+    "video": "/media/generated/mageliggende-leg-curl-apparat/video.mp4",
+    "poster": "/media/generated/mageliggende-leg-curl-apparat/poster.jpg",
+    "source": "/media/generated/mageliggende-leg-curl-apparat/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 20). Tidligere kontrollmerknad beholdt: Videoutkastet var merket needs-review før brukerens valg.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "skulderpress-apparat",
+    "name": "Skulderpress i apparat",
+    "description": "Sitt med ryggen mot puten og håndtakene i skulderhøyde. Press håndtakene rolig rett opp til armene er helt strake, hold kort og senk kontrollert tilbake.",
+    "region": "Upper body",
+    "equipment": "Machine",
+    "tags": [
+      "Skulder og overkropp",
+      "Skulderpress i apparat",
+      "FormRehab"
+    ],
+    "video": "/media/generated/skulderpress-apparat/video.mp4",
+    "poster": "/media/generated/skulderpress-apparat/poster.jpg",
+    "source": "/media/generated/skulderpress-apparat/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 21). Tidligere kontrollmerknad beholdt: Videoutkastet var merket needs-review før brukerens valg.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "omvendt-flyes-apparat",
+    "name": "Omvendt flyes i apparat",
+    "description": "Sitt med brystet mot puten og ta i håndtakene foran deg. Før armene rolig ut til sidene til skulderbladene trekkes sammen, hold kort og før dem kontrollert fram igjen.",
+    "region": "Upper body",
+    "equipment": "Machine",
+    "tags": [
+      "Skulder og overkropp",
+      "Omvendt flyes i apparat",
+      "FormRehab"
+    ],
+    "video": "/media/generated/omvendt-flyes-apparat/video.mp4",
+    "poster": "/media/generated/omvendt-flyes-apparat/poster.jpg",
+    "source": "/media/generated/omvendt-flyes-apparat/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 22). Tidligere kontrollmerknad beholdt: Videoutkastet var merket needs-review før brukerens valg.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "hopp-opp-pa-apparat",
+    "name": "Hopp opp på kasse",
+    "description": "Stå foran kassen med føttene i hoftebredde. Bøy lett i knærne, hopp opp og land kontrollert med begge føtter oppe på kassen.",
+    "region": "Lower body",
+    "equipment": "Step",
+    "tags": [
+      "Knær og lår",
+      "Hopp opp på kasse",
+      "FormRehab"
+    ],
+    "video": "/media/generated/hopp-opp-pa-apparat/video.mp4",
+    "poster": "/media/generated/hopp-opp-pa-apparat/poster.jpg",
+    "source": "/media/generated/hopp-opp-pa-apparat/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 23). Tidligere kontrollmerknad beholdt: Videoutkastet var merket needs-review før brukerens valg.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "steg-ned-pa-apparat",
+    "name": "Steg ned fra kasse",
+    "description": "Stå på kassen med føttene i hoftebredde. Før det ene beinet rolig ned til gulvet, følg etter med det andre og avslutt stående på gulvet.",
+    "region": "Lower body",
+    "equipment": "Step",
+    "tags": [
+      "Knær og lår",
+      "Steg ned fra kasse",
+      "FormRehab"
+    ],
+    "video": "/media/generated/steg-ned-pa-apparat/video.mp4",
+    "poster": "/media/generated/steg-ned-pa-apparat/poster.jpg",
+    "source": "/media/generated/steg-ned-pa-apparat/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "reviewNote": "Godkjent og valgt for bibliotekimport av brukeren 10. oktober 2026 (videogjennomgang, FormRehab-utkast nr. 24). Tidligere kontrollmerknad beholdt: Videoutkastet var merket needs-review før brukerens valg.",
+    "visualGroup": "equipment"
+  },
+  {
+    "id": "bench-581-barbell-firstframe-v1-20261010",
+    "name": "Flat benkpress med stang",
+    "description": "Press stangen fra brystet til armene er naturlig strake, og senk kontrollert tilbake. Hold hodet, ryggen og setet på benken og føttene i gulvet.",
+    "region": "Upper body",
+    "equipment": "Barbell",
+    "tags": [
+      "Bryst",
+      "Benkpress",
+      "Stang",
+      "FormRehab"
+    ],
+    "aliases": [
+      "benkpress med stang",
+      "flat benkpress med vektstang"
+    ],
+    "video": "/media/generated/bench-581-barbell-firstframe-v1-20261010/video.mp4",
+    "poster": "/media/generated/bench-581-barbell-firstframe-v1-20261010/poster.jpg",
+    "source": "/media/generated/bench-581-barbell-firstframe-v1-20261010/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026. Kamerautsittet endres litt fra startbildet."
+  },
+  {
+    "id": "bench-85-dumbbell-firstframe-v1-20261010",
+    "name": "Flat benkpress med manualer",
+    "description": "Press begge manualene fra brysthøyde til armene er naturlig strake, og senk kontrollert tilbake. Hold hodet, ryggen og setet på benken og føttene i gulvet.",
+    "region": "Upper body",
+    "equipment": "Dumbbells",
+    "tags": [
+      "Bryst",
+      "Benkpress",
+      "Manualer",
+      "FormRehab"
+    ],
+    "aliases": [
+      "brystpress med manualer",
+      "flat brystpress med hantler",
+      "benkpress med hantler"
+    ],
+    "video": "/media/generated/bench-85-dumbbell-firstframe-v1-20261010/video.mp4",
+    "poster": "/media/generated/bench-85-dumbbell-firstframe-v1-20261010/poster.jpg",
+    "source": "/media/generated/bench-85-dumbbell-firstframe-v1-20261010/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": ""
+  },
+  {
+    "id": "selected14-20261010-065-firstframe-v1",
+    "name": "Bicepscurl med manualer",
+    "description": "Curl begge manualene mot skuldrene og senk kontrollert tilbake. Hold overarmene nær kroppen.",
+    "region": "Upper body",
+    "equipment": "Dumbbells",
+    "tags": [
+      "Biceps",
+      "FormRehab"
+    ],
+    "aliases": [
+      "manualcurl",
+      "bicepscurl med hantler"
+    ],
+    "video": "/media/generated/selected14-20261010-065-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-065-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-065-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026."
+  },
+  {
+    "id": "selected14-20261010-066-firstframe-v1",
+    "name": "Bicepscurl med vektstang mot vegg",
+    "description": "Stå med ryggen støttet mot veggen. Curl stangen mot skuldrene og senk kontrollert tilbake.",
+    "region": "Upper body",
+    "equipment": "Barbell",
+    "tags": [
+      "Biceps",
+      "FormRehab"
+    ],
+    "aliases": [
+      "stangcurl mot vegg",
+      "bicepscurl med stang mot vegg"
+    ],
+    "video": "/media/generated/selected14-20261010-066-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-066-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-066-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026."
+  },
+  {
+    "id": "selected14-20261010-069-firstframe-v1",
+    "name": "Pushups",
+    "description": "Senk kroppen ved å bøye albuene og press tilbake til strake armer.",
+    "region": "Upper body",
+    "equipment": "Bodyweight",
+    "tags": [
+      "Bryst",
+      "FormRehab"
+    ],
+    "aliases": [
+      "armhevinger",
+      "push-ups",
+      "push ups"
+    ],
+    "video": "/media/generated/selected14-20261010-069-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-069-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-069-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 10. oktober 2026. Visuell merknad: Full senking og retur til strake armer. Bekken/mage ligger mot matta i bunnen ved 2,5 s; dette bryter en sammenhengende plankelinje. Må vurderes før bruk."
+  },
+  {
+    "id": "selected14-20261010-071-firstframe-v1",
+    "name": "Sittende skulderpress med hantler og ryggstøtte",
+    "description": "Sitt med ryggstøtte. Press manualene over hodet og senk kontrollert tilbake til skulderhøyde.",
+    "region": "Upper body",
+    "equipment": "Dumbbells",
+    "tags": [
+      "Skulder",
+      "FormRehab"
+    ],
+    "aliases": [
+      "sittende skulderpress med manualer",
+      "hantelpress med ryggstøtte"
+    ],
+    "video": "/media/generated/selected14-20261010-071-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-071-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-071-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026."
+  },
+  {
+    "id": "selected14-20261010-072-firstframe-v1",
+    "name": "Sittende tricepsstrekk over hodet med manual",
+    "description": "Sitt med manualen over hodet. Bøy albuene, senk manualen bak hodet og strekk armene tilbake.",
+    "region": "Upper body",
+    "equipment": "Dumbbells",
+    "tags": [
+      "Triceps",
+      "FormRehab"
+    ],
+    "aliases": [
+      "triceps extension over hodet",
+      "sittende franskpress med manual"
+    ],
+    "video": "/media/generated/selected14-20261010-072-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-072-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-072-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026. Visuell merknad: Manualen senkes bak hodet og løftes tilbake til strake armer. Langt hold i bunn. Manual/hender skjules bak hodet; kontinuitet i grepet kan ikke bekreftes gjennom hele bunnen."
+  },
+  {
+    "id": "selected14-20261010-075-firstframe-v1",
+    "name": "Stående militærpress",
+    "description": "Press stangen fra øvre bryst til over hodet og senk kontrollert tilbake.",
+    "region": "Upper body",
+    "equipment": "Barbell",
+    "tags": [
+      "Skulder",
+      "FormRehab"
+    ],
+    "aliases": [
+      "militærpress med stang",
+      "stående skulderpress med stang",
+      "overhead press"
+    ],
+    "video": "/media/generated/selected14-20261010-075-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-075-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-075-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026. Visuell merknad: Stangen presses over hodet og returnerer til øvre bryst. Tydelig knebøy/dipp før løftet gir hjelp fra beina, nærmere push press enn strikt militærpress."
+  },
+  {
+    "id": "selected14-20261010-076-firstframe-v1",
+    "name": "Tricepspress i kabelapparat med V-håndtak",
+    "description": "Hold overarmene nær kroppen. Strekk albuene og press V-håndtaket ned, før det kontrollert tilbake.",
+    "region": "Upper body",
+    "equipment": "Machine",
+    "tags": [
+      "Triceps",
+      "FormRehab"
+    ],
+    "aliases": [
+      "triceps pushdown",
+      "triceps nedpress med V-håndtak"
+    ],
+    "video": "/media/generated/selected14-20261010-076-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-076-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-076-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026."
+  },
+  {
+    "id": "selected14-20261010-079-firstframe-v1",
+    "name": "Bryststøttet apparatroing med bredt grep",
+    "description": "Hold brystet mot støtten. Trekk håndtakene mot kroppen med bredt grep og strekk armene kontrollert tilbake.",
+    "region": "Upper body",
+    "equipment": "Machine",
+    "tags": [
+      "Rygg",
+      "FormRehab"
+    ],
+    "aliases": [
+      "bryststøttet roing bredt grep",
+      "apparatroing bredt grep"
+    ],
+    "video": "/media/generated/selected14-20261010-079-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-079-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-079-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026."
+  },
+  {
+    "id": "selected14-20261010-080-firstframe-v1",
+    "name": "Bryststøttet apparatroing med smalt grep",
+    "description": "Hold brystet mot støtten. Trekk håndtakene mot kroppen med smalt grep og strekk armene kontrollert tilbake.",
+    "region": "Upper body",
+    "equipment": "Machine",
+    "tags": [
+      "Rygg",
+      "FormRehab"
+    ],
+    "aliases": [
+      "bryststøttet roing smalt grep",
+      "apparatroing smalt grep"
+    ],
+    "video": "/media/generated/selected14-20261010-080-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-080-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-080-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026."
+  },
+  {
+    "id": "selected14-20261010-091-firstframe-v1",
+    "name": "Fremoverlent roing med vektstang",
+    "description": "Stå fremoverlent med lett bøy i knærne. Trekk stangen mot nedre mage og senk kontrollert til strake armer.",
+    "region": "Upper body",
+    "equipment": "Barbell",
+    "tags": [
+      "Rygg",
+      "FormRehab"
+    ],
+    "aliases": [
+      "stående stangroing",
+      "bent-over row",
+      "fremoverbøyd roing med stang"
+    ],
+    "video": "/media/generated/selected14-20261010-091-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-091-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-091-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026."
+  },
+  {
+    "id": "selected14-20261010-092-firstframe-v1",
+    "name": "Katt–ku",
+    "description": "Stå på alle fire. Veksle rolig mellom svai og krum rygg, og gå tilbake til utgangsstillingen.",
+    "region": "Back",
+    "equipment": "Bodyweight",
+    "tags": [
+      "Rygg",
+      "FormRehab"
+    ],
+    "aliases": [
+      "katt ku",
+      "katt–kamel",
+      "cat cow",
+      "cat camel"
+    ],
+    "video": "/media/generated/selected14-20261010-092-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-092-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-092-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 10. oktober 2026. Visuell merknad: Rygg fra svai til tydelig krumning og tilbake mot svai. Hender og knær står fast. Sluttstillingen har litt mindre svai/hodeløft enn start; vurder ønsket utslag."
+  },
+  {
+    "id": "selected14-20261010-093-firstframe-v1",
+    "name": "Kroppsheving med overhåndsgrep",
+    "description": "Heng med overhåndsgrep. Trekk kroppen opp til haken kommer over stangen og senk kontrollert til strake armer.",
+    "region": "Upper body",
+    "equipment": "Pull-up bar",
+    "tags": [
+      "Rygg",
+      "FormRehab"
+    ],
+    "aliases": [
+      "pullups",
+      "pull-ups",
+      "pull ups",
+      "kroppshevinger overhånd"
+    ],
+    "video": "/media/generated/selected14-20261010-093-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected14-20261010-093-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected14-20261010-093-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 10. oktober 2026."
+  },
+  {
+    "id": "selected11-20261011-w4-132-firstframe-v1",
+    "name": "Hoftebøyertøyning i halvt knestående",
+    "description": "Stå i halvt knestående med hendene på fremre lår. Før bekkenet rolig frem, hold overkroppen oppreist og kjenn strekk foran på bakre hofte. Hold kort og før bekkenet kontrollert tilbake.",
+    "region": "Lower body",
+    "equipment": "Bodyweight",
+    "tags": [
+      "Hofte",
+      "Tøyning",
+      "FormRehab"
+    ],
+    "aliases": [
+      "hoftebøyerstrekk",
+      "knestående hoftebøyertøyning",
+      "hip flexor stretch"
+    ],
+    "video": "/media/generated/selected11-20261011-w4-132-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected11-20261011-w4-132-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected11-20261011-w4-132-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 11. oktober 2026. Mønsteret i toppen blir svakere; små teksturavvik fra referansebildet."
+  },
+  {
+    "id": "selected11-20261011-w3-122-firstframe-v1",
+    "name": "Strake rygghev i apparat",
+    "description": "Bøy fra hoftene med lang rygg og løft overkroppen kontrollert tilbake på linje med beina. Hold lårene på støtten og føttene festet.",
+    "region": "Trunk",
+    "equipment": "Machine",
+    "tags": [
+      "Rygg",
+      "Rygghev",
+      "FormRehab"
+    ],
+    "aliases": [
+      "strake rygghev",
+      "rygghev med rett rygg",
+      "straight back extension"
+    ],
+    "video": "/media/generated/selected11-20261011-w3-122-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected11-20261011-w3-122-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected11-20261011-w3-122-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 11. oktober 2026. Videoen viser redusert utslag og krumming av ryggen."
+  },
+  {
+    "id": "selected11-20261011-w3-121-firstframe-v1",
+    "name": "Strake benløft med korsryggstøtte",
+    "description": "Ligg på ryggen med hendene under bekkenet. Løft ett bein med strakt kne, hold kort og senk kontrollert tilbake. La det andre beinet hvile på matten.",
+    "region": "Lower body",
+    "equipment": "Bodyweight",
+    "tags": [
+      "Hofte",
+      "Rygg og kjerne",
+      "FormRehab"
+    ],
+    "aliases": [
+      "strakt benløft",
+      "strakt beinløft med korsryggstøtte",
+      "straight leg raise"
+    ],
+    "video": "/media/generated/selected11-20261011-w3-121-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected11-20261011-w3-121-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected11-20261011-w3-121-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 11. oktober 2026. Foten beskjæres ved øvre bildekant under løftet. Kneet bøyes litt og utslaget er større enn i referansen."
+  },
+  {
+    "id": "selected11-20261011-w3-110-firstframe-v1",
+    "name": "Sittende good morning med vektstang",
+    "description": "Sitt med føttene i gulvet og stangen på øvre rygg. Bøy frem fra hoftene og rett deg kontrollert opp igjen. Hold setet på benken.",
+    "region": "Trunk",
+    "equipment": "Barbell",
+    "tags": [
+      "Rygg",
+      "Hofte",
+      "FormRehab"
+    ],
+    "aliases": [
+      "sittende good morning",
+      "good morning med stang"
+    ],
+    "video": "/media/generated/selected11-20261011-w3-110-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected11-20261011-w3-110-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected11-20261011-w3-110-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 11. oktober 2026. Videoen viser redusert fremoverbøy sammenlignet med valgt sluttstilling."
+  },
+  {
+    "id": "selected11-20261011-w3-104-firstframe-v1",
+    "name": "Rullende rygghev i apparat",
+    "description": "Rull ryggen gradvis ned og strekk kontrollert tilbake til øvre stilling. Hold lårene støttet, føttene festet og armene krysset.",
+    "region": "Trunk",
+    "equipment": "Machine",
+    "tags": [
+      "Rygg",
+      "Rygghev",
+      "FormRehab"
+    ],
+    "aliases": [
+      "rullende rygghev",
+      "rolling back extension"
+    ],
+    "video": "/media/generated/selected11-20261011-w3-104-firstframe-v1/video.mp4",
+    "poster": "/media/generated/selected11-20261011-w3-104-firstframe-v1/poster.jpg",
+    "source": "/media/generated/selected11-20261011-w3-104-firstframe-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent 11. oktober 2026. Videoen avsluttes før overkroppen er helt tilbake i øvre startstilling."
+  },
+  {
+    "id": "hip-pilot-20261011-10170-twoframes-v1",
+    "name": "Statisk hip thrust på benk med vektstang",
+    "description": "Støtt øvre rygg på benken med begge føtter i gulvet og vektstangen over hoftene. Hold stangen med begge hender. Løft bekkenet til skuldre, hofter og knær ligger på linje, og hold stillingen i avtalt tid med stabil støtte.",
+    "region": "Lower body",
+    "equipment": "Barbell",
+    "tags": [
+      "Hofte",
+      "Sete",
+      "Statisk",
+      "Isometrisk",
+      "FormRehab"
+    ],
+    "aliases": [
+      "statisk hip thrust med stang",
+      "statisk hoftehev på benk",
+      "isometrisk hip thrust"
+    ],
+    "video": "/media/generated/hip-pilot-20261011-10170-twoframes-v1/video.mp4",
+    "poster": "/media/generated/hip-pilot-20261011-10170-twoframes-v1/poster.jpg",
+    "source": "/media/generated/hip-pilot-20261011-10170-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "equipment",
+    "reviewNote": "Brukergodkjent som statisk variant 11. oktober 2026. Videoen viser løft og hold uten retur. Små ansikts-/hår- og teksturavvik fra referansebildene er dokumentert."
+  },
+  {
+    "id": "hip-pilot-20261011-786-twoframes-v1",
+    "name": "Statisk ettbeins seteløft",
+    "description": "Ligg på ryggen med ett kne bøyd og foten i matten. Hold det andre beinet strakt og løftet. Løft bekkenet til skuldre, hofter og støttekneet ligger på linje, og hold stillingen i avtalt tid. Behold hodet, skuldrene og armene støttet på matten.",
+    "region": "Lower body",
+    "equipment": "Bodyweight",
+    "tags": [
+      "Hofte",
+      "Sete",
+      "Statisk",
+      "Isometrisk",
+      "FormRehab"
+    ],
+    "aliases": [
+      "statisk ettbeins seteloft",
+      "statisk ettbens seteløft",
+      "isometrisk ettbeins seteløft",
+      "static single-leg glute bridge"
+    ],
+    "video": "/media/generated/hip-pilot-20261011-786-twoframes-v1/video.mp4",
+    "poster": "/media/generated/hip-pilot-20261011-786-twoframes-v1/poster.jpg",
+    "source": "/media/generated/hip-pilot-20261011-786-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent som statisk variant 11. oktober 2026. Videoen viser løft og hold uten retur. Små ansikts-/hår- og teksturavvik fra referansebildene er dokumentert."
+  },
+  {
+    "id": "mobility-three-20261011-w4-180-twoframes-v1",
+    "name": "Tøyning av bryst og rygg med støtte på bord",
+    "description": "Stå med begge hender på bordet og føttene støttet på gulvet. Bøy videre i hoftene, før setet bakover og la hendene gli frem på bordet. Senk brystet og hodet mellom armene til en behagelig tøyningsstilling, og hold stillingen i avtalt tid.",
+    "region": "Upper body",
+    "equipment": "Table",
+    "tags": [
+      "Tøyning",
+      "Mobilitet",
+      "Bryst",
+      "Rygg",
+      "Skulder",
+      "FormRehab",
+      "Strekking",
+      "strekking av bryst og rygg med støtte på bord",
+      "bordtøyning",
+      "bordstrekking",
+      "skulderfleksjon med støtte på bord",
+      "table supported chest and back stretch"
+    ],
+    "aliases": [
+      "strekking av bryst og rygg med støtte på bord",
+      "bordtøyning",
+      "bordstrekking",
+      "skulderfleksjon med støtte på bord",
+      "table supported chest and back stretch"
+    ],
+    "video": "/media/generated/mobility-three-20261011-w4-180-twoframes-v1/video.mp4",
+    "poster": "/media/generated/mobility-three-20261011-w4-180-twoframes-v1/phase1.png",
+    "source": "/media/generated/mobility-three-20261011-w4-180-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 11. oktober 2026. Sluttstillingen holdes omtrent ett sekund i klippet."
+  },
+  {
+    "id": "mobility-three-20261011-w4-28-twoframes-v1",
+    "name": "Sideliggende innrotasjonsmobilisering av skulder",
+    "description": "Ligg på siden med hodet støttet og den nederste albuen på benken foran kroppen. Bruk den øverste hånden rundt håndleddet til å føre underarmen rolig ned mot benken. Behold overkroppen på siden, stopp ved et behagelig utslag og hold stillingen i avtalt tid.",
+    "region": "Upper body",
+    "equipment": "Bench",
+    "tags": [
+      "Tøyning",
+      "Mobilitet",
+      "Skulder",
+      "Innrotasjon",
+      "FormRehab",
+      "Strekking",
+      "sideliggende innrotasjon av skulder",
+      "sideliggende skuldertøyning",
+      "sideliggende skulderstrekking",
+      "sleeper stretch",
+      "assistert innrotasjon sideliggende"
+    ],
+    "aliases": [
+      "sideliggende innrotasjon av skulder",
+      "sideliggende skuldertøyning",
+      "sideliggende skulderstrekking",
+      "sleeper stretch",
+      "assistert innrotasjon sideliggende"
+    ],
+    "video": "/media/generated/mobility-three-20261011-w4-28-twoframes-v1/video.mp4",
+    "poster": "/media/generated/mobility-three-20261011-w4-28-twoframes-v1/phase1.png",
+    "source": "/media/generated/mobility-three-20261011-w4-28-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 11. oktober 2026. Liten albueforskyvning og delvis skjult håndleddskontakt er dokumentert."
+  },
+  {
+    "id": "mobility-three-20261011-w4-161-twoframes-v1",
+    "name": "Ankelmobilisering med bøyd kne på kile",
+    "description": "Støtt begge hender mot veggen og plasser den fremre foten på kilen. Før det bøyde kneet rolig frem over tærne mot veggen mens foten beholder støtte på kilen. Stopp ved et behagelig utslag og hold stillingen i avtalt tid.",
+    "region": "Lower body",
+    "equipment": "Wedge",
+    "tags": [
+      "Mobilitet",
+      "Tøyning",
+      "Ankel",
+      "Dorsalfleksjon",
+      "FormRehab",
+      "Strekking",
+      "ankelmobilitet med bøyd kne på kile",
+      "ankeltøyning med bøyd kne på kile",
+      "ankelstrekking med bøyd kne på kile",
+      "dorsalfleksjon med bøyd kne på kile",
+      "ankelmobilisering på skråbrett"
+    ],
+    "aliases": [
+      "ankelmobilitet med bøyd kne på kile",
+      "ankeltøyning med bøyd kne på kile",
+      "ankelstrekking med bøyd kne på kile",
+      "dorsalfleksjon med bøyd kne på kile",
+      "ankelmobilisering på skråbrett"
+    ],
+    "video": "/media/generated/mobility-three-20261011-w4-161-twoframes-v1/video.mp4",
+    "poster": "/media/generated/mobility-three-20261011-w4-161-twoframes-v1/phase1.png",
+    "source": "/media/generated/mobility-three-20261011-w4-161-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 11. oktober 2026. Hæl-/kilekontakt er delvis usikker i kontrollbildene."
+  },
+  {
+    "id": "calf-13313-twoimages-hold-v1-20261011",
+    "name": "Tøyning av lår og legg på stol",
+    "description": "Sitt på en stol med hælen til det utstrakte benet støttet på en annen stol og den andre foten i gulvet. Bøy overkroppen rolig frem fra hoftene til en behagelig tøyning, og hold stillingen i avtalt tid.",
+    "region": "Lower body",
+    "equipment": "Chair",
+    "tags": [
+      "Tøyning",
+      "Lår",
+      "Legg",
+      "Stol",
+      "FormRehab",
+      "tøyning av legg og lår på stol",
+      "hamstringstøyning på stol",
+      "seated thigh and calf stretch",
+      "ExorLive 13313"
+    ],
+    "aliases": [
+      "tøyning av legg og lår på stol",
+      "hamstringstøyning på stol",
+      "seated thigh and calf stretch",
+      "ExorLive 13313"
+    ],
+    "video": "/media/generated/calf-13313-twoimages-hold-v1-20261011/video.mp4",
+    "poster": "/media/generated/calf-13313-twoimages-hold-v1-20261011/phase1.png",
+    "source": "/media/generated/calf-13313-twoimages-hold-v1-20261011/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 12. oktober 2026. Klippet viser overgang og hold, ikke en hel tøyningsdose."
+  },
+  {
+    "id": "calf-11245-twoimages-return-v1-20261011",
+    "name": "Dynamisk tøy av legg mot vegg",
+    "description": "Støtt hendene mot veggen i en kort splittstilling. Hold bakre kne strakt og begge hæler i gulvet. Bøy fremre kne og før bekkenet rolig mot veggen, og før deretter kontrollert tilbake til start.",
+    "region": "Lower body",
+    "equipment": "Wall",
+    "tags": [
+      "Mobilitet",
+      "Dynamisk tøyning",
+      "Legg",
+      "Ankel",
+      "Vegg",
+      "FormRehab",
+      "dynamisk leggtøyning mot vegg",
+      "dynamisk tøyning av legg",
+      "dynamic wall calf stretch",
+      "ExorLive 11245"
+    ],
+    "aliases": [
+      "dynamisk leggtøyning mot vegg",
+      "dynamisk tøyning av legg",
+      "dynamic wall calf stretch",
+      "ExorLive 11245"
+    ],
+    "video": "/media/generated/calf-11245-twoimages-return-v1-20261011/video.mp4",
+    "poster": "/media/generated/calf-11245-twoimages-return-v1-20261011/phase1.png",
+    "source": "/media/generated/calf-11245-twoimages-return-v1-20261011/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 12. oktober 2026. Kort frem-og-tilbake-demonstrasjon; mindre referanseforskyvning i hånd-/fotplassering er dokumentert."
+  },
+  {
+    "id": "calf-768-twoimages-return-v1-20261011",
+    "name": "Tåhev med bøyde knær",
+    "description": "Stå med begge føtter i gulvet, lett bøyde knær og hendene på hoftene. Behold knebøyen mens du løfter begge hæler. Ta en kort pause på toppen og senk hælene kontrollert tilbake.",
+    "region": "Lower body",
+    "equipment": "None",
+    "tags": [
+      "Styrke",
+      "Legg",
+      "Ankel",
+      "Tåhev",
+      "Bøyde knær",
+      "FormRehab",
+      "tåhev med bøyd kne",
+      "tåhev med lett bøyde knær",
+      "bent knee calf raise",
+      "ExorLive 768"
+    ],
+    "aliases": [
+      "tåhev med bøyd kne",
+      "tåhev med lett bøyde knær",
+      "bent knee calf raise",
+      "ExorLive 768"
+    ],
+    "video": "/media/generated/calf-768-twoimages-return-v1-20261011/video.mp4",
+    "poster": "/media/generated/calf-768-twoimages-return-v1-20261011/phase1.png",
+    "source": "/media/generated/calf-768-twoimages-return-v1-20261011/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent 12. oktober 2026. Lett variasjon i knevinkel mellom referanser; ingen målt vinkelrekonstruksjon."
+  },
+  {
+    "id": "static-pilot-20261011-w3-child332-twoframes-v1",
+    "name": "Barnets stilling",
+    "description": "Start på alle fire med knær og legger støttet på matten. Før hoftene rolig bakover mot hælene og senk overkroppen og pannen mot matten med armene strukket frem. Hold stillingen i avtalt tid.",
+    "region": "Trunk",
+    "equipment": "None",
+    "tags": [
+      "Tøyning",
+      "Rygg",
+      "Hofter",
+      "FormRehab",
+      "Childs pose",
+      "Child’s pose",
+      "Barnets stilling / Childs pose"
+    ],
+    "aliases": [
+      "Childs pose",
+      "Child’s pose",
+      "Barnets stilling / Childs pose"
+    ],
+    "video": "/media/generated/static-pilot-20261011-w3-child332-twoframes-v1/video.mp4",
+    "poster": "/media/generated/static-pilot-20261011-w3-child332-twoframes-v1/poster.jpg",
+    "source": "/media/generated/static-pilot-20261011-w3-child332-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent med ønsket trimming til 4,00 sekunder for å fjerne sen hodedistorsjon. Klipplengden angir ikke klinisk holdetid."
+  },
+  {
+    "id": "static-pilot-20261011-w4-sideplank13799-twoframes-v1",
+    "name": "Statisk sideplanke på albue med strake ben",
+    "description": "Legg deg på siden med strake ben og underarmen støttet i gulvet. Plasser albuen under skulderen og løft hoften til kroppen danner en rett linje fra skulder til ankel. Hold stillingen i avtalt tid.",
+    "region": "Trunk",
+    "equipment": "None",
+    "tags": [
+      "Stabilitet",
+      "Kjernemuskulatur",
+      "Sideplanke",
+      "FormRehab",
+      "Statisk sideplanke på albue – strake ben",
+      "Sideplanke med strake ben"
+    ],
+    "aliases": [
+      "Statisk sideplanke på albue – strake ben",
+      "Sideplanke med strake ben"
+    ],
+    "video": "/media/generated/static-pilot-20261011-w4-sideplank13799-twoframes-v1/video.mp4",
+    "poster": "/media/generated/static-pilot-20261011-w4-sideplank13799-twoframes-v1/poster.jpg",
+    "source": "/media/generated/static-pilot-20261011-w4-sideplank13799-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent overgang til statisk sideplanke med hold, uten retur i klippet."
+  },
+  {
+    "id": "three-stretches-20261011-w4-134-twoframes-v1",
+    "name": "Liggende piriformistøyning",
+    "description": "Ligg på ryggen med bøyde knær og føttene i gulvet. Legg den ene ankelen over motsatt lår, grip rundt baksiden av støttelåret og trekk det rolig mot brystet. Behold hodet, skuldrene og bekkenet støttet, og hold tøyningen i avtalt tid.",
+    "region": "Lower body",
+    "equipment": "None",
+    "tags": [
+      "Tøyning",
+      "Sete",
+      "Hofter",
+      "FormRehab",
+      "Piriformistøyning liggende",
+      "Liggende tøyning av setemuskulatur"
+    ],
+    "aliases": [
+      "Piriformistøyning liggende",
+      "Liggende tøyning av setemuskulatur"
+    ],
+    "video": "/media/generated/three-stretches-20261011-w4-134-twoframes-v1/video.mp4",
+    "poster": "/media/generated/three-stretches-20261011-w4-134-twoframes-v1/poster.jpg",
+    "source": "/media/generated/three-stretches-20261011-w4-134-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent start-til-slutt-demonstrasjon med hold, uten retur. Håndføring er delvis skjult under overgangen."
+  },
+  {
+    "id": "three-stretches-20261011-w4-140-twoframes-v1",
+    "name": "Tøyning av sete med rotasjon av overkroppen",
+    "description": "Sitt på matten med bena strake. Bøy det ene kneet og sett foten over det andre benet. Støtt den ene hånden bak hoften, legg den andre armen mot det bøyde kneet og roter overkroppen rolig mot det bøyde benet. Behold setet støttet og hold tøyningen i avtalt tid.",
+    "region": "Trunk",
+    "equipment": "None",
+    "tags": [
+      "Tøyning",
+      "Sete",
+      "Rotasjon",
+      "FormRehab",
+      "Tøying av sete med rotasjon av overkropp",
+      "Sittende setetøyning med rotasjon"
+    ],
+    "aliases": [
+      "Tøying av sete med rotasjon av overkropp",
+      "Sittende setetøyning med rotasjon"
+    ],
+    "video": "/media/generated/three-stretches-20261011-w4-140-twoframes-v1/video.mp4",
+    "poster": "/media/generated/three-stretches-20261011-w4-140-twoframes-v1/poster.jpg",
+    "source": "/media/generated/three-stretches-20261011-w4-140-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent start-til-slutt-demonstrasjon med hold, uten retur. Den kryssede fotens kontakt er delvis skjult i referansen og videoen."
+  },
+  {
+    "id": "three-stretches-20261011-w4-139-twoframes-v1",
+    "name": "Sittende piriformistøyning",
+    "description": "Sitt oppreist på en benk med den ene ankelen hvilende over motsatt lår og støttefoten i gulvet. Støtt kneet og ankelen med hendene og len overkroppen rolig frem fra hoftene. Behold setet støttet og hold tøyningen i avtalt tid.",
+    "region": "Lower body",
+    "equipment": "Bench",
+    "tags": [
+      "Tøyning",
+      "Sete",
+      "Hofter",
+      "FormRehab",
+      "Piriformistøyning sittende",
+      "Sittende tøyning av setemuskulatur"
+    ],
+    "aliases": [
+      "Piriformistøyning sittende",
+      "Sittende tøyning av setemuskulatur"
+    ],
+    "video": "/media/generated/three-stretches-20261011-w4-139-twoframes-v1/video.mp4",
+    "poster": "/media/generated/three-stretches-20261011-w4-139-twoframes-v1/poster.jpg",
+    "source": "/media/generated/three-stretches-20261011-w4-139-twoframes-v1/video.mp4",
+    "credit": "Form · MiniMax",
+    "license": "AI-generert",
+    "collection": "FormRehab – godkjente videoer",
+    "visualGroup": "sage",
+    "reviewNote": "Brukergodkjent start-til-slutt-demonstrasjon med hold, uten retur."
   }
 ]
